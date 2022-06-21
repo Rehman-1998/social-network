@@ -1,0 +1,78 @@
+.searchbar-main {
+  border-radius: 30px;
+  background-color: white;
+  padding: 0px 10px;
+}
+
+.searchbar-main .main-col:hover {
+  background: #f1f1f1;
+  border-radius: 50px;
+}
+
+.sub-searchbar {
+  margin: 10px;
+  border-right: 1px solid #e5d8d8;
+}
+
+.sub-searchbar select {
+  outline: none !important;
+  border: none !important;
+  font-size: 14px;
+  background: transparent;
+}
+
+.sub-searchbar p {
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sub-searchbar input {
+  width: 70%;
+  font-size: 13px;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.sub-searchbar:hover {
+  border-right: 0px;
+}
+
+.search-btn {
+  margin: 15px !important;
+  border: 0 !important;
+  background-color: black !important;
+  color: white !important;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 5px 30px !important;
+  border-radius: 30px !important;
+}
+
+option {
+  border: none;
+  font-weight: 500;
+}
+.search-button {
+  padding: 15px 11px;
+  background-color: #c14f4f;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  margin: 6px 10px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: black;
+}
+
+/* .form-input-check[type="checkbox"]:checked {
+  color: #c14f4f
+} */
+
+/* .input[type="checkbox" i] {
+  background-color: red !important;
+} */

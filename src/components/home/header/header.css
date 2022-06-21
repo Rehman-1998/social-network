@@ -1,0 +1,69 @@
+.logo {
+  width: 100px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.login-icon {
+  background-color: white;
+  padding: 3px 8px;
+  border-radius: 50px;
+}
+
+.user-icon {
+  padding: 5px;
+  background-color: grey;
+  color: black !important;
+  border-radius: 50px;
+}
+
+.header-btn {
+  border: none;
+  outline: none;
+  background-color: #8fbf00;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 50px;
+}
+.header-btn:hover {
+  background-color: black;
+}
+
+.main-navbar {
+  background-color: white;
+}
+
+.main-navbar.navbar-light .navbar-nav .nav-link {
+  color: black;
+  border-radius: 50px;
+}
+
+.nav-link {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.nav-menu:hover {
+  color: white !important;
+  background-color: #8fbf00;
+  border-radius: 50px;
+}
+
+.dropdown-menu {
+  border-radius: 15px !important;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.navbar-light .navbar-toggler {
+  background-color: white;
+  box-shadow: none;
+  padding: 3px;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-collapse {
+    padding-top: 20px;
+  }
+}

@@ -1,0 +1,148 @@
+.filter-icon {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: white;
+  border: 1px solid #ebe4e4;
+  cursor: pointer;
+}
+
+.filter-icon.active {
+  /* border: 1px solid black; */
+  background-color: #8fbf00;
+  border: 1px solid white;
+  color: white;
+}
+
+.filter-icon:hover {
+  /* border: 1px solid black; */
+  background-color: #8fbf00;
+  border: 1px solid white;
+  color: white;
+}
+
+.filter-icon select {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.filter-icon option {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 400 !important;
+}
+
+.filter-icon p {
+  margin-bottom: 0px !important;
+}
+
+.matirial-select.MuiFormControl-root {
+  vertical-align: baseline;
+  margin: 0px;
+}
+
+.matirial-select .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border: none;
+}
+
+.matirial-select .MuiOutlinedInput-root {
+  border-radius: 50px;
+  border: 1px solid #ebe4e4;
+}
+
+.matirial-select
+  .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 10px;
+}
+
+.filter-bar-main .css-16awh2u-MuiAutocomplete-root .MuiOutlinedInput-root {
+  padding: 0px !important;
+}
+
+/* Auto complete */
+
+.css-g6lq71-MuiAutocomplete-root {
+  border: 1px solid #ebe4e4;
+  border-radius: 50px;
+  outline: none !important;
+}
+.css-g6lq71-MuiAutocomplete-root .MuiOutlinedInput-root {
+  padding: 0px !important;
+}
+.css-wb57ya-MuiFormControl-root-MuiTextField-root {
+  vertical-align: baseline !important;
+  margin: 0 !important;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+.css-g6lq71-MuiAutocomplete-root .MuiOutlinedInput-root .MuiAutocomplete-input {
+  padding: 7.5px 4px 7.5px 15px !important;
+}
+
+.filter-bar-main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  overflow-x: scroll;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .filter-bar {
+    overflow-x: scroll;
+  }
+  .filter-bar-main {
+    justify-content: space-between;
+  }
+  .filter-icon {
+    margin-left: 10px;
+  }
+  .filter-icon p {
+    width: 100px;
+  }
+  .matirial-select.MuiFormControl-root {
+    margin-left: 10px;
+  }
+
+  /* .filter-icon {
+    padding: 5px;
+  }
+  .filter-icon p {
+    font-size: 11px;
+  }
+  .filter-icon select {
+    font-size: 11px;
+  } */
+}
+
+@media screen and (max-width: 767px) {
+  .filter-bar {
+    overflow-x: scroll;
+  }
+  .filter-bar-main {
+    justify-content: space-between;
+  }
+  .filter-icon {
+    margin-left: 10px;
+  }
+  .filter-icon p {
+    width: 100px;
+  }
+  .matirial-select.MuiFormControl-root {
+    margin-left: 10px;
+  }
+  /* .filter-icon {
+    padding: 5px;
+  }
+  .filter-icon p {
+    font-size: 9px;
+  } */
+  .service-search-button {
+    padding: 10px 0px;
+    width: 70%;
+  }
+}

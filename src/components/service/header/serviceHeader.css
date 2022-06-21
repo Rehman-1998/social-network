@@ -1,0 +1,104 @@
+/******** Search Bar CSS *********/
+
+.service-login-icon {
+  background-color: white;
+  padding: 3px 8px;
+  border-radius: 50px;
+  border: 1px solid #e5dcdc;
+}
+
+.service-search-button {
+  margin-top: 5px;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: #cc2d4a;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.service-search-button:hover {
+  background-color: black;
+}
+
+.service-searchbar-main {
+  border-radius: 30px;
+  background-color: white;
+  padding: 0px 10px;
+  border: 1px solid beige;
+}
+
+.service-searchbar-main .main-col:hover {
+  background: #f1f1f1;
+  border-radius: 50px;
+}
+
+.service-sub-searchbar {
+  margin: 5px;
+  border-right: 1px solid #e5d8d8;
+}
+
+.service-sub-searchbar select {
+  outline: none !important;
+  border: none !important;
+  font-size: 14px;
+  background: transparent;
+}
+
+.service-sub-searchbar p {
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.service-sub-searchbar input {
+  width: 100%;
+  font-size: 13px;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.service-sub-searchbar:hover {
+  border-right: 0px;
+}
+
+.service-navbar {
+  background-color: white;
+}
+
+.select-days .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border: none;
+}
+
+.select-days
+  .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 0px;
+}
+
+.select-days.MuiFormControl-root {
+  vertical-align: unset;
+  margin: 0px;
+}
+
+.select-days .css-hfutr2-MuiSvgIcon-root-MuiSelect-icon {
+  display: none !important;
+}
+
+.select-days
+  .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.MuiSelect-select {
+  font-size: 14px;
+}
+
+.pac-container:after {
+  /* Disclaimer: not needed to show 'powered by Google' if also a Google Map is shown */
+  background-image: none !important;
+  height: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-collapse {
+    padding-top: 20px;
+  }
+}

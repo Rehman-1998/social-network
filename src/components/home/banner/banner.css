@@ -1,0 +1,53 @@
+.banner-image {
+  position: relative;
+  width: 100%;
+  height: 87vh;
+  background-size: cover !important;
+  background-position: 50% 85% !important;
+}
+
+.banner {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background: #0c0b0b61;
+  color: white;
+}
+
+.banner-title {
+  padding: 30px;
+  text-align: center;
+}
+
+.banner-title h1 {
+  font-weight: 800;
+  font-size: 60px;
+}
+
+.banner-title button {
+  text-align: center;
+  background: #8fbf00;
+  font-size: 20px;
+  padding: 7px 40px;
+  border-radius: 20px;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.banner-title button:hover {
+  background-color: black;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .banner-image {
+    height: 100vh !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner-image {
+    height: 100vh !important;
+  }
+}

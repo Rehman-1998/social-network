@@ -1,0 +1,38 @@
+.card {
+  border: none !important;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  height: 150px;
+}
+
+.card-subtitle {
+  margin-top: 0px !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: white;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  letter-spacing: 1px;
+  color: white;
+}
+
+/* Media query for Ipad */
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .card-img-top {
+    height: 130px;
+  }
+  .card-body {
+    height: 130px;
+  }
+}

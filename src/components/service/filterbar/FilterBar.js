@@ -42,7 +42,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
           <div>
             <FormControl
               id="gender-select"
-              className="matirial-select"
+              className="matirial-select my-class"
               sx={{ m: 1, minWidth: 120 }}
             >
               <Select
@@ -73,7 +73,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
           <div>
             <FormControl
               id="price-select"
-              className="matirial-select"
+              className="matirial-select my-class"
               sx={{ m: 1, minWidth: 120 }}
             >
               <Select
@@ -105,6 +105,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
             <Autocomplete
               disablePortal
               id="controllable-states-demo"
+              className="my-auto-class"
               sx={{ minWidth: 120 }}
               options={state.data}
               name={"zipCode"}
@@ -130,7 +131,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
           <div>
             <FormControl
               id="type-select"
-              className="matirial-select"
+              className="matirial-select my-class"
               sx={{ m: 1, minWidth: 120 }}
             >
               <Select
@@ -162,7 +163,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
           <div>
             <FormControl
               id="type-select"
-              className="matirial-select"
+              className="matirial-select my-class"
               sx={{ m: 1, minWidth: 120 }}
             >
               <Select
@@ -194,7 +195,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
           <div>
             <FormControl
               id="type-select"
-              className="matirial-select"
+              className="matirial-select my-class"
               sx={{ m: 1, minWidth: 120 }}
             >
               <Select
@@ -229,7 +230,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
           <div>
             <FormControl
               id="gender-select"
-              className="matirial-select"
+              className="matirial-select my-class"
               sx={{ m: 1, minWidth: 120 }}
             >
               <Select
@@ -260,7 +261,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
           <div>
             <FormControl
               id="type-select"
-              className="matirial-select"
+              className="matirial-select my-class"
               sx={{ m: 1, minWidth: 120 }}
             >
               <Select
@@ -291,7 +292,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
           <div className="">
             <FormControl
               id="price-select"
-              className="matirial-select"
+              className="matirial-select my-class"
               sx={{ m: 1, minWidth: 120 }}
             >
               <Select
@@ -322,7 +323,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
           <div>
             <FormControl
               id="type-select"
-              className="matirial-select"
+              className="matirial-select my-class"
               sx={{ m: 1, minWidth: 120 }}
             >
               <Select
@@ -354,7 +355,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
           <div>
             <FormControl
               id="type-select"
-              className="matirial-select"
+              className="matirial-select my-class"
               sx={{ m: 1, minWidth: 120 }}
             >
               <Select
@@ -386,7 +387,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
           <div>
             <FormControl
               id="type-select"
-              className="matirial-select"
+              className="matirial-select my-class"
               sx={{ m: 1, minWidth: 120 }}
             >
               <Select

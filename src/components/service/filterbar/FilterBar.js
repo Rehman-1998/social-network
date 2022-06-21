@@ -2,13 +2,20 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import "./filter.css";
 import data from "../../../utilis/data";
-import Select from "@mui/material/Select";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
+// import FormControl from "@mui/material/FormControl";
 import { filterFunction } from "../../../utilis/filterData";
 import { capitalizeFirstLetter } from "../../../utilis/capitalizeFirstLetter";
-import TextField from "@mui/material/TextField";
-import Autocomplete from "@mui/material/Autocomplete";
+// import TextField from "@mui/material/TextField";
+// import Autocomplete from "@mui/material/Autocomplete";
+// import Select from "@mui/material/Select";
+// import MenuItem from "@mui/material/MenuItem";
+import {
+  MenuItem,
+  Select,
+  Autocomplete,
+  TextField,
+  FormControl,
+} from "@mui/material";
 import state from "../../../utilis/state";
 
 const FilterBar = ({ setDumyData, dataHistory }) => {
@@ -40,6 +47,17 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
       <Container className="py-3">
         <div className="filter-bar-main">
           <div className="form-div">
+            {/* <Form.Select className="filter-icon" aria-label="Gender">
+              <option disabled value="">
+                Gender
+              </option>
+              {data?.gender?.map((item, index) => (
+                <option key={index} value={item.value}>
+                  {capitalizeFirstLetter(item.value)}
+                </option>
+              ))}
+            </Form.Select> */}
+
             <FormControl
               id="gender-select"
               className="matirial-select my-class"

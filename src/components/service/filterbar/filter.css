@@ -51,17 +51,22 @@ fieldset.MuiOutlinedInput-notchedOutline.css-igs3ac {
 
 .MuiOutlinedInput-root.MuiInputBase-root.MuiInputBase-colorPrimary.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd.MuiAutocomplete-inputRoot.css-segi59 {
   padding: 0px !important;
-  border: 1px solid #ebe4e4;
-  border-radius: 50px;
-  outline: none;
+  border: 1px solid #ebe4e4 !important;
+  border-radius: 50px !important;
+  outline: none !important;
 }
 
 fieldset.MuiOutlinedInput-notchedOutline.css-igs3ac {
   border: none !important;
 }
 .css-qiwgdb {
-  padding: 10.5px 14px I !important;
+  padding: 10.5px 14px !important;
 }
+.css-qiwgdb.css-qiwgdb.css-qiwgdb {
+  padding: 10.5px 14px !important;
+}
+
+/* test end */
 
 .form-div .my-class.matirial-select.MuiFormControl-root {
   vertical-align: baseline;

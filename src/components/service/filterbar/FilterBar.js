@@ -167,7 +167,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
                 displayEmpty
               >
                 <MenuItem value={""}>
-                  <em>Material Status</em>
+                  <em>Status</em>
                 </MenuItem>
                 {data?.materialStatus?.map((item, index) => (
                   <MenuItem key={index} value={item.value}>
@@ -328,7 +328,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
                 displayEmpty
               >
                 <MenuItem value={""}>
-                  <em>Political Views</em>
+                  <em>Political</em>
                 </MenuItem>
                 {data?.politicalView?.map((item, index) => (
                   <MenuItem key={index} value={item.value}>
@@ -359,7 +359,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
                 displayEmpty
               >
                 <MenuItem value={""}>
-                  <em>Skill Level</em>
+                  <em>Skills</em>
                 </MenuItem>
                 {data?.skillLevel?.map((item, index) => (
                   <MenuItem key={index} value={item.value}>
@@ -391,7 +391,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
                 displayEmpty
               >
                 <MenuItem value={""}>
-                  <em>Often Play</em>
+                  <em>Play</em>
                 </MenuItem>
                 {data?.oftenPlay?.map((item, index) => (
                   <MenuItem key={index} value={item.value}>
@@ -423,7 +423,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
                 displayEmpty
               >
                 <MenuItem value={""}>
-                  <em>Purpose to Play</em>
+                  <em>Purpose</em>
                 </MenuItem>
                 {data?.purpose?.map((item, index) => (
                   <MenuItem key={index} value={item.value}>

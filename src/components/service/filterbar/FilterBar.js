@@ -39,7 +39,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
     <>
       <Container className="py-3">
         <div className="filter-bar-main">
-          <div>
+          <div className="form-div">
             <FormControl
               id="gender-select"
               className="matirial-select my-class"
@@ -70,7 +70,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
               </Select>
             </FormControl>
           </div>
-          <div>
+          <div className="form-div">
             <FormControl
               id="price-select"
               className="matirial-select my-class"
@@ -101,7 +101,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
               </Select>
             </FormControl>
           </div>
-          <div>
+          <div className="form-div">
             <Autocomplete
               disablePortal
               id="controllable-states-demo"
@@ -128,7 +128,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
               }}
             />
           </div>
-          <div>
+          <div className="form-div">
             <FormControl
               id="type-select"
               className="matirial-select my-class"
@@ -160,7 +160,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
             </FormControl>
           </div>
 
-          <div>
+          <div className="form-div">
             <FormControl
               id="type-select"
               className="matirial-select my-class"
@@ -192,7 +192,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
             </FormControl>
           </div>
 
-          <div>
+          <div className="form-div">
             <FormControl
               id="type-select"
               className="matirial-select my-class"
@@ -227,7 +227,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
 
         {/****************  Second Bar ***************** */}
         <div className="filter-bar-main mt-3">
-          <div>
+          <div className="form-div">
             <FormControl
               id="gender-select"
               className="matirial-select my-class"
@@ -258,7 +258,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
               </Select>
             </FormControl>
           </div>
-          <div>
+          <div className="form-div">
             <FormControl
               id="type-select"
               className="matirial-select my-class"
@@ -289,7 +289,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
               </Select>
             </FormControl>
           </div>
-          <div className="">
+          <div className="form-div">
             <FormControl
               id="price-select"
               className="matirial-select my-class"
@@ -320,7 +320,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
               </Select>
             </FormControl>
           </div>
-          <div>
+          <div className="form-div">
             <FormControl
               id="type-select"
               className="matirial-select my-class"
@@ -352,7 +352,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
             </FormControl>
           </div>
 
-          <div>
+          <div className="form-div">
             <FormControl
               id="type-select"
               className="matirial-select my-class"
@@ -384,7 +384,7 @@ const FilterBar = ({ setDumyData, dataHistory }) => {
             </FormControl>
           </div>
 
-          <div>
+          <div className="form-div">
             <FormControl
               id="type-select"
               className="matirial-select my-class"

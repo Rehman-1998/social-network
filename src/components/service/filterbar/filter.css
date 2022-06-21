@@ -38,49 +38,58 @@
   margin-bottom: 0px !important;
 }
 
-.my-class.matirial-select.MuiFormControl-root {
+.form-div .my-class.matirial-select.MuiFormControl-root {
   vertical-align: baseline;
   margin: 0px;
 }
 
-.my-class.matirial-select .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+.form-div
+  .my-class.matirial-select
+  .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
   border: none;
 }
 
-.my-class.matirial-select .MuiOutlinedInput-root {
+.form-div .my-class.matirial-select .MuiOutlinedInput-root {
   border-radius: 50px;
   border: 1px solid #ebe4e4;
 }
 
-.my-class.matirial-select
+.form-div
+  .my-class.matirial-select
   .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
   padding: 10px;
 }
 
-.filter-bar-main .css-16awh2u-MuiAutocomplete-root .MuiOutlinedInput-root {
+.form-div
+  .filter-bar-main
+  .css-16awh2u-MuiAutocomplete-root
+  .MuiOutlinedInput-root {
   padding: 0px !important;
 }
 
 /* Auto complete */
 
-.my-auto-class.css-g6lq71-MuiAutocomplete-root {
+.form-div .my-auto-class.css-g6lq71-MuiAutocomplete-root {
   border: 1px solid #ebe4e4;
   border-radius: 50px;
   outline: none !important;
 }
-.my-auto-class.css-g6lq71-MuiAutocomplete-root .MuiOutlinedInput-root {
+.form-div
+  .my-auto-class.css-g6lq71-MuiAutocomplete-root
+  .MuiOutlinedInput-root {
   padding: 0px !important;
 }
-.my-auto-class .css-wb57ya-MuiFormControl-root-MuiTextField-root {
+.form-div .my-auto-class .css-wb57ya-MuiFormControl-root-MuiTextField-root {
   vertical-align: baseline !important;
   margin: 0 !important;
 }
 
-.my-auto-class .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+.form-div .my-auto-class .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
   border: none !important;
 }
 
-.my-auto-class.css-g6lq71-MuiAutocomplete-root
+.form-div
+  .my-auto-class.css-g6lq71-MuiAutocomplete-root
   .MuiOutlinedInput-root
   .MuiAutocomplete-input {
   padding: 7.5px 4px 7.5px 15px !important;

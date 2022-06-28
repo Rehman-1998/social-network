@@ -46,8 +46,14 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) and (min-width: 401px) {
   .banner-image {
     height: 100vh !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .banner-image {
+    height: 120vh !important;
   }
 }

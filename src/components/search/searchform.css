@@ -1,0 +1,23 @@
+.submit-button {
+  border: none;
+  outline: none;
+  background-color: #8fbf00;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+
+.submit-button:hover {
+  background-color: black;
+}
+
+.container-bg {
+  background-color: white;
+  opacity: 0.9;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  padding: 30px 20px;
+  /* margin: 10px 0px; */
+}

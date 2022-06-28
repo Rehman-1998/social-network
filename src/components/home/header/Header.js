@@ -24,8 +24,8 @@ const Header = () => {
               <Nav.Link className="nav-menu" href="/a">
                 Online Experiences
               </Nav.Link> */}
-              <Link to="/search">
-                <button className="header-btn">Find Your Partner</button>
+              <Link to="/my-profile">
+                <button className="header-btn">About me</button>
               </Link>
             </Nav>
           </Navbar.Collapse>

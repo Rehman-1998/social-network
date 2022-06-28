@@ -1,8 +1,10 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import Header from "../../components/home/header/Header";
-import FilterBar from "../../components/service/filterbar/FilterBar";
+// import FilterBar from "../../components/service/filterbar/FilterBar";
 import Cards from "../../components/service/cards/Cards";
 import CircularProgress from "@mui/material/CircularProgress";
+import { useLocation } from "react-router-dom";
 // import data from "../../utilis/data";
 
 const Service = () => {
@@ -21,10 +23,14 @@ const Service = () => {
       });
   }, []);
 
+  let location = useLocation();
+
+  console.log("valuesss====>>", location.state);
+
   return (
     <>
       <Header />
-      <FilterBar setDumyData={setDumyData} dataHistory={dataHistory} />
+      {/* <FilterBar setDumyData={setDumyData} dataHistory={dataHistory} /> */}
       {loading ? (
         <Cards dumyData={dumyData} setDumyData={setDumyData} />
       ) : (

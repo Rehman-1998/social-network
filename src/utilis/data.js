@@ -75,27 +75,30 @@ export default {
   ],
   age: [
     {
-      value: "10-20",
+      value: "18-25",
     },
     {
-      value: "21-30",
+      value: "26-35",
     },
     {
-      value: "31-40",
+      value: "36-45",
     },
     {
-      value: "41-50",
+      value: "46-55",
     },
     {
-      value: "51-100",
+      value: "56-65",
+    },
+    {
+      value: "66-100",
     },
   ],
   materialStatus: [
     {
-      value: "married",
+      value: "single",
     },
     {
-      value: "single",
+      value: "married",
     },
     {
       value: "divorce",
@@ -304,16 +307,78 @@ export default {
   ],
   purpose: [
     {
+      value: "dating",
+    },
+    {
+      value: "networking",
+    },
+    {
       value: "i just want to play golf",
     },
     {
       value: "meet new friends",
     },
+  ],
+  industry: [
     {
-      value: "dating",
+      value: "advertising and marketing",
     },
     {
-      value: "networking",
+      value: "aerospace",
+    },
+    {
+      value: "agriculture",
+    },
+    {
+      value: "computer technology",
+    },
+    {
+      value: "construction",
+    },
+    {
+      value: "education",
+    },
+    {
+      value: "energy",
+    },
+    {
+      value: "entertainment",
+    },
+    {
+      value: "fashion",
+    },
+    {
+      value: "finance economic",
+    },
+    {
+      value: "food and beverage",
+    },
+    {
+      value: "government",
+    },
+    {
+      value: "healthcare",
+    },
+    {
+      value: "hospitality",
+    },
+    {
+      value: "manufacturing",
+    },
+    {
+      value: "Media news",
+    },
+    {
+      value: "mining",
+    },
+    {
+      value: "pharmaceutical",
+    },
+    {
+      value: "telecommunication",
+    },
+    {
+      value: "transportation",
     },
   ],
 };

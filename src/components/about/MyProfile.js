@@ -2,17 +2,19 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "./profileCards.css";
+import "../profile/profileCards.css";
 import { Link, useLocation } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
 import { capitalizeFirstLetter } from "../../utilis/capitalizeFirstLetter";
 // import data from "../../utilis/data";
-const ProfileCards = () => {
+const MyProfile = () => {
   const [profileData, setProfileData] = React.useState("");
   const [loading, setLoading] = React.useState("");
   const location = useLocation();
   useEffect(() => {
-    fetch(`https://social-golf-network.herokuapp.com/user/${location.state.id}`)
+    fetch(
+      `https://social-golf-network.herokuapp.com/user/62baa790587a29d83da4191a`
+    )
       .then((response) => response.json())
       .then((res) => {
         const { data, success } = res;
@@ -345,4 +347,4 @@ const ProfileCards = () => {
   );
 };
 
-export default ProfileCards;
+export default MyProfile;

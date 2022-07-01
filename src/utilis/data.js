@@ -381,4 +381,25 @@ export default {
       value: "transportation",
     },
   ],
+  currentHandicap: [
+    {
+      name: "0 to 36",
+      value: "0-36",
+    },
+    {
+      name: "I don't have Handicap",
+      value: "0",
+    },
+  ],
+  professional: [
+    {
+      value: "network",
+    },
+    {
+      value: "looking for a job",
+    },
+    {
+      value: "looking for a change careers",
+    },
+  ],
 };

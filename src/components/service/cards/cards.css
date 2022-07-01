@@ -1,5 +1,5 @@
 .profile-cards {
-  text-align: center !important;
+  /* text-align: center !important; */
   border: 1px solid #e7dede;
   border-radius: 10px;
   padding: 15px;
@@ -25,12 +25,38 @@
 }
 .profile-cards h5 {
   color: #779e03;
+  margin-bottom: 0px;
 }
 .profile-status p {
   font-weight: 500;
   margin-bottom: 5px;
 }
 
+.profile-title {
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 500;
+}
+.profile-title p {
+  margin-bottom: 5px;
+}
+.profile-subtitle {
+  text-align: justify;
+  font-weight: 500;
+  font-size: 14px;
+  color: #779e03;
+  /* word-break: break-word; */
+}
+.profile-subtitle p {
+  margin-bottom: 5px;
+}
+.purpose-border {
+  border-top: 1px solid #779e03;
+  margin-top: 5px;
+  padding-top: 5px;
+  margin-left: 12px;
+  width: 92%;
+}
 ::-webkit-scrollbar {
   display: none;
 }
@@ -45,4 +71,49 @@
 
 .profile-cards button:hover {
   background-color: black;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 401px) {
+  .profile-title {
+    font-size: 13px;
+    margin-bottom: 3px;
+  }
+  .profile-subtitle {
+    font-size: 13px;
+    margin-bottom: 3px;
+  }
+}
+
+@media screen and (max-width: 400px) and (min-width: 301px) {
+  .profile-cards h5 {
+    margin-bottom: 3px;
+  }
+
+  .cards-image img {
+    width: 90px;
+    height: 90px;
+  }
+  .profile-title {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+  .profile-subtitle {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .cards-image img {
+    width: 70px;
+    height: 70px;
+  }
+  .profile-title {
+    font-size: 10px;
+    margin-bottom: 3px;
+  }
+  .profile-subtitle {
+    font-size: 10px;
+    margin-bottom: 3px;
+  }
 }

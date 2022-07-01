@@ -2,13 +2,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import CircularProgress from "@mui/material/CircularProgress";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./cards.css";
 import { capitalizeFirstLetter } from "../../../utilis/capitalizeFirstLetter";
 
 const Cards = ({ setDumyData, dumyData }) => {
   const navigate = useNavigate();
-  let location = useLocation();
+  // let location = useLocation();
   const [data, setData] = React.useState("");
   const [loading, setLoading] = React.useState(false);
 
@@ -16,19 +16,28 @@ const Cards = ({ setDumyData, dumyData }) => {
     navigate("/profile", { state: { id } });
   };
 
+  // const fetchData = () => {
+  //   fetch("https://social-golf-network.herokuapp.com/user/filter", {
+  //     // Adding method type
+  //     method: "POST",
+
+  //     // Adding body or contents to send
+  //     body: JSON.stringify(location.state),
+
+  //     // Adding headers to the request
+  //     headers: {
+  //       "Content-type": "application/json; charset=UTF-8",
+  //     },
+  //   })
+  //     .then((response) => response.json())
+  //     .then((res) => {
+  //       setData(res.data);
+  //       setLoading(res.success);
+  //     });
+  // };
+
   const fetchData = () => {
-    fetch("https://social-golf-network.herokuapp.com/user/filter", {
-      // Adding method type
-      method: "POST",
-
-      // Adding body or contents to send
-      body: JSON.stringify(location.state),
-
-      // Adding headers to the request
-      headers: {
-        "Content-type": "application/json; charset=UTF-8",
-      },
-    })
+    fetch("https://social-golf-network.herokuapp.com/user")
       .then((response) => response.json())
       .then((res) => {
         setData(res.data);
@@ -43,80 +52,141 @@ const Cards = ({ setDumyData, dumyData }) => {
   return (
     <>
       <Container className=" border-top pt-4 pb-4">
-        {data?.length === 0 ? (
-          <div className="text-center">
-            <h3>No Result Match</h3>
-          </div>
-        ) : (
-          <h5 className="mb-5">Results are :</h5>
-        )}
+        <h5 className="mb-3">Results are :</h5>
         <Row>
-          {/* Map data */}
-          {/* {dumyData &&
-            dumyData?.map((item, index) => (
-              <Col key={index} className="mb-3" md={4} lg={3}>
-                <div className="profile-cards">
-                  <div className="cards-image">
-                    <img src={item.image} alt="" />
-                  </div>
-                  <div className="py-2">
-                    <h5>{capitalizeFirstLetter(item.name)}</h5>
-                  </div>
-                  <div className="profile-status">
-                    <p>Material Status :</p>
-                    <p>{capitalizeFirstLetter(item.matirialStatus)}</p>
-                  </div>
-                  <div className="profile-status">
-                    <p>Gender :</p>
-                    <p>{capitalizeFirstLetter(item.gender)}</p>
-                  </div>
-                  <div className="profile-status">
-                    <p>Age :</p>
-                    <p>{item.age}</p>
-                  </div>
-                  <div className="profile-status">
-                    <p>Zip Code :</p>
-                    <p>{item.zipCode}</p>
-                  </div>
-                  <div>
-                    <button onClick={() => handleClick(item._id)}>
-                      See more{" "}
-                    </button>
-                  </div>
-                </div>
-              </Col>
-            ))} */}
           {loading ? (
             <>
               {data &&
                 data?.map((item, index) => (
-                  <Col key={index} className="mb-3" md={4} lg={3}>
+                  <Col key={index} className="mb-3" md={6} lg={4}>
                     <div className="profile-cards">
-                      <div className="cards-image">
-                        <img src={item.image} alt="" />
-                      </div>
-                      <div className="py-2">
-                        <h5>{capitalizeFirstLetter(item.name)}</h5>
-                      </div>
-                      <div className="profile-status">
-                        <p>Material Status :</p>
-                        <p>{capitalizeFirstLetter(item.matirialStatus)}</p>
-                      </div>
-                      <div className="profile-status">
-                        <p>Gender :</p>
-                        <p>{capitalizeFirstLetter(item.gender)}</p>
-                      </div>
-                      <div className="profile-status">
-                        <p>Age :</p>
-                        <p>{item.age}</p>
-                      </div>
-                      <div className="profile-status">
-                        <p>Zip Code :</p>
-                        <p>{item.zipCode}</p>
-                      </div>
-                      <div>
+                      <Row>
+                        <Col className="mb-2" sm={4} xs={4} md={4} lg={4}>
+                          <div className="cards-image">
+                            <img src={item.image} alt="" />
+                          </div>
+                        </Col>
+                        <Col className="mb-2" sm={8} xs={8} md={8} lg={8}>
+                          <Row>
+                            <Col md={12}>
+                              <div>
+                                <h5>{capitalizeFirstLetter(item.name)}</h5>
+                              </div>
+                            </Col>
+                            <Col md={5} xs={5} sm={5}>
+                              <div className="profile-title">
+                                <p>Status :</p>
+                              </div>
+                            </Col>
+                            <Col md={7} xs={7} sm={7}>
+                              <div className="profile-subtitle">
+                                <p>
+                                  {capitalizeFirstLetter(item.matirialStatus)}
+                                </p>
+                              </div>
+                            </Col>
+                            <Col md={5} xs={5} sm={5}>
+                              <div className="profile-title">
+                                <p>Skill Level :</p>
+                              </div>
+                            </Col>
+                            <Col md={7} xs={7} sm={7}>
+                              <div className="profile-subtitle">
+                                <p>{capitalizeFirstLetter(item.skillLevel)}</p>
+                              </div>
+                            </Col>
+                            <Col md={5} xs={5} sm={7}>
+                              <div className="profile-title">
+                                <p>Political:</p>
+                              </div>
+                            </Col>
+                            <Col md={7} xs={5} sm={7}>
+                              <div className="profile-subtitle">
+                                <p>
+                                  {capitalizeFirstLetter(item.politicalView)}
+                                </p>
+                              </div>
+                            </Col>
+                          </Row>
+                        </Col>
+                        <Col md={2} xs={2} sm={2}>
+                          <div className="profile-title">
+                            <p>Age:</p>
+                          </div>
+                        </Col>
+                        <Col md={2} xs={2} sm={2}>
+                          <div className="profile-subtitle">
+                            <p>{item.age}</p>
+                          </div>
+                        </Col>
+                        <Col md={5} xs={5} sm={5}>
+                          <div className="profile-title">
+                            <p>Current Handicap:</p>
+                          </div>
+                        </Col>
+                        <Col md={3} xs={3} sm={3}>
+                          <div className="profile-subtitle">
+                            <p>{item.currentHandicap}</p>
+                          </div>
+                        </Col>
+                        <Col md={2} xs={2} sm={2}>
+                          <div className="profile-title">
+                            <p>Drinker:</p>
+                          </div>
+                        </Col>
+                        <Col md={2} xs={2} sm={2}>
+                          <div className="profile-subtitle">
+                            <p>{capitalizeFirstLetter(item.drinker)}</p>
+                          </div>
+                        </Col>
+                        <Col md={5} xs={5} sm={5}>
+                          <div className="profile-title">
+                            <p>Smoker : </p>
+                          </div>
+                        </Col>
+                        <Col md={3} xs={3} sm={3}>
+                          <div className="profile-subtitle">
+                            <p>{capitalizeFirstLetter(item.smoker)}</p>
+                          </div>
+                        </Col>
+                        <Col md={2} xs={2} sm={2}>
+                          <div className="profile-title">
+                            <p>Race:</p>
+                          </div>
+                        </Col>
+                        <Col md={2} xs={2} sm={2}>
+                          <div className="profile-subtitle">
+                            <p>{capitalizeFirstLetter(item.race)}</p>
+                          </div>
+                        </Col>
+                        <Col md={5} xs={5} sm={5}>
+                          <div className="profile-title">
+                            <p>Religion : </p>
+                          </div>
+                        </Col>
+                        <Col md={3} xs={3} sm={3}>
+                          <div className="profile-subtitle">
+                            <p>{capitalizeFirstLetter(item.religion)}</p>
+                          </div>
+                        </Col>
+
+                        <div className="purpose-border"></div>
+                        <Row>
+                          <Col md={4} xs={4} sm={4}>
+                            <div className="profile-title ">
+                              <p>Purpose :</p>
+                            </div>
+                          </Col>
+                          <Col md={8} xs={8} sm={8}>
+                            <div className="profile-subtitle ">
+                              <p>{capitalizeFirstLetter(item.purpose)}</p>
+                            </div>
+                          </Col>
+                        </Row>
+                      </Row>
+                      <div className="text-center mt-2">
                         <button onClick={() => handleClick(item._id)}>
-                          See more{" "}
+                          Contact me{" "}
                         </button>
                       </div>
                     </div>

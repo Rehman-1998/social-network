@@ -6,6 +6,8 @@ import "./profileCards.css";
 import { Link, useLocation } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
 import { capitalizeFirstLetter } from "../../utilis/capitalizeFirstLetter";
+import { Widget, addResponseMessage } from "react-chat-widget";
+import "react-chat-widget/lib/styles.css";
 // import data from "../../utilis/data";
 const ProfileCards = () => {
   const [profileData, setProfileData] = React.useState("");
@@ -19,10 +21,21 @@ const ProfileCards = () => {
         setLoading(success);
         setProfileData(data);
       });
+
+    addResponseMessage(
+      "Do You Want to Play golf on the afternoon of August 5th at Chestatee Golf Club ?"
+    );
   }, []);
+
   return (
     <>
       <Container className="py-5 border-top ipad-class">
+        <Widget
+          title={`Social Golf Network`}
+          subtitle={""}
+          toggleWidget={true}
+          profileAvatar={profileData?.image}
+        />
         {!loading ? (
           <div className="text-center">
             <CircularProgress style={{ color: "#8FBF00" }} />
@@ -35,7 +48,7 @@ const ProfileCards = () => {
                 <h3>
                   {profileData && capitalizeFirstLetter(profileData.name)}
                 </h3>
-                <div className="pt-3">
+                {/* <div className="pt-3">
                   <h6>LinkdIn Profile :</h6>
                 </div>
                 <div>
@@ -51,7 +64,7 @@ const ProfileCards = () => {
                   >
                     {profileData?.linkdinProfile}
                   </p>
-                </div>
+                </div> */}
               </div>
             </Col>
             <Col md={8}>

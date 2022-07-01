@@ -35,6 +35,21 @@
   margin-bottom: 20px;
 }
 
+.rcw-conversation-container .rcw-header {
+  background-color: #8fbf00 !important;
+}
+.rcw-launcher {
+  background-color: #8fbf00 !important;
+}
+
+/* .rcw-conversation-container > .rcw-header {
+  background-color: red;
+}
+
+.rcw-message > .rcw-response {
+  background-color: black;
+  color: white;
+} */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .profile-details img {
     height: 200px;

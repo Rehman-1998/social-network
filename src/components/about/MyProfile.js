@@ -6,6 +6,8 @@ import "../profile/profileCards.css";
 import { Link, useLocation } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
 import { capitalizeFirstLetter } from "../../utilis/capitalizeFirstLetter";
+import { Widget, addResponseMessage } from "react-chat-widget";
+import "react-chat-widget/lib/styles.css";
 // import data from "../../utilis/data";
 const MyProfile = () => {
   const [profileData, setProfileData] = React.useState("");
@@ -13,7 +15,7 @@ const MyProfile = () => {
   const location = useLocation();
   useEffect(() => {
     fetch(
-      `https://social-golf-network.herokuapp.com/user/62baa790587a29d83da4191a`
+      `https://social-golf-network.herokuapp.com/user/62bff400d45f9d4184350c89`
     )
       .then((response) => response.json())
       .then((res) => {
@@ -21,10 +23,19 @@ const MyProfile = () => {
         setLoading(success);
         setProfileData(data);
       });
+    addResponseMessage(
+      "Hey ! Do you tell me which time and day you want to play with me ?"
+    );
   }, []);
   return (
     <>
       <Container className="py-5 border-top ipad-class">
+        <Widget
+          title={`Social Golf Network`}
+          subtitle={""}
+          toggleWidget={true}
+          profileAvatar={profileData?.image}
+        />
         {!loading ? (
           <div className="text-center">
             <CircularProgress style={{ color: "#8FBF00" }} />
@@ -314,6 +325,27 @@ const MyProfile = () => {
                       <p>{profileData?.distance}</p>
                     </div>
                   </Col>
+                  <Col md={3} xs={6} sm={6}>
+                    <div>
+                      <h6>Time to Play :</h6>
+                    </div>
+                  </Col>
+                  <Col md={3} xs={6} sm={6}>
+                    <div>
+                      <p>Morning</p>
+                    </div>
+                  </Col>
+                  <Col md={3} xs={6} sm={6}>
+                    <div>
+                      <h6>Play Days :</h6>
+                    </div>
+                  </Col>
+                  <Col md={3} xs={6} sm={6}>
+                    <div>
+                      <p>Monday, Friday</p>
+                    </div>
+                  </Col>
+
                   <Col md={3} xs={6} sm={6}>
                     <div>
                       <h6>Purpose to Play :</h6>

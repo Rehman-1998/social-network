@@ -21,7 +21,6 @@ const ProfileCards = () => {
         setLoading(success);
         setProfileData(data);
       });
-
     addResponseMessage(
       "Do You Want to Play golf on the afternoon of August 5th at Chestatee Golf Club ?"
     );

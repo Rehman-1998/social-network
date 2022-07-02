@@ -15,8 +15,8 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Link to="/search">
-                <button className="header-btn">Find Your Partner</button>
+              <Link to="/my-profile">
+                <button className="header-btn">My Profile</button>
               </Link>
             </Nav>
           </Navbar.Collapse>

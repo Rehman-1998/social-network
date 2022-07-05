@@ -8,33 +8,12 @@ import { capitalizeFirstLetter } from "../../../utilis/capitalizeFirstLetter";
 
 const Cards = ({ setDumyData, dumyData }) => {
   const navigate = useNavigate();
-  // let location = useLocation();
   const [data, setData] = React.useState("");
   const [loading, setLoading] = React.useState(false);
 
   const handleClick = (id) => {
     navigate("/profile", { state: { id } });
   };
-
-  // const fetchData = () => {
-  //   fetch("https://social-golf-network.herokuapp.com/user/filter", {
-  //     // Adding method type
-  //     method: "POST",
-
-  //     // Adding body or contents to send
-  //     body: JSON.stringify(location.state),
-
-  //     // Adding headers to the request
-  //     headers: {
-  //       "Content-type": "application/json; charset=UTF-8",
-  //     },
-  //   })
-  //     .then((response) => response.json())
-  //     .then((res) => {
-  //       setData(res.data);
-  //       setLoading(res.success);
-  //     });
-  // };
 
   const fetchData = () => {
     fetch("https://social-golf-network.herokuapp.com/user")

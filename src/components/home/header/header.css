@@ -43,6 +43,12 @@
   margin-left: 0.5rem;
 }
 
+.nav-link:hover {
+  color: #0a58ca;
+  background-color: #8fbf00;
+  color: white !important;
+}
+
 .nav-menu:hover {
   color: white !important;
   background-color: #8fbf00;
@@ -65,5 +71,9 @@
 @media screen and (max-width: 767px) {
   .navbar-collapse {
     padding-top: 20px;
+  }
+  .nav-link:hover {
+    background-color: unset;
+    color: white !important;
   }
 }

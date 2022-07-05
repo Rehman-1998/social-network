@@ -1,8 +1,8 @@
 import React from "react";
 import "./header.css";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import car from "../../../assets/images/Main_Logo.png";
+// import { Link } from "react-router-dom";
+import Logo from "../../../assets/images/Main_Logo.png";
 
 const Header = () => {
   return (
@@ -10,14 +10,17 @@ const Header = () => {
       <Navbar className="main-navbar border-bottom" expand="lg">
         <Container>
           <Navbar.Brand href="/">
-            <img className="logo" src={car} alt="" />
+            <img className="logo" src={Logo} alt="" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Link to="/my-profile">
+              <Nav.Link href="/my-profile">My Profile</Nav.Link>
+              <Nav.Link href="/search">Search</Nav.Link>
+              <Nav.Link href="/results">Results</Nav.Link>
+              {/* <Link to="/my-profile">
                 <button className="header-btn">My Profile</button>
-              </Link>
+              </Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

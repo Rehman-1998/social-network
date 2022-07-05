@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import banner from "../../../assets/images/banner3.jpg";
 import "./banner.css";
 import { Link } from "react-router-dom";
+import Logo from "../../../assets/images/Main_Logo.png";
 
 const Banner = () => {
   return (
@@ -16,7 +17,8 @@ const Banner = () => {
         >
           <div className="banner">
             <div className="banner-title">
-              <h1>Welcome to Social Golf Network</h1>
+              {/* <h1>Welcome to Social Golf Network</h1> */}
+              <img className="banner-Logo" src={Logo} alt="" />
               <h4>Find your Golf Patner </h4>
               <Link to="/search">
                 <button>Search</button>

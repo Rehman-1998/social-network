@@ -47,6 +47,11 @@ const ProfileCards = () => {
                 <h3>
                   {profileData && capitalizeFirstLetter(profileData.name)}
                 </h3>
+                <textarea
+                  className="about-text border-0"
+                  type="text"
+                  defaultValue={`" ${profileData && profileData.about} "`}
+                />
                 {/* <div className="pt-3">
                   <h6>LinkdIn Profile :</h6>
                 </div>
@@ -68,10 +73,10 @@ const ProfileCards = () => {
             </Col>
             <Col md={8}>
               <div className="profile-desc">
-                <div>
+                {/* <div>
                   <h4>My Aims</h4>
                   <p>{profileData && profileData.about}</p>
-                </div>
+                </div> */}
                 <h4>About Me</h4>
                 <Row>
                   <Col md={3} xs={6} sm={6}>

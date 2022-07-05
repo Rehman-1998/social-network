@@ -197,52 +197,52 @@ export default {
   ],
   favouriteCourse: [
     {
-      value: "hampton golf village",
+      value: "Hampton Golf Village",
     },
     {
-      value: "windermere golf club",
+      value: "Windermere Golf Club",
     },
     {
-      value: "sugar hill golf club",
+      value: "Sugar Hill Golf Club",
     },
     {
-      value: "lanier islands golf course",
+      value: "Lanier Islands Golf Courses",
     },
     {
-      value: "country land golf course",
+      value: "Country Land Golf Courses",
     },
     {
-      value: "woodlands course at chateau elan golf club",
+      value: "Woodlands Course at Chateau Elan Golf Club",
     },
     {
-      value: "bears best atlanta",
+      value: "Bears Best Atlanta",
     },
     {
-      value: "st marlo country club",
+      value: "St Marlo Country Club",
     },
     {
-      value: "echelon golf club",
+      value: "Echelon Golf Club",
     },
     {
-      value: "collins hill golf club",
+      value: "Collins Hill Golf Club",
     },
     {
-      value: "chicopee woods golf course",
+      value: "Chicopee Woods Golf Courses",
     },
     {
-      value: "river pines golf course",
+      value: "River Pines Golf Courses",
     },
     {
-      value: "reunion country club",
+      value: "Reunion Country Club",
     },
     {
-      value: "chestatee golf club",
+      value: "Chestatee Golf Club",
     },
     {
-      value: "woodlands course at chateau elan golf club",
+      value: "Woodlands Course at Chateau Elan Golf Club",
     },
     {
-      value: "steel canyon",
+      value: "Steel Canyon",
     },
   ],
   skillLevel: [
@@ -292,6 +292,43 @@ export default {
     },
     {
       value: "afternoon",
+    },
+  ],
+  days: [
+    {
+      value: "sunday",
+    },
+    {
+      value: "monday",
+    },
+    {
+      value: "tuesday",
+    },
+    {
+      value: "wednessday",
+    },
+    {
+      value: "thursday",
+    },
+    {
+      value: "friday",
+    },
+    {
+      value: "saturday",
+    },
+  ],
+  time: [
+    {
+      value: "mornings",
+    },
+    {
+      value: "mid-afternoon",
+    },
+    {
+      value: "afternoon",
+    },
+    {
+      value: "anytime",
     },
   ],
   distance: [

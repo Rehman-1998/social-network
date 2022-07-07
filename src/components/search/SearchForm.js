@@ -6,7 +6,15 @@ import state from "../../utilis/state";
 import city from "../../utilis/city";
 import county from "../../utilis/county";
 import banner from "../../assets/images/banner3.jpg";
-import { MenuItem, FormControl, TextField, Autocomplete } from "@mui/material";
+import {
+  MenuItem,
+  FormControl,
+  TextField,
+  Autocomplete,
+  // Checkbox,
+  // ListItemText,
+  // ListItemIcon,
+} from "@mui/material";
 import { useNavigate } from "react-router";
 import DatePicker from "react-multi-date-picker";
 import "./searchform.css";
@@ -129,9 +137,6 @@ const SearchForm = () => {
                       id="controllable-states-demo"
                       options={city.data}
                       getOptionLabel={(option) => option?.city || arr.city}
-                      // isOptionEqualToValue={(option, value) =>
-                      //   option.zip === value
-                      // }
                       name={"city"}
                       value={arr?.city}
                       onChange={(e, value) =>
@@ -168,7 +173,7 @@ const SearchForm = () => {
                       name={"distance"}
                       onChange={handleChange}
                       select
-                      label="Willing to Drive"
+                      label="Willingness to Drive"
                     >
                       {data?.distance?.map((item, index) => (
                         <MenuItem key={index} value={item.value}>
@@ -224,6 +229,9 @@ const SearchForm = () => {
                       onChange={handleChange}
                       select
                       label="Smoker"
+                      // renderValue={(selected) =>
+                      //   console.log("render==", selected)
+                      // }
                       SelectProps={{
                         multiple: true,
                       }}
@@ -231,6 +239,10 @@ const SearchForm = () => {
                       {data?.smoker?.map((item, index) => (
                         <MenuItem key={index} value={item.value}>
                           {capitalizeFirstLetter(item.value)}
+                          {/* <ListItemIcon>
+                            <Checkbox checked={item.value.indexOf(item) > -1} />
+                          </ListItemIcon>
+                          <ListItemText primary={item.value} /> */}
                         </MenuItem>
                       ))}
                     </TextField>
@@ -394,7 +406,7 @@ const SearchForm = () => {
                       name={"availability"}
                       onChange={handleChange}
                       select
-                      label="When you want to play"
+                      label="Time"
                     >
                       {data?.availability?.map((item, index) => (
                         <MenuItem key={index} value={item.value}>
@@ -411,12 +423,12 @@ const SearchForm = () => {
                       console.log("e Value===>>>", e, value)
                     }
                     multiple={true}
-                    placeholder={"When do you want to play"}
+                    placeholder={"Days *"}
                   />
                 </Col>
                 <Col md={12}>
                   <div>
-                    <h5>Where you want to play</h5>
+                    <h5>Where do I want to play ?</h5>
                   </div>
                 </Col>
                 <Col md={3} xs={6} sm={6} className="mb-3">
@@ -458,7 +470,7 @@ const SearchForm = () => {
                     />
                   </FormControl>
                 </Col>
-                <Col md={3} xs={6} sm={6} className="mb-3">
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <Autocomplete
                       id="controllable-states-demo"
@@ -476,7 +488,7 @@ const SearchForm = () => {
                       )}
                     />
                   </FormControl>
-                </Col>
+                </Col> */}
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <TextField
@@ -485,7 +497,7 @@ const SearchForm = () => {
                       name={"playDistance"}
                       onChange={handleChange}
                       select
-                      label="Willing to Drive"
+                      label="Willingness to Drive"
                     >
                       {data?.distance?.map((item, index) => (
                         <MenuItem key={index} value={item.value}>

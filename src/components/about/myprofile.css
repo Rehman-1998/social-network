@@ -12,6 +12,10 @@
   color: white;
 }
 
+.save-button button:hover {
+  background-color: black;
+}
+
 .about-text {
   outline: none;
   border: none;

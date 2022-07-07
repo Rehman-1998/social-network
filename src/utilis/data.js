@@ -72,6 +72,9 @@ export default {
     {
       value: "female",
     },
+    {
+      value: "Does not matter",
+    },
   ],
   age: [
     {
@@ -92,6 +95,9 @@ export default {
     {
       value: "66-100",
     },
+    {
+      value: "Does not matter",
+    },
   ],
   materialStatus: [
     {
@@ -101,10 +107,13 @@ export default {
       value: "married",
     },
     {
-      value: "divorce",
+      value: "divorced",
     },
     {
-      value: "widow",
+      value: "widowed",
+    },
+    {
+      value: "Does not matter",
     },
   ],
   drinker: [
@@ -113,6 +122,9 @@ export default {
     },
     {
       value: "no",
+    },
+    {
+      value: "Does not matter",
     },
   ],
   smoker: [
@@ -127,6 +139,9 @@ export default {
     },
     {
       value: "vape",
+    },
+    {
+      value: "Other",
     },
   ],
   race: [
@@ -150,6 +165,9 @@ export default {
     },
     {
       value: "Native Hawaiian/Other Islander",
+    },
+    {
+      value: "Does not matter",
     },
   ],
   religion: [
@@ -180,6 +198,9 @@ export default {
     {
       value: "buddish",
     },
+    {
+      value: "Does not matter",
+    },
   ],
   politicalView: [
     {
@@ -193,6 +214,9 @@ export default {
     },
     {
       value: "non-political",
+    },
+    {
+      value: "Does not matter",
     },
   ],
   favouriteCourse: [
@@ -210,9 +234,6 @@ export default {
     },
     {
       value: "Country Land Golf Courses",
-    },
-    {
-      value: "Woodlands Course at Chateau Elan Golf Club",
     },
     {
       value: "Bears Best Atlanta",
@@ -261,6 +282,9 @@ export default {
     {
       value: "advance",
     },
+    {
+      value: "Does not matter",
+    },
   ],
 
   oftenPlay: [
@@ -294,6 +318,32 @@ export default {
       value: "afternoon",
     },
   ],
+  myAvailability: [
+    {
+      value: "sunday",
+    },
+    {
+      value: "monday",
+    },
+    {
+      value: "tuesday",
+    },
+    {
+      value: "wednessday",
+    },
+    {
+      value: "thursday",
+    },
+    {
+      value: "friday",
+    },
+    {
+      value: "saturday",
+    },
+    {
+      value: "Anytime",
+    },
+  ],
   days: [
     {
       value: "sunday",
@@ -319,7 +369,7 @@ export default {
   ],
   time: [
     {
-      value: "mornings",
+      value: "morning",
     },
     {
       value: "mid-afternoon",
@@ -340,6 +390,9 @@ export default {
     },
     {
       value: "26-50",
+    },
+    {
+      value: "Any distance",
     },
   ],
   purpose: [
@@ -420,11 +473,23 @@ export default {
   ],
   currentHandicap: [
     {
-      name: "0 to 36",
-      value: "0-36",
+      name: "0 to 9",
+      value: "0-9",
     },
     {
-      name: "I don't have Handicap",
+      name: "10 to 15",
+      value: "10-15",
+    },
+    {
+      name: "16 to 20",
+      value: "16-20",
+    },
+    {
+      name: "21 or Greater",
+      value: "21-100",
+    },
+    {
+      name: "No Handicap",
       value: "0",
     },
   ],

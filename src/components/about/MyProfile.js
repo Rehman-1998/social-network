@@ -3,18 +3,23 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../profile/profileCards.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
 import { capitalizeFirstLetter } from "../../utilis/capitalizeFirstLetter";
 import { Widget, addResponseMessage } from "react-chat-widget";
 import "react-chat-widget/lib/styles.css";
 import { MenuItem, FormControl, TextField, Autocomplete } from "@mui/material";
+import DatePicker from "react-multi-date-picker";
 import data from "../../utilis/data";
+// import state from "../../utilis/state";
+import city from "../../utilis/city";
+import county from "../../utilis/county";
 import "./myprofile.css";
 const MyProfile = () => {
   const [profileData, setProfileData] = React.useState("");
   const [loading, setLoading] = React.useState("");
   const location = useLocation();
+  let navigate = useNavigate();
   useEffect(() => {
     fetch(
       `https://social-golf-network.herokuapp.com/user/62bff400d45f9d4184350c89`
@@ -32,6 +37,7 @@ const MyProfile = () => {
 
   const [arr, setArr] = React.useState({
     age: "",
+    birthdate: "",
     gender: "",
     country: "",
     city: "",
@@ -133,7 +139,7 @@ const MyProfile = () => {
                 </div> */}
                 <h4>About Me</h4>
                 <Row>
-                  <Col md={3} xs={6} sm={6}>
+                  {/* <Col md={3} xs={6} sm={6}>
                     <div>
                       <h6>Gender :</h6>
                     </div>
@@ -202,19 +208,69 @@ const MyProfile = () => {
                     <div>
                       <p>{profileData?.zipCode}</p>
                     </div>
-                  </Col>
+                  </Col> */}
                   {/* <Col md={3} xs={6} sm={6}>
                     <div>
                       <h6>Material Status :</h6>
                     </div>
                   </Col> */}
                   <Col className="mb-3" md={3} xs={6} sm={6}>
-                    {/* <div>
-                      <p>
-                        {profileData &&
-                          capitalizeFirstLetter(profileData.matirialStatus)}
-                      </p>
-                    </div> */}
+                    <FormControl fullWidth>
+                      <TextField
+                        required
+                        value={arr.age}
+                        name={"age"}
+                        onChange={handleChange}
+                        label="Age"
+                      ></TextField>
+                    </FormControl>
+                  </Col>
+                  <Col md={3} xs={6} sm={6} className="mb-3">
+                    <DatePicker
+                      onChange={(e, value) =>
+                        console.log("e Value===>>>", e, value)
+                      }
+                      multiple={false}
+                      placeholder={"Birthdate"}
+                    />
+                  </Col>
+                  <Col md={3} xs={6} sm={6} className="mb-3">
+                    <FormControl fullWidth>
+                      <Autocomplete
+                        id="controllable-states-demo"
+                        options={county.data}
+                        getOptionLabel={(option) =>
+                          option?.county || arr.country
+                        }
+                        name={"country"}
+                        value={arr?.country}
+                        onChange={(e, value) =>
+                          setArr({ ...arr, country: value.county })
+                        }
+                        renderInput={(params) => (
+                          <TextField {...params} fullWidth label="State" />
+                        )}
+                      />
+                    </FormControl>
+                  </Col>
+                  <Col md={3} xs={6} sm={6} className="mb-3">
+                    <FormControl fullWidth>
+                      <Autocomplete
+                        id="controllable-states-demo"
+                        options={city.data}
+                        getOptionLabel={(option) => option?.city || arr.city}
+                        name={"city"}
+                        value={arr?.city}
+                        onChange={(e, value) =>
+                          setArr({ ...arr, city: value.city })
+                        }
+                        renderInput={(params) => (
+                          <TextField {...params} fullWidth label="City" />
+                        )}
+                      />
+                    </FormControl>
+                  </Col>
+                  <Col className="mb-3" md={3} xs={6} sm={6}>
                     <FormControl fullWidth>
                       <TextField
                         required
@@ -395,7 +451,7 @@ const MyProfile = () => {
                       >
                         {data?.favouriteCourse?.map((item, index) => (
                           <MenuItem key={index} value={item.value}>
-                            {capitalizeFirstLetter(item.value)}
+                            {item.value}
                           </MenuItem>
                         ))}
                       </TextField>
@@ -471,7 +527,7 @@ const MyProfile = () => {
                           multiple: true,
                         }}
                       >
-                        {data?.days?.map((item, index) => (
+                        {data?.myAvailability?.map((item, index) => (
                           <MenuItem key={index} value={item.value}>
                             {capitalizeFirstLetter(item.value)}
                           </MenuItem>
@@ -508,7 +564,7 @@ const MyProfile = () => {
                         name={"distance"}
                         onChange={handleChange}
                         select
-                        label="Willing to Drive"
+                        label="Willingness to Drive"
                       >
                         {data?.distance?.map((item, index) => (
                           <MenuItem key={index} value={item.value}>
@@ -530,7 +586,7 @@ const MyProfile = () => {
                       >
                         {data?.purpose?.map((item, index) => (
                           <MenuItem key={index} value={item.value}>
-                            {capitalizeFirstLetter(item.value)} miles
+                            {capitalizeFirstLetter(item.value)}
                           </MenuItem>
                         ))}
                       </TextField>
@@ -625,7 +681,7 @@ const MyProfile = () => {
                       >
                         {data?.industry?.map((item, index) => (
                           <MenuItem key={index} value={item.value}>
-                            {capitalizeFirstLetter(item.value)} miles
+                            {capitalizeFirstLetter(item.value)}
                           </MenuItem>
                         ))}
                       </TextField>
@@ -722,9 +778,9 @@ const MyProfile = () => {
                     </div>
                   </Col> */}
                 </Row>
-                <h4>When do you want to play?</h4>
+                <h4>When do I want to play?</h4>
                 <Row>
-                  <Col className="mb-3" md={6} xs={6} sm={6}>
+                  {/* <Col className="mb-3" md={6} xs={6} sm={6}>
                     <FormControl fullWidth>
                       <TextField
                         required
@@ -744,6 +800,14 @@ const MyProfile = () => {
                         ))}
                       </TextField>
                     </FormControl>
+                  </Col> */}
+                  <Col md={6} xs={6} sm={6} className="mb-3">
+                    <DatePicker
+                      onChange={(e, value) =>
+                        console.log("e Value===>>>", e, value)
+                      }
+                      placeholder={"Day"}
+                    />
                   </Col>
                   <Col className="mb-3" md={6} xs={6} sm={6}>
                     <FormControl fullWidth>
@@ -768,7 +832,14 @@ const MyProfile = () => {
                   </Col>
                 </Row>
                 <div className="save-button">
-                  <button>Save</button>
+                  <button
+                    onClick={() => {
+                      const id = "62bff400d45f9d4184350c89";
+                      navigate("/profile", { state: { id } });
+                    }}
+                  >
+                    Save
+                  </button>
                 </div>
               </div>
             </Col>

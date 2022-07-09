@@ -72,9 +72,6 @@ export default {
     {
       value: "female",
     },
-    {
-      value: "Does not matter",
-    },
   ],
   age: [
     {
@@ -95,9 +92,6 @@ export default {
     {
       value: "66-100",
     },
-    {
-      value: "Does not matter",
-    },
   ],
   materialStatus: [
     {
@@ -112,9 +106,6 @@ export default {
     {
       value: "widowed",
     },
-    {
-      value: "Does not matter",
-    },
   ],
   drinker: [
     {
@@ -122,9 +113,6 @@ export default {
     },
     {
       value: "no",
-    },
-    {
-      value: "Does not matter",
     },
   ],
   smoker: [
@@ -166,9 +154,6 @@ export default {
     {
       value: "Native Hawaiian/Other Islander",
     },
-    {
-      value: "Does not matter",
-    },
   ],
   religion: [
     {
@@ -198,9 +183,6 @@ export default {
     {
       value: "buddish",
     },
-    {
-      value: "Does not matter",
-    },
   ],
   politicalView: [
     {
@@ -215,34 +197,13 @@ export default {
     {
       value: "non-political",
     },
-    {
-      value: "Does not matter",
-    },
   ],
   favouriteCourse: [
-    {
-      value: "Hampton Golf Village",
-    },
-    {
-      value: "Windermere Golf Club",
-    },
-    {
-      value: "Sugar Hill Golf Club",
-    },
-    {
-      value: "Lanier Islands Golf Courses",
-    },
-    {
-      value: "Country Land Golf Courses",
-    },
     {
       value: "Bears Best Atlanta",
     },
     {
-      value: "St Marlo Country Club",
-    },
-    {
-      value: "Echelon Golf Club",
+      value: "Country Land Golf Courses",
     },
     {
       value: "Collins Hill Golf Club",
@@ -251,19 +212,39 @@ export default {
       value: "Chicopee Woods Golf Courses",
     },
     {
+      value: "Chestatee Golf Club",
+    },
+    {
+      value: "Echelon Golf Club",
+    },
+
+    {
+      value: "Hampton Golf Village",
+    },
+    {
+      value: "Lanier Islands Golf Courses",
+    },
+    {
       value: "River Pines Golf Courses",
     },
     {
       value: "Reunion Country Club",
     },
     {
-      value: "Chestatee Golf Club",
-    },
-    {
-      value: "Woodlands Course at Chateau Elan Golf Club",
+      value: "Sugar Hill Golf Club",
     },
     {
       value: "Steel Canyon",
+    },
+    {
+      value: "St Marlo Country Club",
+    },
+    {
+      value: "Windermere Golf Club",
+    },
+
+    {
+      value: "Woodlands Course at Chateau Elan Golf Club",
     },
   ],
   skillLevel: [
@@ -281,9 +262,6 @@ export default {
     },
     {
       value: "advance",
-    },
-    {
-      value: "Does not matter",
     },
   ],
 
@@ -400,13 +378,13 @@ export default {
       value: "dating",
     },
     {
-      value: "networking",
-    },
-    {
       value: "i just want to play golf",
     },
     {
       value: "meet new friends",
+    },
+    {
+      value: "networking",
     },
   ],
   industry: [

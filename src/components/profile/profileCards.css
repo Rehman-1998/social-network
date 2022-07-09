@@ -35,6 +35,27 @@
   margin-bottom: 20px;
 }
 
+.profile-details button {
+  background-color: #779e03;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 8px 15px;
+  border-radius: 30px;
+}
+
+.profile-details button:hover {
+  background-color: black;
+}
+
+/* .rcw-close-widget-container {
+  display: block !important;
+} */
+
+/* .rcw-chat-container {
+  opacity: 1 !important;
+} */
+
 .rcw-conversation-container .rcw-header {
   background-color: #8fbf00 !important;
 }

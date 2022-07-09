@@ -2,1642 +2,1642 @@
 export default {
   data: [
     {
-      city: "Lawrenceville",
-    },
-    {
-      city: "Suwanee",
-    },
-    {
-      city: "Atlanta",
-    },
-    {
-      city: "Cumming",
-    },
-    {
-      city: "Powder Springs",
-    },
-    {
-      city: "Alpharetta",
-    },
-    {
-      city: "Duluth",
-    },
-    {
-      city: "Loganville",
-    },
-    {
-      city: "Stockbridge",
-    },
-    {
-      city: "Douglasville",
-    },
-    {
-      city: "Lilburn",
-    },
-    {
-      city: "Marietta",
-    },
-    {
-      city: "Woodstock",
-    },
-    {
-      city: "Newnan",
-    },
-    {
-      city: "Lithonia",
-    },
-    {
-      city: "Augusta",
+      city: "Abbeville",
     },
     {
       city: "Acworth",
     },
     {
-      city: "Savannah",
-    },
-    {
-      city: "Columbus",
-    },
-    {
-      city: "Stone Mountain",
-    },
-    {
-      city: "Warner Robins",
-    },
-    {
-      city: "Smyrna",
-    },
-    {
-      city: "Kennesaw",
-    },
-    {
-      city: "Norcross",
-    },
-    {
-      city: "Covington",
-    },
-    {
-      city: "Canton",
-    },
-    {
-      city: "Dalton",
-    },
-    {
-      city: "Mcdonough",
-    },
-    {
-      city: "Buford",
-    },
-    {
-      city: "Roswell",
-    },
-    {
-      city: "Jonesboro",
-    },
-    {
-      city: "Dallas",
-    },
-    {
-      city: "Dacula",
-    },
-    {
-      city: "Evans",
-    },
-    {
-      city: "Decatur",
-    },
-    {
-      city: "Snellville",
-    },
-    {
-      city: "Athens",
-    },
-    {
-      city: "Winder",
-    },
-    {
-      city: "Grovetown",
-    },
-    {
-      city: "Statesboro",
-    },
-    {
-      city: "Hampton",
-    },
-    {
-      city: "Gainesville",
-    },
-    {
-      city: "Mableton",
-    },
-    {
-      city: "Milledgeville",
-    },
-    {
-      city: "Ringgold",
-    },
-    {
-      city: "Ellenwood",
-    },
-    {
-      city: "Hephzibah",
-    },
-    {
-      city: "Rome",
-    },
-    {
-      city: "Calhoun",
-    },
-    {
-      city: "Cartersville",
-    },
-    {
-      city: "Hinesville",
-    },
-    {
-      city: "Tucker",
-    },
-    {
-      city: "Flowery Branch",
-    },
-    {
-      city: "Villa Rica",
-    },
-    {
-      city: "Fayetteville",
-    },
-    {
-      city: "Valdosta",
-    },
-    {
-      city: "Griffin",
-    },
-    {
-      city: "Peachtree City",
-    },
-    {
-      city: "Riverdale",
-    },
-    {
-      city: "Carrollton",
-    },
-    {
-      city: "Macon",
-    },
-    {
-      city: "Chatsworth",
-    },
-    {
-      city: "Fairburn",
-    },
-    {
-      city: "Conyers",
-    },
-    {
-      city: "Albany",
-    },
-    {
-      city: "Brunswick",
-    },
-    {
-      city: "Dawsonville",
-    },
-    {
-      city: "Lagrange",
-    },
-    {
-      city: "Forest Park",
-    },
-    {
-      city: "Rossville",
-    },
-    {
-      city: "Tifton",
-    },
-    {
-      city: "Dublin",
-    },
-    {
-      city: "Dahlonega",
-    },
-    {
-      city: "Richmond Hill",
-    },
-    {
-      city: "Monroe",
-    },
-    {
-      city: "Locust Grove",
-    },
-    {
-      city: "Pooler",
-    },
-    {
-      city: "Lithia Springs",
-    },
-    {
-      city: "Austell",
-    },
-    {
-      city: "Jefferson",
-    },
-    {
-      city: "Morrow",
-    },
-    {
-      city: "Cleveland",
-    },
-    {
-      city: "Leesburg",
-    },
-    {
-      city: "Cedartown",
-    },
-    {
-      city: "Jackson",
-    },
-    {
-      city: "Hiram",
-    },
-    {
-      city: "Thomasville",
-    },
-    {
-      city: "Clarkston",
-    },
-    {
-      city: "Grayson",
-    },
-    {
-      city: "Jasper",
-    },
-    {
-      city: "Sharpsburg",
-    },
-    {
-      city: "Moultrie",
-    },
-    {
-      city: "Thomaston",
-    },
-    {
-      city: "Kingsland",
-    },
-    {
-      city: "Union City",
-    },
-    {
-      city: "Saint Marys",
-    },
-    {
-      city: "Blairsville",
-    },
-    {
-      city: "Cordele",
-    },
-    {
-      city: "Rincon",
-    },
-    {
-      city: "Guyton",
-    },
-    {
-      city: "Toccoa",
-    },
-    {
-      city: "Eatonton",
-    },
-    {
-      city: "La Fayette",
-    },
-    {
-      city: "Waycross",
-    },
-    {
-      city: "Perry",
-    },
-    {
-      city: "Hoschton",
-    },
-    {
-      city: "Ellijay",
-    },
-    {
-      city: "Rockmart",
-    },
-    {
-      city: "Watkinsville",
-    },
-    {
-      city: "Temple",
-    },
-    {
-      city: "Byron",
-    },
-    {
-      city: "Fitzgerald",
-    },
-    {
-      city: "Bonaire",
-    },
-    {
-      city: "Fort Valley",
-    },
-    {
-      city: "Fort Benning",
-    },
-    {
-      city: "Thomson",
-    },
-    {
-      city: "Douglas",
-    },
-    {
-      city: "Vidalia",
-    },
-    {
-      city: "Saint Simons Island",
-    },
-    {
-      city: "Chickamauga",
-    },
-    {
-      city: "Forsyth",
-    },
-    {
-      city: "Jesup",
-    },
-    {
-      city: "Baxley",
-    },
-    {
-      city: "Senoia",
-    },
-    {
-      city: "Braselton",
-    },
-    {
-      city: "Summerville",
-    },
-    {
-      city: "Auburn",
-    },
-    {
-      city: "Americus",
-    },
-    {
       city: "Adairsville",
-    },
-    {
-      city: "Gray",
-    },
-    {
-      city: "Hartwell",
-    },
-    {
-      city: "Rex",
-    },
-    {
-      city: "Elberton",
-    },
-    {
-      city: "Blackshear",
-    },
-    {
-      city: "Kathleen",
-    },
-    {
-      city: "Hazlehurst",
-    },
-    {
-      city: "Eastman",
-    },
-    {
-      city: "Bethlehem",
-    },
-    {
-      city: "Ludowici",
-    },
-    {
-      city: "Waynesboro",
-    },
-    {
-      city: "Bremen",
-    },
-    {
-      city: "Swainsboro",
-    },
-    {
-      city: "Ball Ground",
-    },
-    {
-      city: "Hahira",
-    },
-    {
-      city: "Cochran",
-    },
-    {
-      city: "Barnesville",
-    },
-    {
-      city: "Glennville",
-    },
-    {
-      city: "Clarkesville",
-    },
-    {
-      city: "Greensboro",
-    },
-    {
-      city: "Oxford",
-    },
-    {
-      city: "Sylvania",
-    },
-    {
-      city: "Blue Ridge",
-    },
-    {
-      city: "Hawkinsville",
-    },
-    {
-      city: "Madison",
-    },
-    {
-      city: "Sylvester",
-    },
-    {
-      city: "Lyons",
-    },
-    {
-      city: "Bogart",
-    },
-    {
-      city: "Midland",
-    },
-    {
-      city: "Commerce",
-    },
-    {
-      city: "Lake Park",
-    },
-    {
-      city: "Reidsville",
-    },
-    {
-      city: "Cornelia",
-    },
-    {
-      city: "Statham",
-    },
-    {
-      city: "Folkston",
     },
     {
       city: "Adel",
     },
     {
-      city: "Metter",
-    },
-    {
-      city: "Claxton",
-    },
-    {
-      city: "Springfield",
-    },
-    {
-      city: "Palmetto",
-    },
-    {
-      city: "Pelham",
-    },
-    {
-      city: "Nashville",
-    },
-    {
-      city: "Hogansville",
-    },
-    {
-      city: "Tunnel Hill",
-    },
-    {
-      city: "Alma",
-    },
-    {
-      city: "Sandersville",
-    },
-    {
-      city: "Social Circle",
-    },
-    {
-      city: "Franklin",
-    },
-    {
-      city: "Monticello",
-    },
-    {
-      city: "Lizella",
-    },
-    {
-      city: "Danielsville",
-    },
-    {
-      city: "Royston",
-    },
-    {
-      city: "Tyrone",
-    },
-    {
-      city: "Conley",
-    },
-    {
-      city: "Harlem",
-    },
-    {
-      city: "Sparta",
-    },
-    {
-      city: "Trenton",
-    },
-    {
-      city: "Mc Rae",
-    },
-    {
-      city: "Alto",
-    },
-    {
-      city: "Townsend",
-    },
-    {
-      city: "Rocky Face",
-    },
-    {
-      city: "Quitman",
-    },
-    {
-      city: "Nicholls",
-    },
-    {
-      city: "Lula",
-    },
-    {
-      city: "Camilla",
-    },
-    {
-      city: "Fort Stewart",
-    },
-    {
-      city: "Lavonia",
-    },
-    {
-      city: "Demorest",
-    },
-    {
-      city: "Pembroke",
-    },
-    {
-      city: "Millen",
-    },
-    {
-      city: "Fort Oglethorpe",
-    },
-    {
-      city: "Winston",
-    },
-    {
-      city: "Bloomingdale",
-    },
-    {
-      city: "Midway",
-    },
-    {
-      city: "Bowdon",
-    },
-    {
-      city: "Lincolnton",
-    },
-    {
-      city: "Clayton",
-    },
-    {
-      city: "Fortson",
-    },
-    {
-      city: "Oakwood",
-    },
-    {
-      city: "Kingston",
-    },
-    {
-      city: "Colbert",
-    },
-    {
-      city: "Ellabell",
-    },
-    {
-      city: "Rock Spring",
-    },
-    {
-      city: "Hiawassee",
-    },
-    {
-      city: "Washington",
-    },
-    {
-      city: "Cohutta",
-    },
-    {
-      city: "West Point",
-    },
-    {
-      city: "Wrightsville",
-    },
-    {
-      city: "Hull",
-    },
-    {
-      city: "Norman Park",
-    },
-    {
-      city: "Trion",
-    },
-    {
-      city: "Winterville",
-    },
-    {
-      city: "Vienna",
-    },
-    {
-      city: "Tallapoosa",
-    },
-    {
-      city: "Ocilla",
-    },
-    {
-      city: "Gordon",
-    },
-    {
-      city: "Lakeland",
-    },
-    {
-      city: "Brooklet",
-    },
-    {
-      city: "Resaca",
-    },
-    {
-      city: "White",
-    },
-    {
-      city: "Hamilton",
-    },
-    {
-      city: "Centerville",
-    },
-    {
-      city: "Waleska",
-    },
-    {
-      city: "Buchanan",
-    },
-    {
-      city: "Cataula",
-    },
-    {
-      city: "Appling",
-    },
-    {
-      city: "Avondale Estates",
-    },
-    {
-      city: "Mount Airy",
-    },
-    {
-      city: "Soperton",
-    },
-    {
-      city: "Woodbine",
-    },
-    {
-      city: "Canon",
-    },
-    {
-      city: "Homerville",
-    },
-    {
-      city: "Williamson",
-    },
-    {
-      city: "Grantville",
-    },
-    {
-      city: "Silver Creek",
-    },
-    {
-      city: "Ashburn",
-    },
-    {
-      city: "Darien",
-    },
-    {
-      city: "Talking Rock",
-    },
-    {
-      city: "Pine Mountain",
-    },
-    {
-      city: "Alamo",
-    },
-    {
-      city: "Louisville",
-    },
-    {
-      city: "Lindale",
-    },
-    {
-      city: "Oglethorpe",
-    },
-    {
-      city: "Maysville",
-    },
-    {
-      city: "Buena Vista",
-    },
-    {
-      city: "Bishop",
-    },
-    {
-      city: "Manchester",
-    },
-    {
-      city: "Ellaville",
-    },
-    {
-      city: "Aragon",
-    },
-    {
-      city: "Martin",
-    },
-    {
-      city: "Ray City",
-    },
-    {
-      city: "Carnesville",
-    },
-    {
-      city: "Montezuma",
-    },
-    {
-      city: "Young Harris",
-    },
-    {
-      city: "Comer",
-    },
-    {
-      city: "Pearson",
-    },
-    {
-      city: "Waynesville",
-    },
-    {
-      city: "Morganton",
-    },
-    {
-      city: "Twin City",
-    },
-    {
-      city: "Mineral Bluff",
-    },
-    {
-      city: "Nahunta",
-    },
-    {
-      city: "Nicholson",
-    },
-    {
-      city: "Gillsville",
-    },
-    {
-      city: "Lookout Mountain",
-    },
-    {
-      city: "Abbeville",
-    },
-    {
-      city: "Whitesburg",
-    },
-    {
-      city: "Flintstone",
-    },
-    {
-      city: "Tennille",
-    },
-    {
-      city: "Butler",
-    },
-    {
-      city: "Unadilla",
-    },
-    {
-      city: "Milner",
-    },
-    {
-      city: "Clermont",
-    },
-    {
-      city: "Hortense",
-    },
-    {
-      city: "Zebulon",
-    },
-    {
-      city: "Dearing",
-    },
-    {
-      city: "Greenville",
-    },
-    {
-      city: "Warrenton",
-    },
-    {
-      city: "Willacoochee",
-    },
-    {
-      city: "Scottdale",
-    },
-    {
-      city: "Fairmount",
-    },
-    {
-      city: "Lumpkin",
-    },
-    {
-      city: "Baldwin",
-    },
-    {
-      city: "Mount Vernon",
-    },
-    {
-      city: "Murrayville",
-    },
-    {
-      city: "Helena",
-    },
-    {
-      city: "Pendergrass",
-    },
-    {
-      city: "Concord",
-    },
-    {
-      city: "Sparks",
-    },
-    {
-      city: "Ochlocknee",
-    },
-    {
-      city: "Rising Fawn",
-    },
-    {
-      city: "Ranger",
-    },
-    {
-      city: "Wrens",
-    },
-    {
-      city: "Broxton",
-    },
-    {
-      city: "Tybee Island",
-    },
-    {
-      city: "Sautee Nacoochee",
-    },
-    {
-      city: "Allenhurst",
-    },
-    {
-      city: "Mansfield",
-    },
-    {
-      city: "Boston",
-    },
-    {
-      city: "Eastanollee",
-    },
-    {
-      city: "Juliette",
-    },
-    {
-      city: "Omega",
-    },
-    {
-      city: "Crandall",
-    },
-    {
-      city: "Patterson",
-    },
-    {
-      city: "Rydal",
-    },
-    {
-      city: "Bowman",
-    },
-    {
-      city: "Waverly Hall",
-    },
-    {
-      city: "Union Point",
-    },
-    {
-      city: "Rutledge",
-    },
-    {
-      city: "Box Springs",
-    },
-    {
-      city: "Moreland",
-    },
-    {
-      city: "Ellerslie",
-    },
-    {
-      city: "Jeffersonville",
-    },
-    {
-      city: "Reynolds",
-    },
-    {
-      city: "Baconton",
-    },
-    {
       city: "Adrian",
-    },
-    {
-      city: "Homer",
-    },
-    {
-      city: "Molena",
-    },
-    {
-      city: "Meansville",
-    },
-    {
-      city: "Taylorsville",
-    },
-    {
-      city: "Lexington",
-    },
-    {
-      city: "Cave Spring",
-    },
-    {
-      city: "Rentz",
-    },
-    {
-      city: "Chester",
-    },
-    {
-      city: "Doerun",
-    },
-    {
-      city: "Roopville",
-    },
-    {
-      city: "Lenox",
-    },
-    {
-      city: "Brooks",
-    },
-    {
-      city: "Roberta",
-    },
-    {
-      city: "Enigma",
-    },
-    {
-      city: "Glenwood",
-    },
-    {
-      city: "Hoboken",
-    },
-    {
-      city: "Wadley",
-    },
-    {
-      city: "Cusseta",
-    },
-    {
-      city: "Collins",
-    },
-    {
-      city: "Clyo",
-    },
-    {
-      city: "Davisboro",
-    },
-    {
-      city: "Meigs",
-    },
-    {
-      city: "Woodbury",
-    },
-    {
-      city: "Tiger",
-    },
-    {
-      city: "Warm Springs",
-    },
-    {
-      city: "Waco",
-    },
-    {
-      city: "Odum",
-    },
-    {
-      city: "Screven",
-    },
-    {
-      city: "Uvalda",
-    },
-    {
-      city: "Carlton",
-    },
-    {
-      city: "Blythe",
-    },
-    {
-      city: "Mc Caysville",
-    },
-    {
-      city: "Flovilla",
-    },
-    {
-      city: "Buckhead",
-    },
-    {
-      city: "Menlo",
-    },
-    {
-      city: "Luthersville",
-    },
-    {
-      city: "Richland",
-    },
-    {
-      city: "Crawford",
-    },
-    {
-      city: "Pavo",
-    },
-    {
-      city: "Poulan",
-    },
-    {
-      city: "Newborn",
-    },
-    {
-      city: "Bowersville",
-    },
-    {
-      city: "Rochelle",
-    },
-    {
-      city: "Talbotton",
-    },
-    {
-      city: "Portal",
-    },
-    {
-      city: "Culloden",
-    },
-    {
-      city: "Dexter",
-    },
-    {
-      city: "Ambrose",
-    },
-    {
-      city: "Lumber City",
-    },
-    {
-      city: "Sycamore",
-    },
-    {
-      city: "Sardis",
-    },
-    {
-      city: "Wildwood",
-    },
-    {
-      city: "Gibson",
-    },
-    {
-      city: "Plainville",
-    },
-    {
-      city: "Plains",
-    },
-    {
-      city: "Waverly",
-    },
-    {
-      city: "Marshallville",
-    },
-    {
-      city: "Mount Berry",
-    },
-    {
-      city: "Danville",
-    },
-    {
-      city: "Kite",
-    },
-    {
-      city: "Dewy Rose",
-    },
-    {
-      city: "Haddock",
-    },
-    {
-      city: "Coolidge",
-    },
-    {
-      city: "Emerson",
-    },
-    {
-      city: "Alapaha",
-    },
-    {
-      city: "Keysville",
-    },
-    {
-      city: "Good Hope",
-    },
-    {
-      city: "Shiloh",
-    },
-    {
-      city: "Naylor",
-    },
-    {
-      city: "Gay",
-    },
-    {
-      city: "Mauk",
-    },
-    {
-      city: "Ty Ty",
-    },
-    {
-      city: "Bartow",
     },
     {
       city: "Ailey",
     },
     {
-      city: "Dudley",
+      city: "Alamo",
     },
     {
-      city: "Talmo",
+      city: "Alapaha",
     },
     {
-      city: "Armuchee",
+      city: "Albany",
     },
     {
-      city: "Jenkinsburg",
-    },
-    {
-      city: "Lakemont",
-    },
-    {
-      city: "Lyerly",
-    },
-    {
-      city: "Midville",
-    },
-    {
-      city: "Tignall",
-    },
-    {
-      city: "Milan",
-    },
-    {
-      city: "Crawfordville",
-    },
-    {
-      city: "Dry Branch",
-    },
-    {
-      city: "Register",
-    },
-    {
-      city: "Preston",
-    },
-    {
-      city: "Dillard",
-    },
-    {
-      city: "Mc Intyre",
-    },
-    {
-      city: "Epworth",
-    },
-    {
-      city: "Stapleton",
-    },
-    {
-      city: "Garfield",
-    },
-    {
-      city: "Leslie",
-    },
-    {
-      city: "Irwinton",
-    },
-    {
-      city: "Smithville",
-    },
-    {
-      city: "White Plains",
-    },
-    {
-      city: "Surrency",
-    },
-    {
-      city: "Rhine",
-    },
-    {
-      city: "Rabun Gap",
-    },
-    {
-      city: "Yatesville",
-    },
-    {
-      city: "Axson",
-    },
-    {
-      city: "Mountain City",
-    },
-    {
-      city: "Pineview",
-    },
-    {
-      city: "Musella",
-    },
-    {
-      city: "Chula",
-    },
-    {
-      city: "Pitts",
-    },
-    {
-      city: "Tate",
-    },
-    {
-      city: "Rayle",
-    },
-    {
-      city: "Kings Bay",
-    },
-    {
-      city: "Cadwell",
-    },
-    {
-      city: "Riceboro",
-    },
-    {
-      city: "Millwood",
-    },
-    {
-      city: "Pinehurst",
-    },
-    {
-      city: "Montrose",
-    },
-    {
-      city: "Arnoldsville",
-    },
-    {
-      city: "Warthen",
-    },
-    {
-      city: "Shady Dale",
-    },
-    {
-      city: "Harrison",
-    },
-    {
-      city: "Stockton",
-    },
-    {
-      city: "Warwick",
-    },
-    {
-      city: "Toomsboro",
-    },
-    {
-      city: "Byromville",
-    },
-    {
-      city: "Arabi",
-    },
-    {
-      city: "Newington",
-    },
-    {
-      city: "Morven",
-    },
-    {
-      city: "Mitchell",
-    },
-    {
-      city: "Sugar Valley",
-    },
-    {
-      city: "Barney",
-    },
-    {
-      city: "Hartsfield",
-    },
-    {
-      city: "Avera",
-    },
-    {
-      city: "Cobbtown",
-    },
-    {
-      city: "Cherrylog",
-    },
-    {
-      city: "Dixie",
-    },
-    {
-      city: "Woodland",
-    },
-    {
-      city: "Sumner",
-    },
-    {
-      city: "Eden",
-    },
-    {
-      city: "Bristol",
-    },
-    {
-      city: "Rebecca",
-    },
-    {
-      city: "Helen",
-    },
-    {
-      city: "Fleming",
-    },
-    {
-      city: "Chauncey",
-    },
-    {
-      city: "Sale City",
-    },
-    {
-      city: "Norwood",
-    },
-    {
-      city: "Jekyll Island",
-    },
-    {
-      city: "Elko",
-    },
-    {
-      city: "Rockledge",
-    },
-    {
-      city: "Suches",
-    },
-    {
-      city: "Pine Mountain Valley",
-    },
-    {
-      city: "Stephens",
-    },
-    {
-      city: "Mershon",
-    },
-    {
-      city: "Knoxville",
-    },
-    {
-      city: "Wray",
-    },
-    {
-      city: "Statenville",
-    },
-    {
-      city: "Manor",
-    },
-    {
-      city: "Girard",
-    },
-    {
-      city: "Jacksonville",
-    },
-    {
-      city: "West Green",
-    },
-    {
-      city: "Marble Hill",
-    },
-    {
-      city: "Upatoi",
-    },
-    {
-      city: "The Rock",
-    },
-    {
-      city: "Pine Lake",
-    },
-    {
-      city: "Andersonville",
-    },
-    {
-      city: "Cobb",
-    },
-    {
-      city: "Matthews",
-    },
-    {
-      city: "Lovejoy",
-    },
-    {
-      city: "Ideal",
-    },
-    {
-      city: "White Oak",
-    },
-    {
-      city: "Perkins",
-    },
-    {
-      city: "Denton",
-    },
-    {
-      city: "Junction City",
-    },
-    {
-      city: "Rocky Ford",
-    },
-    {
-      city: "Oakfield",
-    },
-    {
-      city: "Berlin",
-    },
-    {
-      city: "Hillsboro",
-    },
-    {
-      city: "Fargo",
-    },
-    {
-      city: "Du Pont",
-    },
-    {
-      city: "Porterdale",
-    },
-    {
-      city: "Gracewood",
-    },
-    {
-      city: "Meldrim",
-    },
-    {
-      city: "Scotland",
-    },
-    {
-      city: "De Soto",
-    },
-    {
-      city: "Tarrytown",
-    },
-    {
-      city: "Weston",
-    },
-    {
-      city: "Oconee",
-    },
-    {
-      city: "Omaha",
-    },
-    {
-      city: "Cecil",
-    },
-    {
-      city: "Cisco",
-    },
-    {
-      city: "Barwick",
-    },
-    {
-      city: "Daisy",
-    },
-    {
-      city: "Geneva",
-    },
-    {
-      city: "Sapelo Island",
-    },
-    {
-      city: "Ellenton",
-    },
-    {
-      city: "Louvale",
-    },
-    {
-      city: "Hagan",
-    },
-    {
-      city: "Lilly",
-    },
-    {
-      city: "Varnell",
-    },
-    {
-      city: "Wiley",
-    },
-    {
-      city: "Oliver",
-    },
-    {
-      city: "Stillmore",
-    },
-    {
-      city: "Sunny Side",
-    },
-    {
-      city: "Argyle",
-    },
-    {
-      city: "Offerman",
+      city: "Allenhurst",
     },
     {
       city: "Allentown",
     },
     {
-      city: "Camak",
+      city: "Alma",
     },
     {
-      city: "Nunez",
-    },
-    {
-      city: "Siloam",
-    },
-    {
-      city: "Sargent",
-    },
-    {
-      city: "Bostwick",
-    },
-    {
-      city: "Seville",
+      city: "Alpharetta",
     },
     {
       city: "Alston",
     },
     {
-      city: "Turin",
+      city: "Alto",
     },
     {
-      city: "Sea Island",
+      city: "Ambrose",
     },
     {
-      city: "Tennga",
+      city: "Americus",
     },
     {
-      city: "Tallulah Falls",
+      city: "Andersonville",
     },
     {
-      city: "Pulaski",
+      city: "Appling",
+    },
+    {
+      city: "Arabi",
+    },
+    {
+      city: "Aragon",
+    },
+    {
+      city: "Argyle",
+    },
+    {
+      city: "Armuchee",
+    },
+    {
+      city: "Arnoldsville",
+    },
+    {
+      city: "Ashburn",
+    },
+    {
+      city: "Athens",
+    },
+    {
+      city: "Atlanta",
+    },
+    {
+      city: "Auburn",
+    },
+    {
+      city: "Augusta",
+    },
+    {
+      city: "Austell",
+    },
+    {
+      city: "Avera",
+    },
+    {
+      city: "Avondale Estates",
+    },
+    {
+      city: "Axson",
+    },
+    {
+      city: "Baconton",
+    },
+    {
+      city: "Baldwin",
+    },
+    {
+      city: "Ball Ground",
+    },
+    {
+      city: "Barnesville",
+    },
+    {
+      city: "Barney",
+    },
+    {
+      city: "Bartow",
+    },
+    {
+      city: "Barwick",
+    },
+    {
+      city: "Baxley",
+    },
+    {
+      city: "Berlin",
+    },
+    {
+      city: "Bethlehem",
+    },
+    {
+      city: "Bishop",
+    },
+    {
+      city: "Blackshear",
+    },
+    {
+      city: "Blairsville",
+    },
+    {
+      city: "Bloomingdale",
+    },
+    {
+      city: "Blue Ridge",
+    },
+    {
+      city: "Blythe",
+    },
+    {
+      city: "Bogart",
+    },
+    {
+      city: "Bonaire",
+    },
+    {
+      city: "Boston",
+    },
+    {
+      city: "Bostwick",
+    },
+    {
+      city: "Bowdon",
+    },
+    {
+      city: "Bowersville",
+    },
+    {
+      city: "Bowman",
+    },
+    {
+      city: "Box Springs",
+    },
+    {
+      city: "Braselton",
+    },
+    {
+      city: "Bremen",
+    },
+    {
+      city: "Bristol",
+    },
+    {
+      city: "Brooklet",
+    },
+    {
+      city: "Brooks",
+    },
+    {
+      city: "Broxton",
+    },
+    {
+      city: "Brunswick",
+    },
+    {
+      city: "Buchanan",
+    },
+    {
+      city: "Buckhead",
+    },
+    {
+      city: "Buena Vista",
+    },
+    {
+      city: "Buford",
+    },
+    {
+      city: "Butler",
+    },
+    {
+      city: "Byromville",
+    },
+    {
+      city: "Byron",
+    },
+    {
+      city: "Cadwell",
+    },
+    {
+      city: "Calhoun",
+    },
+    {
+      city: "Camak",
+    },
+    {
+      city: "Camilla",
+    },
+    {
+      city: "Canon",
+    },
+    {
+      city: "Canton",
+    },
+    {
+      city: "Carlton",
+    },
+    {
+      city: "Carnesville",
+    },
+    {
+      city: "Carrollton",
+    },
+    {
+      city: "Cartersville",
+    },
+    {
+      city: "Cataula",
+    },
+    {
+      city: "Cave Spring",
+    },
+    {
+      city: "Cecil",
+    },
+    {
+      city: "Cedartown",
+    },
+    {
+      city: "Centerville",
+    },
+    {
+      city: "Chatsworth",
+    },
+    {
+      city: "Chauncey",
+    },
+    {
+      city: "Cherrylog",
+    },
+    {
+      city: "Chester",
+    },
+    {
+      city: "Chickamauga",
+    },
+    {
+      city: "Chula",
+    },
+    {
+      city: "Cisco",
+    },
+    {
+      city: "Clarkesville",
+    },
+    {
+      city: "Clarkston",
+    },
+    {
+      city: "Claxton",
+    },
+    {
+      city: "Clayton",
+    },
+    {
+      city: "Clermont",
+    },
+    {
+      city: "Cleveland",
+    },
+    {
+      city: "Clyo",
+    },
+    {
+      city: "Cobb",
+    },
+    {
+      city: "Cobbtown",
+    },
+    {
+      city: "Cochran",
+    },
+    {
+      city: "Cohutta",
+    },
+    {
+      city: "Colbert",
+    },
+    {
+      city: "Collins",
+    },
+    {
+      city: "Columbus",
+    },
+    {
+      city: "Comer",
+    },
+    {
+      city: "Commerce",
+    },
+    {
+      city: "Concord",
+    },
+    {
+      city: "Conley",
+    },
+    {
+      city: "Conyers",
+    },
+    {
+      city: "Coolidge",
+    },
+    {
+      city: "Cordele",
+    },
+    {
+      city: "Cornelia",
+    },
+    {
+      city: "Covington",
+    },
+    {
+      city: "Crandall",
+    },
+    {
+      city: "Crawford",
+    },
+    {
+      city: "Crawfordville",
     },
     {
       city: "Crescent",
     },
     {
-      city: "Manassas",
+      city: "Culloden",
     },
     {
-      city: "Sharon",
+      city: "Cumming",
     },
     {
-      city: "Rupert",
+      city: "Cusseta",
     },
     {
-      city: "Jewell",
+      city: "Dacula",
+    },
+    {
+      city: "Dahlonega",
+    },
+    {
+      city: "Daisy",
+    },
+    {
+      city: "Dallas",
+    },
+    {
+      city: "Dalton",
+    },
+    {
+      city: "Danielsville",
+    },
+    {
+      city: "Danville",
+    },
+    {
+      city: "Darien",
+    },
+    {
+      city: "Davisboro",
+    },
+    {
+      city: "Dawsonville",
+    },
+    {
+      city: "De Soto",
+    },
+    {
+      city: "Dearing",
+    },
+    {
+      city: "Decatur",
+    },
+    {
+      city: "Demorest",
+    },
+    {
+      city: "Denton",
+    },
+    {
+      city: "Dewy Rose",
+    },
+    {
+      city: "Dexter",
+    },
+    {
+      city: "Dillard",
+    },
+    {
+      city: "Dixie",
+    },
+    {
+      city: "Doerun",
+    },
+    {
+      city: "Douglas",
+    },
+    {
+      city: "Douglasville",
+    },
+    {
+      city: "Dry Branch",
+    },
+    {
+      city: "Du Pont",
+    },
+    {
+      city: "Dublin",
+    },
+    {
+      city: "Dudley",
+    },
+    {
+      city: "Duluth",
+    },
+    {
+      city: "Eastanollee",
+    },
+    {
+      city: "Eastman",
+    },
+    {
+      city: "Eatonton",
+    },
+    {
+      city: "Eden",
+    },
+    {
+      city: "Elberton",
+    },
+    {
+      city: "Elko",
+    },
+    {
+      city: "Ellabell",
+    },
+    {
+      city: "Ellaville",
+    },
+    {
+      city: "Ellenton",
+    },
+    {
+      city: "Ellenwood",
+    },
+    {
+      city: "Ellerslie",
+    },
+    {
+      city: "Ellijay",
+    },
+    {
+      city: "Emerson",
+    },
+    {
+      city: "Enigma",
+    },
+    {
+      city: "Epworth",
+    },
+    {
+      city: "Evans",
+    },
+    {
+      city: "Fairburn",
+    },
+    {
+      city: "Fairmount",
+    },
+    {
+      city: "Fargo",
+    },
+    {
+      city: "Fayetteville",
+    },
+    {
+      city: "Fitzgerald",
+    },
+    {
+      city: "Fleming",
+    },
+    {
+      city: "Flintstone",
+    },
+    {
+      city: "Flovilla",
+    },
+    {
+      city: "Flowery Branch",
+    },
+    {
+      city: "Folkston",
+    },
+    {
+      city: "Forest Park",
+    },
+    {
+      city: "Forsyth",
+    },
+    {
+      city: "Fort Benning",
+    },
+    {
+      city: "Fort Oglethorpe",
+    },
+    {
+      city: "Fort Stewart",
+    },
+    {
+      city: "Fort Valley",
+    },
+    {
+      city: "Fortson",
+    },
+    {
+      city: "Franklin",
+    },
+    {
+      city: "Gainesville",
+    },
+    {
+      city: "Garfield",
+    },
+    {
+      city: "Gay",
+    },
+    {
+      city: "Geneva",
+    },
+    {
+      city: "Gibson",
+    },
+    {
+      city: "Gillsville",
+    },
+    {
+      city: "Girard",
+    },
+    {
+      city: "Glennville",
+    },
+    {
+      city: "Glenwood",
+    },
+    {
+      city: "Good Hope",
+    },
+    {
+      city: "Gordon",
+    },
+    {
+      city: "Gracewood",
+    },
+    {
+      city: "Grantville",
+    },
+    {
+      city: "Gray",
+    },
+    {
+      city: "Grayson",
+    },
+    {
+      city: "Graysville",
+    },
+    {
+      city: "Greensboro",
+    },
+    {
+      city: "Greenville",
+    },
+    {
+      city: "Griffin",
+    },
+    {
+      city: "Grovetown",
+    },
+    {
+      city: "Guyton",
+    },
+    {
+      city: "Haddock",
+    },
+    {
+      city: "Hagan",
+    },
+    {
+      city: "Hahira",
+    },
+    {
+      city: "Hamilton",
+    },
+    {
+      city: "Hampton",
+    },
+    {
+      city: "Harlem",
+    },
+    {
+      city: "Harrison",
+    },
+    {
+      city: "Hartsfield",
+    },
+    {
+      city: "Hartwell",
+    },
+    {
+      city: "Hawkinsville",
+    },
+    {
+      city: "Hazlehurst",
+    },
+    {
+      city: "Helen",
+    },
+    {
+      city: "Helena",
+    },
+    {
+      city: "Hephzibah",
+    },
+    {
+      city: "Hiawassee",
+    },
+    {
+      city: "Hillsboro",
+    },
+    {
+      city: "Hinesville",
+    },
+    {
+      city: "Hiram",
+    },
+    {
+      city: "Hoboken",
+    },
+    {
+      city: "Hogansville",
+    },
+    {
+      city: "Homer",
+    },
+    {
+      city: "Homerville",
+    },
+    {
+      city: "Hortense",
+    },
+    {
+      city: "Hoschton",
     },
     {
       city: "Howard",
     },
     {
-      city: "Graysville",
+      city: "Hull",
+    },
+    {
+      city: "Ideal",
+    },
+    {
+      city: "Irwinton",
+    },
+    {
+      city: "Jackson",
+    },
+    {
+      city: "Jacksonville",
+    },
+    {
+      city: "Jasper",
+    },
+    {
+      city: "Jefferson",
+    },
+    {
+      city: "Jeffersonville",
+    },
+    {
+      city: "Jekyll Island",
+    },
+    {
+      city: "Jenkinsburg",
+    },
+    {
+      city: "Jesup",
+    },
+    {
+      city: "Jewell",
+    },
+    {
+      city: "Jonesboro",
+    },
+    {
+      city: "Juliette",
+    },
+    {
+      city: "Junction City",
+    },
+    {
+      city: "Kathleen",
+    },
+    {
+      city: "Kennesaw",
+    },
+    {
+      city: "Keysville",
+    },
+    {
+      city: "Kings Bay",
+    },
+    {
+      city: "Kingsland",
+    },
+    {
+      city: "Kingston",
+    },
+    {
+      city: "Kite",
+    },
+    {
+      city: "Knoxville",
+    },
+    {
+      city: "La Fayette",
+    },
+    {
+      city: "Lagrange",
+    },
+    {
+      city: "Lake Park",
+    },
+    {
+      city: "Lakeland",
+    },
+    {
+      city: "Lakemont",
+    },
+    {
+      city: "Lavonia",
+    },
+    {
+      city: "Lawrenceville",
+    },
+    {
+      city: "Leesburg",
+    },
+    {
+      city: "Lenox",
+    },
+    {
+      city: "Leslie",
+    },
+    {
+      city: "Lexington",
+    },
+    {
+      city: "Lilburn",
+    },
+    {
+      city: "Lilly",
+    },
+    {
+      city: "Lincolnton",
+    },
+    {
+      city: "Lindale",
+    },
+    {
+      city: "Lithia Springs",
+    },
+    {
+      city: "Lithonia",
+    },
+    {
+      city: "Lizella",
+    },
+    {
+      city: "Locust Grove",
+    },
+    {
+      city: "Loganville",
+    },
+    {
+      city: "Lookout Mountain",
+    },
+    {
+      city: "Louisville",
+    },
+    {
+      city: "Louvale",
+    },
+    {
+      city: "Lovejoy",
+    },
+    {
+      city: "Ludowici",
+    },
+    {
+      city: "Lula",
+    },
+    {
+      city: "Lumber City",
+    },
+    {
+      city: "Lumpkin",
+    },
+    {
+      city: "Luthersville",
+    },
+    {
+      city: "Lyerly",
+    },
+    {
+      city: "Lyons",
+    },
+    {
+      city: "Mableton",
+    },
+    {
+      city: "Macon",
+    },
+    {
+      city: "Madison",
+    },
+    {
+      city: "Manassas",
+    },
+    {
+      city: "Manchester",
+    },
+    {
+      city: "Manor",
+    },
+    {
+      city: "Mansfield",
+    },
+    {
+      city: "Marble Hill",
+    },
+    {
+      city: "Marietta",
+    },
+    {
+      city: "Marshallville",
+    },
+    {
+      city: "Martin",
+    },
+    {
+      city: "Matthews",
+    },
+    {
+      city: "Mauk",
+    },
+    {
+      city: "Maysville",
+    },
+    {
+      city: "Mc Caysville",
+    },
+    {
+      city: "Mc Intyre",
+    },
+    {
+      city: "Mc Rae",
+    },
+    {
+      city: "Mcdonough",
+    },
+    {
+      city: "Meansville",
+    },
+    {
+      city: "Meigs",
+    },
+    {
+      city: "Meldrim",
+    },
+    {
+      city: "Menlo",
+    },
+    {
+      city: "Mershon",
+    },
+    {
+      city: "Metter",
+    },
+    {
+      city: "Midland",
+    },
+    {
+      city: "Midville",
+    },
+    {
+      city: "Midway",
+    },
+    {
+      city: "Milan",
+    },
+    {
+      city: "Milledgeville",
+    },
+    {
+      city: "Millen",
+    },
+    {
+      city: "Millwood",
+    },
+    {
+      city: "Milner",
+    },
+    {
+      city: "Mineral Bluff",
+    },
+    {
+      city: "Mitchell",
+    },
+    {
+      city: "Molena",
+    },
+    {
+      city: "Monroe",
+    },
+    {
+      city: "Montezuma",
+    },
+    {
+      city: "Monticello",
+    },
+    {
+      city: "Montrose",
+    },
+    {
+      city: "Moreland",
+    },
+    {
+      city: "Morganton",
+    },
+    {
+      city: "Morrow",
+    },
+    {
+      city: "Morven",
+    },
+    {
+      city: "Moultrie",
+    },
+    {
+      city: "Mount Airy",
+    },
+    {
+      city: "Mount Berry",
+    },
+    {
+      city: "Mount Vernon",
+    },
+    {
+      city: "Mountain City",
+    },
+    {
+      city: "Murrayville",
+    },
+    {
+      city: "Musella",
+    },
+    {
+      city: "Nahunta",
+    },
+    {
+      city: "Nashville",
+    },
+    {
+      city: "Naylor",
+    },
+    {
+      city: "Newborn",
+    },
+    {
+      city: "Newington",
+    },
+    {
+      city: "Newnan",
+    },
+    {
+      city: "Nicholls",
+    },
+    {
+      city: "Nicholson",
+    },
+    {
+      city: "Norcross",
+    },
+    {
+      city: "Norman Park",
+    },
+    {
+      city: "Norwood",
+    },
+    {
+      city: "Nunez",
+    },
+    {
+      city: "Oakfield",
+    },
+    {
+      city: "Oakwood",
+    },
+    {
+      city: "Ochlocknee",
+    },
+    {
+      city: "Ocilla",
+    },
+    {
+      city: "Oconee",
+    },
+    {
+      city: "Odum",
+    },
+    {
+      city: "Offerman",
+    },
+    {
+      city: "Oglethorpe",
+    },
+    {
+      city: "Oliver",
+    },
+    {
+      city: "Omaha",
+    },
+    {
+      city: "Omega",
+    },
+    {
+      city: "Oxford",
+    },
+    {
+      city: "Palmetto",
+    },
+    {
+      city: "Patterson",
+    },
+    {
+      city: "Pavo",
+    },
+    {
+      city: "Peachtree City",
+    },
+    {
+      city: "Pearson",
+    },
+    {
+      city: "Pelham",
+    },
+    {
+      city: "Pembroke",
+    },
+    {
+      city: "Pendergrass",
+    },
+    {
+      city: "Perkins",
+    },
+    {
+      city: "Perry",
+    },
+    {
+      city: "Pine Lake",
+    },
+    {
+      city: "Pine Mountain",
+    },
+    {
+      city: "Pine Mountain Valley",
+    },
+    {
+      city: "Pinehurst",
+    },
+    {
+      city: "Pineview",
+    },
+    {
+      city: "Pitts",
+    },
+    {
+      city: "Plains",
+    },
+    {
+      city: "Plainville",
+    },
+    {
+      city: "Pooler",
+    },
+    {
+      city: "Portal",
+    },
+    {
+      city: "Porterdale",
+    },
+    {
+      city: "Poulan",
+    },
+    {
+      city: "Powder Springs",
+    },
+    {
+      city: "Preston",
+    },
+    {
+      city: "Pulaski",
+    },
+    {
+      city: "Quitman",
+    },
+    {
+      city: "Rabun Gap",
+    },
+    {
+      city: "Ranger",
+    },
+    {
+      city: "Ray City",
+    },
+    {
+      city: "Rayle",
+    },
+    {
+      city: "Rebecca",
+    },
+    {
+      city: "Register",
+    },
+    {
+      city: "Reidsville",
+    },
+    {
+      city: "Rentz",
+    },
+    {
+      city: "Resaca",
+    },
+    {
+      city: "Rex",
+    },
+    {
+      city: "Reynolds",
+    },
+    {
+      city: "Rhine",
+    },
+    {
+      city: "Riceboro",
+    },
+    {
+      city: "Richland",
+    },
+    {
+      city: "Richmond Hill",
+    },
+    {
+      city: "Rincon",
+    },
+    {
+      city: "Ringgold",
+    },
+    {
+      city: "Rising Fawn",
+    },
+    {
+      city: "Riverdale",
+    },
+    {
+      city: "Roberta",
+    },
+    {
+      city: "Rochelle",
+    },
+    {
+      city: "Rock Spring",
+    },
+    {
+      city: "Rockledge",
+    },
+    {
+      city: "Rockmart",
+    },
+    {
+      city: "Rocky Face",
+    },
+    {
+      city: "Rocky Ford",
+    },
+    {
+      city: "Rome",
+    },
+    {
+      city: "Roopville",
+    },
+    {
+      city: "Rossville",
+    },
+    {
+      city: "Roswell",
+    },
+    {
+      city: "Royston",
+    },
+    {
+      city: "Rupert",
+    },
+    {
+      city: "Rutledge",
+    },
+    {
+      city: "Rydal",
+    },
+    {
+      city: "Saint Marys",
+    },
+    {
+      city: "Saint Simons Island",
+    },
+    {
+      city: "Sale City",
+    },
+    {
+      city: "Sandersville",
+    },
+    {
+      city: "Sapelo Island",
+    },
+    {
+      city: "Sardis",
+    },
+    {
+      city: "Sargent",
+    },
+    {
+      city: "Sautee Nacoochee",
+    },
+    {
+      city: "Savannah",
+    },
+    {
+      city: "Scotland",
+    },
+    {
+      city: "Scottdale",
+    },
+    {
+      city: "Screven",
+    },
+    {
+      city: "Sea Island",
+    },
+    {
+      city: "Senoia",
+    },
+    {
+      city: "Seville",
+    },
+    {
+      city: "Shady Dale",
+    },
+    {
+      city: "Sharon",
+    },
+    {
+      city: "Sharpsburg",
+    },
+    {
+      city: "Shiloh",
+    },
+    {
+      city: "Siloam",
+    },
+    {
+      city: "Silver Creek",
+    },
+    {
+      city: "Smithville",
+    },
+    {
+      city: "Smyrna",
+    },
+    {
+      city: "Snellville",
+    },
+    {
+      city: "Social Circle",
+    },
+    {
+      city: "Soperton",
+    },
+    {
+      city: "Sparks",
+    },
+    {
+      city: "Sparta",
+    },
+    {
+      city: "Springfield",
+    },
+    {
+      city: "Stapleton",
+    },
+    {
+      city: "Statenville",
+    },
+    {
+      city: "Statesboro",
+    },
+    {
+      city: "Statham",
+    },
+    {
+      city: "Stephens",
+    },
+    {
+      city: "Stillmore",
+    },
+    {
+      city: "Stockbridge",
+    },
+    {
+      city: "Stockton",
+    },
+    {
+      city: "Stone Mountain",
+    },
+    {
+      city: "Suches",
+    },
+    {
+      city: "Sugar Valley",
+    },
+    {
+      city: "Summerville",
+    },
+    {
+      city: "Sumner",
+    },
+    {
+      city: "Sunny Side",
+    },
+    {
+      city: "Surrency",
+    },
+    {
+      city: "Suwanee",
+    },
+    {
+      city: "Swainsboro",
+    },
+    {
+      city: "Sycamore",
+    },
+    {
+      city: "Sylvania",
+    },
+    {
+      city: "Sylvester",
+    },
+    {
+      city: "Talbotton",
+    },
+    {
+      city: "Talking Rock",
+    },
+    {
+      city: "Tallapoosa",
+    },
+    {
+      city: "Tallulah Falls",
+    },
+    {
+      city: "Talmo",
+    },
+    {
+      city: "Tarrytown",
+    },
+    {
+      city: "Tate",
+    },
+    {
+      city: "Taylorsville",
+    },
+    {
+      city: "Temple",
+    },
+    {
+      city: "Tennga",
+    },
+    {
+      city: "Tennille",
+    },
+    {
+      city: "The Rock",
+    },
+    {
+      city: "Thomaston",
+    },
+    {
+      city: "Thomasville",
+    },
+    {
+      city: "Thomson",
+    },
+    {
+      city: "Tifton",
+    },
+    {
+      city: "Tiger",
+    },
+    {
+      city: "Tignall",
+    },
+    {
+      city: "Toccoa",
+    },
+    {
+      city: "Toomsboro",
+    },
+    {
+      city: "Townsend",
+    },
+    {
+      city: "Trenton",
+    },
+    {
+      city: "Trion",
+    },
+    {
+      city: "Tucker",
+    },
+    {
+      city: "Tunnel Hill",
+    },
+    {
+      city: "Turin",
+    },
+    {
+      city: "Twin City",
+    },
+    {
+      city: "Ty Ty",
+    },
+    {
+      city: "Tybee Island",
+    },
+    {
+      city: "Tyrone",
+    },
+    {
+      city: "Unadilla",
+    },
+    {
+      city: "Union City",
+    },
+    {
+      city: "Union Point",
+    },
+    {
+      city: "Upatoi",
+    },
+    {
+      city: "Uvalda",
+    },
+    {
+      city: "Valdosta",
+    },
+    {
+      city: "Varnell",
+    },
+    {
+      city: "Vidalia",
+    },
+    {
+      city: "Vienna",
+    },
+    {
+      city: "Villa Rica",
+    },
+    {
+      city: "Waco",
+    },
+    {
+      city: "Wadley",
+    },
+    {
+      city: "Waleska",
+    },
+    {
+      city: "Warm Springs",
+    },
+    {
+      city: "Warner Robins",
+    },
+    {
+      city: "Warrenton",
+    },
+    {
+      city: "Warthen",
+    },
+    {
+      city: "Warwick",
+    },
+    {
+      city: "Washington",
+    },
+    {
+      city: "Watkinsville",
+    },
+    {
+      city: "Waverly",
+    },
+    {
+      city: "Waverly Hall",
+    },
+    {
+      city: "Waycross",
+    },
+    {
+      city: "Waynesboro",
+    },
+    {
+      city: "Waynesville",
+    },
+    {
+      city: "West Green",
+    },
+    {
+      city: "West Point",
+    },
+    {
+      city: "Weston",
+    },
+    {
+      city: "White",
+    },
+    {
+      city: "White Oak",
+    },
+    {
+      city: "White Plains",
+    },
+    {
+      city: "Whitesburg",
+    },
+    {
+      city: "Wildwood",
+    },
+    {
+      city: "Wiley",
+    },
+    {
+      city: "Willacoochee",
+    },
+    {
+      city: "Williamson",
+    },
+    {
+      city: "Winder",
+    },
+    {
+      city: "Winston",
+    },
+    {
+      city: "Winterville",
+    },
+    {
+      city: "Woodbine",
+    },
+    {
+      city: "Woodbury",
+    },
+    {
+      city: "Woodland",
+    },
+    {
+      city: "Woodstock",
+    },
+    {
+      city: "Wray",
+    },
+    {
+      city: "Wrens",
+    },
+    {
+      city: "Wrightsville",
+    },
+    {
+      city: "Yatesville",
+    },
+    {
+      city: "Young Harris",
+    },
+    {
+      city: "Zebulon",
     },
   ],
 };

@@ -11,9 +11,9 @@ import "react-chat-widget/lib/styles.css";
 import { MenuItem, FormControl, TextField, Autocomplete } from "@mui/material";
 import DatePicker from "react-multi-date-picker";
 import data from "../../utilis/data";
-// import state from "../../utilis/state";
 import city from "../../utilis/city";
 import county from "../../utilis/county";
+import americaCity from "../../utilis/americaCity";
 import "./myprofile.css";
 const MyProfile = () => {
   const [profileData, setProfileData] = React.useState("");
@@ -50,7 +50,7 @@ const MyProfile = () => {
     religion: "",
     politicalView: "",
     skillLevel: [],
-    currentHandicap: "",
+    currentHandicap: [],
     oftenPlay: "",
     purpose: [],
     professional: "",
@@ -73,6 +73,8 @@ const MyProfile = () => {
       [name]: value,
     }));
   };
+
+  var currentYear = new Date().getFullYear();
 
   return (
     <>
@@ -103,117 +105,21 @@ const MyProfile = () => {
                   name="about"
                   onChange={handleChange}
                 />
-                {/* <p>" {profileData && profileData.about} "</p> */}
-                {/* <FormControl fullWidth> */}
-                {/* <TextField
-                  name="about"
-                  value={arr.about || profileData?.about}
-                  id="filled-required"
-                  variant="outlined"
-                /> */}
-                {/* </FormControl> */}
-                {/* <div className="pt-3">
-                  <h6>LinkdIn Profile :</h6>
-                </div>
-                <div>
-                  <p
-                    style={{
-                      color: "blue",
-                      cursor: "pointer",
-                      wordBreak: "break-all",
-                    }}
-                    onClick={() =>
-                      window.location.replace(profileData?.linkdinProfile)
-                    }
-                  >
-                    {profileData?.linkdinProfile}
-                  </p>
-                </div> */}
               </div>
             </Col>
             <Col md={8}>
               <div className="profile-desc">
-                {/* <div>
-                  <h4>My Aims</h4>
-                  <p>{profileData && profileData.about}</p>
-                </div> */}
                 <h4>About Me</h4>
                 <Row>
-                  {/* <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Gender :</h6>
-                    </div>
+                  <Col md={3} xs={6} sm={6} className="mb-3">
+                    <DatePicker
+                      onYearChange={(e) =>
+                        setArr({ ...arr, age: currentYear - e.year })
+                      }
+                      multiple={false}
+                      placeholder={"Birthdate"}
+                    />
                   </Col>
-                  <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <p>
-                        {profileData &&
-                          capitalizeFirstLetter(profileData.gender)}
-                      </p>
-                    </div>
-                  </Col>
-                  <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Age :</h6>
-                    </div>
-                  </Col>
-                  <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <p>{profileData?.age}</p>
-                    </div>
-                  </Col>
-                  <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>BirthDate :</h6>
-                    </div>
-                  </Col>
-                  <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <p>02-July-1996</p>
-                    </div>
-                  </Col>
-
-                  <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>State :</h6>
-                    </div>
-                  </Col>
-                  <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <p>
-                        {profileData &&
-                          capitalizeFirstLetter(profileData.state)}
-                      </p>
-                    </div>
-                  </Col>
-                  <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>City :</h6>
-                    </div>
-                  </Col>
-                  <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <p>
-                        {profileData &&
-                          capitalizeFirstLetter(profileData.country)}
-                      </p>
-                    </div>
-                  </Col>
-                  <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Zip Code</h6>
-                    </div>
-                  </Col>
-                  <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <p>{profileData?.zipCode}</p>
-                    </div>
-                  </Col> */}
-                  {/* <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Material Status :</h6>
-                    </div>
-                  </Col> */}
                   <Col className="mb-3" md={3} xs={6} sm={6}>
                     <FormControl fullWidth>
                       <TextField
@@ -226,26 +132,15 @@ const MyProfile = () => {
                     </FormControl>
                   </Col>
                   <Col md={3} xs={6} sm={6} className="mb-3">
-                    <DatePicker
-                      onChange={(e, value) =>
-                        console.log("e Value===>>>", e, value)
-                      }
-                      multiple={false}
-                      placeholder={"Birthdate"}
-                    />
-                  </Col>
-                  <Col md={3} xs={6} sm={6} className="mb-3">
                     <FormControl fullWidth>
                       <Autocomplete
                         id="controllable-states-demo"
-                        options={county.data}
-                        getOptionLabel={(option) =>
-                          option?.county || arr.country
-                        }
+                        options={americaCity.data}
+                        getOptionLabel={(option) => option?.name || arr.country}
                         name={"country"}
                         value={arr?.country}
                         onChange={(e, value) =>
-                          setArr({ ...arr, country: value.county })
+                          setArr({ ...arr, country: value.name })
                         }
                         renderInput={(params) => (
                           <TextField {...params} fullWidth label="State" />
@@ -288,18 +183,7 @@ const MyProfile = () => {
                       </TextField>
                     </FormControl>
                   </Col>
-                  {/* <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Drinker :</h6>
-                    </div>
-                  </Col> */}
                   <Col className="mb-3" md={3} xs={6} sm={6}>
-                    {/* <div>
-                      <p>
-                        {profileData &&
-                          capitalizeFirstLetter(profileData.drinker)}
-                      </p>
-                    </div> */}
                     <FormControl fullWidth>
                       <TextField
                         required
@@ -317,18 +201,7 @@ const MyProfile = () => {
                       </TextField>
                     </FormControl>
                   </Col>
-                  {/* <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Smoke :</h6>
-                    </div>
-                  </Col> */}
                   <Col className="mb-3" md={3} xs={6} sm={6}>
-                    {/* <div>
-                      <p>
-                        {profileData &&
-                          capitalizeFirstLetter(profileData.smoker)}
-                      </p>
-                    </div> */}
                     <FormControl fullWidth>
                       <TextField
                         required
@@ -341,6 +214,7 @@ const MyProfile = () => {
                           multiple: true,
                         }}
                       >
+                        <MenuItem disabled>Select Multiple</MenuItem>
                         {data?.smoker?.map((item, index) => (
                           <MenuItem key={index} value={item.value}>
                             {capitalizeFirstLetter(item.value)}
@@ -349,17 +223,7 @@ const MyProfile = () => {
                       </TextField>
                     </FormControl>
                   </Col>
-                  {/* <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Race :</h6>
-                    </div>
-                  </Col> */}
                   <Col className="mb-3" md={3} xs={6} sm={6}>
-                    {/* <div>
-                      <p>
-                        {profileData && capitalizeFirstLetter(profileData.race)}
-                      </p>
-                    </div> */}
                     <FormControl fullWidth>
                       <TextField
                         required
@@ -377,18 +241,7 @@ const MyProfile = () => {
                       </TextField>
                     </FormControl>
                   </Col>
-                  {/* <Col className="mb-3" md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Religion :</h6>
-                    </div>
-                  </Col> */}
                   <Col className="mb-3" md={3} xs={6} sm={6}>
-                    {/* <div>
-                      <p>
-                        {profileData &&
-                          capitalizeFirstLetter(profileData.religion)}
-                      </p>
-                    </div> */}
                     <FormControl fullWidth>
                       <TextField
                         required
@@ -406,19 +259,7 @@ const MyProfile = () => {
                       </TextField>
                     </FormControl>
                   </Col>
-
-                  {/* <Col className="mb-3" md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Political View :</h6>
-                    </div>
-                  </Col> */}
                   <Col className="mb-3" md={3} xs={6} sm={6}>
-                    {/* <div>
-                      <p>
-                        {profileData &&
-                          capitalizeFirstLetter(profileData.politicalView)}
-                      </p>
-                    </div> */}
                     <FormControl fullWidth>
                       <TextField
                         required
@@ -449,6 +290,7 @@ const MyProfile = () => {
                           multiple: true,
                         }}
                       >
+                        <MenuItem disabled>Select Multiple</MenuItem>
                         {data?.favouriteCourse?.map((item, index) => (
                           <MenuItem key={index} value={item.value}>
                             {item.value}
@@ -470,6 +312,7 @@ const MyProfile = () => {
                           multiple: true,
                         }}
                       >
+                        <MenuItem disabled>Select Multiple</MenuItem>
                         {data?.skillLevel?.map((item, index) => (
                           <MenuItem key={index} value={item.value}>
                             {capitalizeFirstLetter(item.value)}
@@ -487,7 +330,11 @@ const MyProfile = () => {
                         onChange={handleChange}
                         select
                         label="Current Handicap"
+                        SelectProps={{
+                          multiple: true,
+                        }}
                       >
+                        <MenuItem disabled>Select Multiple</MenuItem>
                         {data?.currentHandicap?.map((item, index) => (
                           <MenuItem key={index} value={item.value}>
                             {capitalizeFirstLetter(item.name)}
@@ -527,6 +374,7 @@ const MyProfile = () => {
                           multiple: true,
                         }}
                       >
+                        <MenuItem disabled>Select Multiple</MenuItem>
                         {data?.myAvailability?.map((item, index) => (
                           <MenuItem key={index} value={item.value}>
                             {capitalizeFirstLetter(item.value)}
@@ -548,6 +396,7 @@ const MyProfile = () => {
                           multiple: true,
                         }}
                       >
+                        <MenuItem disabled>Select Multiple</MenuItem>
                         {data?.time?.map((item, index) => (
                           <MenuItem key={index} value={item.value}>
                             {capitalizeFirstLetter(item.value)}
@@ -583,7 +432,11 @@ const MyProfile = () => {
                         onChange={handleChange}
                         select
                         label="Purpose"
+                        SelectProps={{
+                          multiple: true,
+                        }}
                       >
+                        <MenuItem disabled>Select Multiple</MenuItem>
                         {data?.purpose?.map((item, index) => (
                           <MenuItem key={index} value={item.value}>
                             {capitalizeFirstLetter(item.value)}
@@ -616,17 +469,8 @@ const MyProfile = () => {
                       </p>
                     </div>
                   </Col>
-                  {/* <Col className="mb-3" md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Company Name :</h6>
-                    </div>
-                  </Col> */}
                   <Col className="mb-3" md={4} xs={6} sm={6}>
                     <div>
-                      {/* <p>
-                        {profileData &&
-                          capitalizeFirstLetter(profileData.companyName)}
-                      </p> */}
                       <TextField
                         id="outlined-basic"
                         label="Company Name"
@@ -637,17 +481,8 @@ const MyProfile = () => {
                       />
                     </div>
                   </Col>
-                  {/* <Col className="mb-3" md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Title :</h6>
-                    </div>
-                  </Col> */}
                   <Col className="mb-3" md={4} xs={6} sm={6}>
                     <div>
-                      {/* <p>
-                        {profileData &&
-                          capitalizeFirstLetter(profileData.positionInCompany)}
-                      </p> */}
                       <TextField
                         id="outlined-basic"
                         label="Title"
@@ -658,18 +493,7 @@ const MyProfile = () => {
                       />
                     </div>
                   </Col>
-                  {/* <Col className="mb-3" md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Industry :</h6>
-                    </div>
-                  </Col> */}
                   <Col className="mb-3" md={6} xs={6} sm={6}>
-                    {/* <div>
-                      <p>
-                        {profileData &&
-                          capitalizeFirstLetter(profileData.industry)}
-                      </p>
-                    </div> */}
                     <FormControl fullWidth>
                       <TextField
                         required
@@ -687,126 +511,16 @@ const MyProfile = () => {
                       </TextField>
                     </FormControl>
                   </Col>
-                  {/* <Col className="mb-3" md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Current Handicap :</h6>
-                    </div>
-                  </Col>
-                  <Col className="mb-3" md={3} xs={6} sm={6}>
-                    <div>
-                      <p>{profileData?.currentHandicap}</p>
-                    </div>
-                  </Col>
-                  <Col className="mb-3" md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Often Play :</h6>
-                    </div>
-                  </Col>
-                  <Col className="mb-3" md={3} xs={6} sm={6}>
-                    <div>
-                      <p>
-                        {profileData &&
-                          capitalizeFirstLetter(profileData.oftenPlay)}
-                      </p>
-                    </div>
-                  </Col>
-                  <Col className="mb-3" md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Availability :</h6>
-                    </div>
-                  </Col>
-                  <Col className="mb-3" md={3} xs={6} sm={6}>
-                    <div>
-                      <p>
-                        {profileData &&
-                          capitalizeFirstLetter(profileData.availability)}
-                      </p>
-                    </div>
-                  </Col>
-                  <Col className="mb-3" md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Distance to Drive :</h6>
-                    </div>
-                  </Col>
-                  <Col className="mb-3" md={3} xs={6} sm={6}>
-                    <div>
-                      <p>{profileData?.distance}</p>
-                    </div>
-                  </Col>
-                  <Col className="mb-3" md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Time to Play :</h6>
-                    </div>
-                  </Col>
-                  <Col className="mb-3" md={3} xs={6} sm={6}>
-                    <div>
-                      <p>Morning</p>
-                    </div>
-                  </Col>
-                  <Col className="mb-3" md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Play Days :</h6>
-                    </div>
-                  </Col>
-                  <Col className="mb-3" md={3} xs={6} sm={6}>
-                    <div>
-                      <p>Monday, Friday</p>
-                    </div>
-                  </Col>
-
-                  <Col className="mb-3" md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Purpose to Play :</h6>
-                    </div>
-                  </Col>
-                  <Col className="mb-3" md={3} xs={6} sm={6}>
-                    <div>
-                      <p>
-                        {profileData &&
-                          capitalizeFirstLetter(profileData.purpose)}
-                      </p>
-                    </div>
-                  </Col>
-                  <Col className="mb-3" md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Favourite Course :</h6>
-                    </div>
-                  </Col>
-                  <Col className="mb-3" md={3} xs={6} sm={6}>
-                    <div>
-                      <p>{profileData?.favouriteCourse}</p>
-                    </div>
-                  </Col> */}
                 </Row>
                 <h4>When do I want to play?</h4>
                 <Row>
-                  {/* <Col className="mb-3" md={6} xs={6} sm={6}>
-                    <FormControl fullWidth>
-                      <TextField
-                        required
-                        value={arr.playDay}
-                        name={"playDay"}
-                        onChange={handleChange}
-                        select
-                        label="Day"
-                        SelectProps={{
-                          multiple: true,
-                        }}
-                      >
-                        {data?.days?.map((item, index) => (
-                          <MenuItem key={index} value={item.value}>
-                            {capitalizeFirstLetter(item.value)}
-                          </MenuItem>
-                        ))}
-                      </TextField>
-                    </FormControl>
-                  </Col> */}
                   <Col md={6} xs={6} sm={6} className="mb-3">
                     <DatePicker
                       onChange={(e, value) =>
                         console.log("e Value===>>>", e, value)
                       }
                       placeholder={"Day"}
+                      multiple={true}
                     />
                   </Col>
                   <Col className="mb-3" md={6} xs={6} sm={6}>
@@ -822,6 +536,7 @@ const MyProfile = () => {
                           multiple: true,
                         }}
                       >
+                        <MenuItem disabled>Select Multiple</MenuItem>
                         {data?.time?.map((item, index) => (
                           <MenuItem key={index} value={item.value}>
                             {capitalizeFirstLetter(item.value)}

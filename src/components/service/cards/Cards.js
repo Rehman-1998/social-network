@@ -42,14 +42,24 @@ const Cards = ({ setDumyData, dumyData }) => {
                       <Row>
                         <Col className="mb-2" sm={4} xs={4} md={4} lg={4}>
                           <div className="cards-image">
-                            <img src={item.image} alt="" />
+                            <img
+                              style={{ cursor: "pointer" }}
+                              onClick={() => handleClick(item._id)}
+                              src={item.image}
+                              alt=""
+                            />
                           </div>
                         </Col>
                         <Col className="mb-2" sm={8} xs={8} md={8} lg={8}>
                           <Row>
                             <Col md={12}>
                               <div>
-                                <h5>{capitalizeFirstLetter(item.name)}</h5>
+                                <h5
+                                  style={{ cursor: "pointer" }}
+                                  onClick={() => handleClick(item._id)}
+                                >
+                                  {capitalizeFirstLetter(item.name)}
+                                </h5>
                               </div>
                             </Col>
                             <Col md={5} xs={5} sm={5}>
@@ -165,7 +175,7 @@ const Cards = ({ setDumyData, dumyData }) => {
                       </Row>
                       <div className="text-center mt-2">
                         <button onClick={() => handleClick(item._id)}>
-                          Contact me{" "}
+                          Full Bio{" "}
                         </button>
                       </div>
                     </div>

@@ -12,6 +12,7 @@ import "react-chat-widget/lib/styles.css";
 const ProfileCards = () => {
   const [profileData, setProfileData] = React.useState("");
   const [loading, setLoading] = React.useState("");
+  // const [test, setTest] = React.useState(false);
   const location = useLocation();
   useEffect(() => {
     fetch(`https://social-golf-network.herokuapp.com/user/${location.state.id}`)
@@ -25,15 +26,18 @@ const ProfileCards = () => {
       "Do You Want to Play golf on the afternoon of August 5th at Chestatee Golf Club ?"
     );
   }, []);
+  // console.log("TES", test);
 
   return (
     <>
       <Container className="py-5 border-top ipad-class">
         <Widget
+          // className={test ? "rcw-chat-container" : ""}
           title={`Social Golf Network`}
           subtitle={""}
-          toggleWidget={true}
           profileAvatar={profileData?.image}
+          // toggleWidget={(h) => console.log("j", h)}
+          // launcher={(handleToggle) => console.log("handle", handleToggle)}
         />
         {!loading ? (
           <div className="text-center">
@@ -47,36 +51,16 @@ const ProfileCards = () => {
                 <h3>
                   {profileData && capitalizeFirstLetter(profileData.name)}
                 </h3>
-                <textarea
-                  className="about-text border-0"
-                  type="text"
-                  defaultValue={`" ${profileData && profileData.about} "`}
-                />
-                {/* <div className="pt-3">
-                  <h6>LinkdIn Profile :</h6>
-                </div>
-                <div>
-                  <p
-                    style={{
-                      color: "blue",
-                      cursor: "pointer",
-                      wordBreak: "break-all",
-                    }}
-                    onClick={() =>
-                      window.location.replace(profileData?.linkdinProfile)
-                    }
-                  >
-                    {profileData?.linkdinProfile}
-                  </p>
+                <p className="text-justify">
+                  " {profileData && profileData.about} "
+                </p>
+                {/* <div className="text-center contact-button ">
+                  <button onClick={() => setTest(true)}>Contact Me </button>
                 </div> */}
               </div>
             </Col>
             <Col md={8}>
               <div className="profile-desc">
-                {/* <div>
-                  <h4>My Aims</h4>
-                  <p>{profileData && profileData.about}</p>
-                </div> */}
                 <h4>About Me</h4>
                 <Row>
                   <Col md={3} xs={6} sm={6}>
@@ -228,9 +212,6 @@ const ProfileCards = () => {
                       </p>
                     </div>
                   </Col>
-                </Row>
-                <h4>Professional</h4>
-                <Row>
                   <Col md={3} xs={6} sm={6}>
                     <div>
                       <h6>Skill Level :</h6>
@@ -241,45 +222,6 @@ const ProfileCards = () => {
                       <p>
                         {profileData &&
                           capitalizeFirstLetter(profileData.skillLevel)}
-                      </p>
-                    </div>
-                  </Col>
-                  <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Company Name :</h6>
-                    </div>
-                  </Col>
-                  <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <p>
-                        {profileData &&
-                          capitalizeFirstLetter(profileData.companyName)}
-                      </p>
-                    </div>
-                  </Col>
-                  <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Title :</h6>
-                    </div>
-                  </Col>
-                  <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <p>
-                        {profileData &&
-                          capitalizeFirstLetter(profileData.positionInCompany)}
-                      </p>
-                    </div>
-                  </Col>
-                  <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <h6>Industry :</h6>
-                    </div>
-                  </Col>
-                  <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <p>
-                        {profileData &&
-                          capitalizeFirstLetter(profileData.industry)}
                       </p>
                     </div>
                   </Col>
@@ -306,6 +248,7 @@ const ProfileCards = () => {
                       </p>
                     </div>
                   </Col>
+
                   <Col md={3} xs={6} sm={6}>
                     <div>
                       <h6>Availability :</h6>
@@ -347,9 +290,72 @@ const ProfileCards = () => {
                       <h6>Favourite Course :</h6>
                     </div>
                   </Col>
-                  <Col md={3} xs={6} sm={6}>
+                  <Col md={9} xs={6} sm={6}>
                     <div>
                       <p>{profileData?.favouriteCourse}</p>
+                    </div>
+                  </Col>
+                </Row>
+                <h4>Professional</h4>
+                <Row>
+                  <Col className="" md={3} xs={6} sm={6}>
+                    <div>
+                      <h6>LinkdIn Profile :</h6>
+                    </div>
+                  </Col>
+                  <Col className="" md={9} xs={6} sm={6}>
+                    <div>
+                      <p
+                        style={{
+                          color: "blue",
+                          cursor: "pointer",
+                          wordBreak: "break-all",
+                        }}
+                        onClick={() =>
+                          window.location.replace(profileData?.linkdinProfile)
+                        }
+                      >
+                        {profileData && profileData.linkdinProfile}
+                      </p>
+                    </div>
+                  </Col>
+                  <Col md={3} xs={6} sm={6}>
+                    <div>
+                      <h6>Company Name :</h6>
+                    </div>
+                  </Col>
+                  <Col md={3} xs={6} sm={6}>
+                    <div>
+                      <p>
+                        {profileData &&
+                          capitalizeFirstLetter(profileData.companyName)}
+                      </p>
+                    </div>
+                  </Col>
+                  <Col md={3} xs={6} sm={6}>
+                    <div>
+                      <h6>Industry :</h6>
+                    </div>
+                  </Col>
+                  <Col md={3} xs={6} sm={6}>
+                    <div>
+                      <p>
+                        {profileData &&
+                          capitalizeFirstLetter(profileData.industry)}
+                      </p>
+                    </div>
+                  </Col>
+                  <Col md={3} xs={6} sm={6}>
+                    <div>
+                      <h6>Title :</h6>
+                    </div>
+                  </Col>
+                  <Col md={3} xs={6} sm={6}>
+                    <div>
+                      <p>
+                        {profileData &&
+                          capitalizeFirstLetter(profileData.positionInCompany)}
+                      </p>
                     </div>
                   </Col>
                 </Row>

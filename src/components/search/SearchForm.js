@@ -1,20 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { capitalizeFirstLetter } from "../../utilis/capitalizeFirstLetter";
-import data from "../../utilis/data";
+import data from "../../utilis/searchBarData";
 import state from "../../utilis/state";
 import city from "../../utilis/city";
-import county from "../../utilis/county";
+// import county from "../../utilis/county";
+import americaCity from "../../utilis/americaCity";
 import banner from "../../assets/images/banner3.jpg";
-import {
-  MenuItem,
-  FormControl,
-  TextField,
-  Autocomplete,
-  // Checkbox,
-  // ListItemText,
-  // ListItemIcon,
-} from "@mui/material";
+import { MenuItem, FormControl, TextField, Autocomplete } from "@mui/material";
 import { useNavigate } from "react-router";
 import DatePicker from "react-multi-date-picker";
 import "./searchform.css";
@@ -35,7 +28,7 @@ const SearchForm = () => {
     religion: "",
     politicalView: "",
     skillLevel: [],
-    currentHandicap: "",
+    currentHandicap: [],
     oftenPlay: "",
     purpose: [],
     professional: "",
@@ -118,12 +111,12 @@ const SearchForm = () => {
                   <FormControl fullWidth>
                     <Autocomplete
                       id="controllable-states-demo"
-                      options={county.data}
-                      getOptionLabel={(option) => option?.county || arr.country}
+                      options={americaCity.data}
+                      getOptionLabel={(option) => option?.name || arr.country}
                       name={"country"}
                       value={arr?.country}
                       onChange={(e, value) =>
-                        setArr({ ...arr, country: value.county })
+                        setArr({ ...arr, country: value.name })
                       }
                       renderInput={(params) => (
                         <TextField {...params} fullWidth label="State" />
@@ -229,20 +222,14 @@ const SearchForm = () => {
                       onChange={handleChange}
                       select
                       label="Smoker"
-                      // renderValue={(selected) =>
-                      //   console.log("render==", selected)
-                      // }
                       SelectProps={{
                         multiple: true,
                       }}
                     >
+                      <MenuItem disabled>Select Multiple</MenuItem>
                       {data?.smoker?.map((item, index) => (
                         <MenuItem key={index} value={item.value}>
                           {capitalizeFirstLetter(item.value)}
-                          {/* <ListItemIcon>
-                            <Checkbox checked={item.value.indexOf(item) > -1} />
-                          </ListItemIcon>
-                          <ListItemText primary={item.value} /> */}
                         </MenuItem>
                       ))}
                     </TextField>
@@ -315,6 +302,7 @@ const SearchForm = () => {
                         multiple: true,
                       }}
                     >
+                      <MenuItem disabled>Select Multiple</MenuItem>
                       {data?.skillLevel?.map((item, index) => (
                         <MenuItem key={index} value={item.value}>
                           {capitalizeFirstLetter(item.value)}
@@ -332,7 +320,11 @@ const SearchForm = () => {
                       onChange={handleChange}
                       select
                       label="Current Handicap"
+                      SelectProps={{
+                        multiple: true,
+                      }}
                     >
+                      <MenuItem disabled>Select Multiple</MenuItem>
                       {data?.currentHandicap?.map((item, index) => (
                         <MenuItem key={index} value={item.value}>
                           {capitalizeFirstLetter(item.name)}
@@ -354,6 +346,7 @@ const SearchForm = () => {
                         multiple: true,
                       }}
                     >
+                      <MenuItem disabled>Select Multiple</MenuItem>
                       {data?.purpose?.map((item, index) => (
                         <MenuItem key={index} value={item.value}>
                           {capitalizeFirstLetter(item.value)}
@@ -428,21 +421,19 @@ const SearchForm = () => {
                 </Col>
                 <Col md={12}>
                   <div>
-                    <h5>Where do I want to play ?</h5>
+                    <h5>Where do you want to play ?</h5>
                   </div>
                 </Col>
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <Autocomplete
                       id="controllable-states-demo"
-                      options={county.data}
-                      getOptionLabel={(option) =>
-                        option?.county || arr.playState
-                      }
-                      name={"playState"}
-                      value={arr?.playState}
+                      options={americaCity.data}
+                      getOptionLabel={(option) => option?.name || arr.country}
+                      name={"country"}
+                      value={arr?.country}
                       onChange={(e, value) =>
-                        setArr({ ...arr, playState: value.county })
+                        setArr({ ...arr, country: value.name })
                       }
                       renderInput={(params) => (
                         <TextField {...params} fullWidth label="State" />
@@ -456,9 +447,6 @@ const SearchForm = () => {
                       id="controllable-states-demo"
                       options={city.data}
                       getOptionLabel={(option) => option?.city || arr.playCity}
-                      // isOptionEqualToValue={(option, value) =>
-                      //   option.zip === value
-                      // }
                       name={"playCity"}
                       value={arr?.playCity}
                       onChange={(e, value) =>
@@ -470,25 +458,6 @@ const SearchForm = () => {
                     />
                   </FormControl>
                 </Col>
-                {/* <Col md={3} xs={6} sm={6} className="mb-3">
-                  <FormControl fullWidth>
-                    <Autocomplete
-                      id="controllable-states-demo"
-                      options={state.data}
-                      getOptionLabel={(option) =>
-                        option?.zip || arr.playZipCode
-                      }
-                      name={"playZipCode"}
-                      value={arr?.playZipCode}
-                      onChange={(e, value) =>
-                        setArr({ ...arr, playZipCode: value.zip })
-                      }
-                      renderInput={(params) => (
-                        <TextField {...params} fullWidth label="Zip Code" />
-                      )}
-                    />
-                  </FormControl>
-                </Col> */}
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <TextField
@@ -520,6 +489,7 @@ const SearchForm = () => {
                         multiple: true,
                       }}
                     >
+                      <MenuItem disabled>Select Multiple</MenuItem>
                       {data?.favouriteCourse?.map((item, index) => (
                         <MenuItem key={index} value={item.value}>
                           {capitalizeFirstLetter(item.value)}

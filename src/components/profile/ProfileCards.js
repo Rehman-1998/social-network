@@ -99,7 +99,7 @@ const ProfileCards = () => {
                       </p>
                     </div>
                   </Col>
-                  <Col md={3} xs={6} sm={6}>
+                  {/* <Col md={3} xs={6} sm={6}>
                     <div>
                       <h6>Country :</h6>
                     </div>
@@ -111,7 +111,7 @@ const ProfileCards = () => {
                           capitalizeFirstLetter(profileData.country)}
                       </p>
                     </div>
-                  </Col>
+                  </Col> */}
                   <Col md={3} xs={6} sm={6}>
                     <div>
                       <h6>State :</h6>
@@ -264,35 +264,47 @@ const ProfileCards = () => {
                   </Col>
                   <Col md={3} xs={6} sm={6}>
                     <div>
-                      <h6>Distance to Drive :</h6>
+                      <h6>Willingness to Drive :</h6>
                     </div>
                   </Col>
                   <Col md={3} xs={6} sm={6}>
                     <div>
-                      <p>{profileData?.distance}</p>
+                      <p>{profileData?.distance} miles</p>
                     </div>
                   </Col>
-                  <Col md={3} xs={6} sm={6}>
+                  <Col className="border-bottom pb-2 mb-2" md={3} xs={6} sm={6}>
                     <div>
-                      <h6>Purpose to Play :</h6>
+                      <h6>Purpose for playing :</h6>
                     </div>
                   </Col>
-                  <Col md={3} xs={6} sm={6}>
-                    <div>
+                  <Col className="border-bottom pb-2 mb-2" md={9} xs={6} sm={6}>
+                    {/* <div>
                       <p>
                         {profileData &&
                           capitalizeFirstLetter(profileData.purpose)}
                       </p>
+                    </div> */}
+                    <div>
+                      {profileData?.purpose.split(",").map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </div>
                   </Col>
                   <Col md={3} xs={6} sm={6}>
                     <div>
-                      <h6>Favourite Course :</h6>
+                      <h6>Favorite Courses :</h6>
                     </div>
                   </Col>
                   <Col md={9} xs={6} sm={6}>
-                    <div>
+                    {/* <div>
                       <p>{profileData?.favouriteCourse}</p>
+                    </div> */}
+                    <div>
+                      {profileData?.favouriteCourse
+                        .split(",")
+                        .map((item, index) => (
+                          <li key={index}>{item}</li>
+                        ))}
                     </div>
                   </Col>
                 </Row>
@@ -334,19 +346,6 @@ const ProfileCards = () => {
                   </Col>
                   <Col md={3} xs={6} sm={6}>
                     <div>
-                      <h6>Industry :</h6>
-                    </div>
-                  </Col>
-                  <Col md={3} xs={6} sm={6}>
-                    <div>
-                      <p>
-                        {profileData &&
-                          capitalizeFirstLetter(profileData.industry)}
-                      </p>
-                    </div>
-                  </Col>
-                  <Col md={3} xs={6} sm={6}>
-                    <div>
                       <h6>Title :</h6>
                     </div>
                   </Col>
@@ -355,6 +354,19 @@ const ProfileCards = () => {
                       <p>
                         {profileData &&
                           capitalizeFirstLetter(profileData.positionInCompany)}
+                      </p>
+                    </div>
+                  </Col>
+                  <Col md={3} xs={6} sm={6}>
+                    <div>
+                      <h6>Industry :</h6>
+                    </div>
+                  </Col>
+                  <Col md={3} xs={6} sm={6}>
+                    <div>
+                      <p>
+                        {profileData &&
+                          capitalizeFirstLetter(profileData.industry)}
                       </p>
                     </div>
                   </Col>

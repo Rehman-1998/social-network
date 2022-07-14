@@ -50,6 +50,9 @@
 .profile-subtitle p {
   margin-bottom: 5px;
 }
+.profile-subtitle li {
+  list-style-type: none;
+}
 .purpose-border {
   border-top: 1px solid #779e03;
   margin-top: 5px;

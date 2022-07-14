@@ -15,7 +15,7 @@ import "./searchform.css";
 const SearchForm = () => {
   const navigate = useNavigate();
   const [arr, setArr] = React.useState({
-    age: "",
+    age: [],
     gender: "",
     country: "",
     city: "",
@@ -33,7 +33,7 @@ const SearchForm = () => {
     purpose: [],
     professional: "",
     industry: "",
-    availability: "",
+    availability: [],
     date: [],
     playState: "",
     playCity: "",
@@ -41,6 +41,7 @@ const SearchForm = () => {
     playDistance: "",
     playCourse: "",
     favouriteCourse: [],
+    playTime: [],
   });
 
   const handleChange = (e) => {
@@ -98,7 +99,11 @@ const SearchForm = () => {
                       variant="outlined"
                       select
                       label="Age"
+                      SelectProps={{
+                        multiple: true,
+                      }}
                     >
+                      <MenuItem disabled>Select Multiple</MenuItem>
                       {data?.age?.map((item, index) => (
                         <MenuItem key={index} value={item.value}>
                           {capitalizeFirstLetter(item.value)}
@@ -359,24 +364,6 @@ const SearchForm = () => {
                   <FormControl fullWidth>
                     <TextField
                       required
-                      value={arr.professional}
-                      name={"professional"}
-                      onChange={handleChange}
-                      select
-                      label="Professional"
-                    >
-                      {data?.professional?.map((item, index) => (
-                        <MenuItem key={index} value={item.value}>
-                          {capitalizeFirstLetter(item.value)}
-                        </MenuItem>
-                      ))}
-                    </TextField>
-                  </FormControl>
-                </Col>
-                <Col md={3} xs={6} sm={6} className="mb-3">
-                  <FormControl fullWidth>
-                    <TextField
-                      required
                       value={arr.industry}
                       name={"industry"}
                       onChange={handleChange}
@@ -384,24 +371,6 @@ const SearchForm = () => {
                       label="Industry"
                     >
                       {data?.industry?.map((item, index) => (
-                        <MenuItem key={index} value={item.value}>
-                          {capitalizeFirstLetter(item.value)}
-                        </MenuItem>
-                      ))}
-                    </TextField>
-                  </FormControl>
-                </Col>
-                <Col md={3} xs={6} sm={6} className="mb-3">
-                  <FormControl fullWidth>
-                    <TextField
-                      required
-                      value={arr.availability}
-                      name={"availability"}
-                      onChange={handleChange}
-                      select
-                      label="Time"
-                    >
-                      {data?.availability?.map((item, index) => (
                         <MenuItem key={index} value={item.value}>
                           {capitalizeFirstLetter(item.value)}
                         </MenuItem>
@@ -419,6 +388,112 @@ const SearchForm = () => {
                     placeholder={"Days *"}
                   />
                 </Col>
+                <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <TextField
+                      required
+                      value={arr.availability}
+                      name={"availability"}
+                      onChange={handleChange}
+                      select
+                      label="Time"
+                      SelectProps={{
+                        multiple: true,
+                      }}
+                    >
+                      {data?.availability?.map((item, index) => (
+                        <MenuItem key={index} value={item.value}>
+                          {capitalizeFirstLetter(item.value)}
+                        </MenuItem>
+                      ))}
+                    </TextField>
+                  </FormControl>
+                </Col>
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <TextField
+                      required
+                      value={arr.professional}
+                      name={"professional"}
+                      onChange={handleChange}
+                      select
+                      label="Professional"
+                    >
+                      {data?.professional?.map((item, index) => (
+                        <MenuItem key={index} value={item.value}>
+                          {capitalizeFirstLetter(item.value)}
+                        </MenuItem>
+                      ))}
+                    </TextField>
+                  </FormControl>
+                </Col> */}
+                <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <TextField
+                      required
+                      value={arr.professional}
+                      name={"professional"}
+                      onChange={handleChange}
+                      label="Network"
+                    ></TextField>
+                  </FormControl>
+                </Col>
+                <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <TextField
+                      required
+                      // value={arr.professional}
+                      // name={"professional"}
+                      // onChange={handleChange}
+                      label="type"
+                    ></TextField>
+                  </FormControl>
+                </Col>
+                <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <TextField
+                      required
+                      // value={arr.professional}
+                      // name={"professional"}
+                      // onChange={handleChange}
+                      label="type"
+                    ></TextField>
+                  </FormControl>
+                </Col>
+                <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <TextField
+                      required
+                      // value={arr.professional}
+                      // name={"professional"}
+                      // onChange={handleChange}
+                      label="type"
+                    ></TextField>
+                  </FormControl>
+                </Col>
+                <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <TextField
+                      required
+                      // value={arr.professional}
+                      // name={"professional"}
+                      // onChange={handleChange}
+                      label="type"
+                    ></TextField>
+                  </FormControl>
+                </Col>
+                <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <TextField
+                      required
+                      // value={arr.professional}
+                      // name={"professional"}
+                      // onChange={handleChange}
+                      label="type"
+                    ></TextField>
+                  </FormControl>
+                </Col>
+
                 <Col md={12}>
                   <div>
                     <h5>Where do you want to play ?</h5>
@@ -484,13 +559,48 @@ const SearchForm = () => {
                       name={"favouriteCourse"}
                       onChange={handleChange}
                       select
-                      label="Course"
+                      label="Courses"
                       SelectProps={{
                         multiple: true,
                       }}
                     >
                       <MenuItem disabled>Select Multiple</MenuItem>
                       {data?.favouriteCourse?.map((item, index) => (
+                        <MenuItem key={index} value={item.value}>
+                          {capitalizeFirstLetter(item.value)}
+                        </MenuItem>
+                      ))}
+                    </TextField>
+                  </FormControl>
+                </Col>
+                <Col md={12}>
+                  <div>
+                    <h5>When I want to play</h5>
+                  </div>
+                </Col>
+                <Col md={3} xs={6} sm={6} className="mb-3">
+                  <DatePicker
+                    onChange={(e, value) =>
+                      console.log("e Value===>>>", e, value)
+                    }
+                    multiple={true}
+                    placeholder={"Days *"}
+                  />
+                </Col>
+                <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <TextField
+                      required
+                      value={arr.playTime}
+                      name={"playTime"}
+                      onChange={handleChange}
+                      select
+                      label="Time"
+                      SelectProps={{
+                        multiple: true,
+                      }}
+                    >
+                      {data?.availability?.map((item, index) => (
                         <MenuItem key={index} value={item.value}>
                           {capitalizeFirstLetter(item.value)}
                         </MenuItem>

@@ -10,10 +10,6 @@ export default {
       abbreviation: "AK",
     },
     {
-      name: "American Samoa",
-      abbreviation: "AS",
-    },
-    {
       name: "Arizona",
       abbreviation: "AZ",
     },
@@ -40,10 +36,6 @@ export default {
     {
       name: "District Of Columbia",
       abbreviation: "DC",
-    },
-    {
-      name: "Federated States Of Micronesia",
-      abbreviation: "FM",
     },
     {
       name: "Florida",
@@ -92,10 +84,6 @@ export default {
     {
       name: "Maine",
       abbreviation: "ME",
-    },
-    {
-      name: "Marshall Islands",
-      abbreviation: "MH",
     },
     {
       name: "Maryland",
@@ -158,10 +146,6 @@ export default {
       abbreviation: "ND",
     },
     {
-      name: "Northern Mariana Islands",
-      abbreviation: "MP",
-    },
-    {
       name: "Ohio",
       abbreviation: "OH",
     },
@@ -172,10 +156,6 @@ export default {
     {
       name: "Oregon",
       abbreviation: "OR",
-    },
-    {
-      name: "Palau",
-      abbreviation: "PW",
     },
     {
       name: "Pennsylvania",

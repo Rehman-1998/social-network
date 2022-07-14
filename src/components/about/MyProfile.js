@@ -117,6 +117,12 @@ const MyProfile = () => {
                         setArr({ ...arr, age: currentYear - e.year })
                       }
                       multiple={false}
+                      onChange={(e) =>
+                        setArr({
+                          ...arr,
+                          age: currentYear - e.format().split("/")[0],
+                        })
+                      }
                       placeholder={"Birthdate"}
                     />
                   </Col>
@@ -285,7 +291,7 @@ const MyProfile = () => {
                         name={"favouriteCourse"}
                         onChange={handleChange}
                         select
-                        label="Course"
+                        label="Home Courses"
                         SelectProps={{
                           multiple: true,
                         }}

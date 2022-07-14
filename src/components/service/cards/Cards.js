@@ -31,7 +31,7 @@ const Cards = ({ setDumyData, dumyData }) => {
   return (
     <>
       <Container className=" border-top pt-4 pb-4">
-        <h5 className="mb-3">Results are :</h5>
+        <h5 className="mb-3">Contact All :</h5>
         <Row>
           {loading ? (
             <>
@@ -168,7 +168,12 @@ const Cards = ({ setDumyData, dumyData }) => {
                           </Col>
                           <Col md={8} xs={8} sm={8}>
                             <div className="profile-subtitle ">
-                              <p>{capitalizeFirstLetter(item.purpose)}</p>
+                              {/* <p style={{ textAlign: "left" }}>
+                                {capitalizeFirstLetter(item.purpose)}
+                              </p> */}
+                              {item.purpose.split(",").map((item, index) => (
+                                <li key={index}>{item}</li>
+                              ))}
                             </div>
                           </Col>
                         </Row>

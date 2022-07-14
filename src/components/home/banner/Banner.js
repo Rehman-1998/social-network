@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import banner from "../../../assets/images/pic3.jpg";
 import "./banner.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Logo from "../../../assets/images/Main_Logo.png";
 
 const Banner = () => {
@@ -20,9 +20,9 @@ const Banner = () => {
               {/* <h1>Welcome to Social Golf Network</h1> */}
               <img className="banner-Logo" src={Logo} alt="" />
               {/* <h4>Find your Golf Patner </h4> */}
-              <Link to="/search">
+              {/* <Link to="/search">
                 <button className="mt-5">Search</button>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

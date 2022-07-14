@@ -263,9 +263,6 @@ export default {
     {
       value: "afternoon",
     },
-    {
-      value: "Does not matter",
-    },
   ],
   myAvailability: [
     {
@@ -349,19 +346,17 @@ export default {
   ],
   purpose: [
     {
-      value: "dating",
-    },
-    {
       value: "i just want to play golf",
     },
     {
-      value: "meet new friends",
+      value: "I want to meet new friends",
     },
+    {
+      value: "dating",
+    },
+
     {
       value: "networking",
-    },
-    {
-      value: "Does not matter",
     },
   ],
   industry: [

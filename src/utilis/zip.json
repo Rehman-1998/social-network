@@ -1,0 +1,822 @@
+[
+  {
+    "City": "us citizenship & immigration",
+    "State": "VT",
+    "StateName": "Vermont",
+    "Zip": "05479",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "802",
+    "Fips": "50011",
+    "CountyName": "franklin"
+  },
+  {
+    "City": "us coast guard acad",
+    "State": "CT",
+    "StateName": "Connecticut",
+    "Zip": "06320",
+    "ZipCodeType": " ",
+    "AreaCode": "860",
+    "Fips": "09011",
+    "CountyName": "new london"
+  },
+  {
+    "City": "us postal service",
+    "State": "CT",
+    "StateName": "Connecticut",
+    "Zip": "06701",
+    "ZipCodeType": " ",
+    "AreaCode": "203",
+    "Fips": "09009",
+    "CountyName": "new haven"
+  },
+  {
+    "City": "usps",
+    "State": "NJ",
+    "StateName": "New Jersey",
+    "Zip": "07099",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "201",
+    "Fips": "34017",
+    "CountyName": "hudson"
+  },
+  {
+    "City": "usps",
+    "State": "NJ",
+    "StateName": "New Jersey",
+    "Zip": "07175",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "973",
+    "Fips": "34013",
+    "CountyName": "essex"
+  },
+  {
+    "City": "usps",
+    "State": "NJ",
+    "StateName": "New Jersey",
+    "Zip": "07395",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "201",
+    "Fips": "34017",
+    "CountyName": "hudson"
+  },
+  {
+    "City": "usps",
+    "State": "NJ",
+    "StateName": "New Jersey",
+    "Zip": "07699",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "201",
+    "Fips": "34003",
+    "CountyName": "bergen"
+  },
+  {
+    "City": "ushers",
+    "State": "NY",
+    "StateName": "New York",
+    "Zip": "12151",
+    "ZipCodeType": " ",
+    "AreaCode": "518",
+    "Fips": "36091",
+    "CountyName": "saratoga"
+  },
+  {
+    "City": "us postal service",
+    "State": "NY",
+    "StateName": "New York",
+    "Zip": "12288",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "518",
+    "Fips": "36001",
+    "CountyName": "albany"
+  },
+  {
+    "City": "usps buffalo amf",
+    "State": "NY",
+    "StateName": "New York",
+    "Zip": "14241",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "716",
+    "Fips": "36029",
+    "CountyName": "erie"
+  },
+  {
+    "City": "usps official",
+    "State": "PA",
+    "StateName": "Pennsylvania",
+    "Zip": "17107",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "717",
+    "Fips": "42043",
+    "CountyName": "dauphin"
+  },
+  {
+    "City": "usps eastern region hdqtrs",
+    "State": "PA",
+    "StateName": "Pennsylvania",
+    "Zip": "19197",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "215",
+    "Fips": "42101",
+    "CountyName": "philadelphia"
+  },
+  {
+    "City": "us chamber of com",
+    "State": "DC",
+    "StateName": "District of Columbia",
+    "Zip": "20062",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "202",
+    "Fips": "11001",
+    "CountyName": "district of columbia"
+  },
+  {
+    "City": "us geological survey",
+    "State": "VA",
+    "StateName": "Virginia",
+    "Zip": "20192",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "703",
+    "Fips": "51059",
+    "CountyName": "fairfax"
+  },
+  {
+    "City": "us tax court",
+    "State": "DC",
+    "StateName": "District of Columbia",
+    "Zip": "20217",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "202",
+    "Fips": "11001",
+    "CountyName": "district of columbia"
+  },
+  {
+    "City": "us treasurer",
+    "State": "DC",
+    "StateName": "District of Columbia",
+    "Zip": "20222",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "202",
+    "Fips": "11001",
+    "CountyName": "district of columbia"
+  },
+  {
+    "City": "us secret service",
+    "State": "DC",
+    "StateName": "District of Columbia",
+    "Zip": "20223",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "202",
+    "Fips": "11001",
+    "CountyName": "district of columbia"
+  },
+  {
+    "City": "us bureau of customs",
+    "State": "DC",
+    "StateName": "District of Columbia",
+    "Zip": "20229",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "202",
+    "Fips": "11001",
+    "CountyName": "district of columbia"
+  },
+  {
+    "City": "us holocaust memorial museum",
+    "State": "DC",
+    "StateName": "District of Columbia",
+    "Zip": "20238",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "202",
+    "Fips": "11001",
+    "CountyName": "district of columbia"
+  },
+  {
+    "City": "usps headquarters",
+    "State": "DC",
+    "StateName": "District of Columbia",
+    "Zip": "20260",
+    "ZipCodeType": " ",
+    "AreaCode": "202",
+    "Fips": "11001",
+    "CountyName": "district of columbia"
+  },
+  {
+    "City": "usps consumer affairs",
+    "State": "DC",
+    "StateName": "District of Columbia",
+    "Zip": "20261",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "202",
+    "Fips": "11001",
+    "CountyName": "district of columbia"
+  },
+  {
+    "City": "us army corp of engineers",
+    "State": "DC",
+    "StateName": "District of Columbia",
+    "Zip": "20314",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "202",
+    "Fips": "11001",
+    "CountyName": "district of columbia"
+  },
+  {
+    "City": "us marine corps barracks",
+    "State": "DC",
+    "StateName": "District of Columbia",
+    "Zip": "20390",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "202",
+    "Fips": "11001",
+    "CountyName": "district of columbia"
+  },
+  {
+    "City": "us court appeal fed circuit",
+    "State": "DC",
+    "StateName": "District of Columbia",
+    "Zip": "20439",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "202",
+    "Fips": "11001",
+    "CountyName": "district of columbia"
+  },
+  {
+    "City": "us trade representative",
+    "State": "DC",
+    "StateName": "District of Columbia",
+    "Zip": "20508",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "202",
+    "Fips": "11001",
+    "CountyName": "district of columbia"
+  },
+  {
+    "City": "us senate",
+    "State": "DC",
+    "StateName": "District of Columbia",
+    "Zip": "20510",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "202",
+    "Fips": "11001",
+    "CountyName": "district of columbia"
+  },
+  {
+    "City": "us house of representatives",
+    "State": "DC",
+    "StateName": "District of Columbia",
+    "Zip": "20515",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "202",
+    "Fips": "11001",
+    "CountyName": "district of columbia"
+  },
+  {
+    "City": "us citizenship immigration",
+    "State": "DC",
+    "StateName": "District of Columbia",
+    "Zip": "20529",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "202",
+    "Fips": "11001",
+    "CountyName": "district of columbia"
+  },
+  {
+    "City": "us supreme court",
+    "State": "DC",
+    "StateName": "District of Columbia",
+    "Zip": "20543",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "202",
+    "Fips": "11001",
+    "CountyName": "district of columbia"
+  },
+  {
+    "City": "us information agency",
+    "State": "DC",
+    "StateName": "District of Columbia",
+    "Zip": "20547",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "202",
+    "Fips": "11001",
+    "CountyName": "district of columbia"
+  },
+  {
+    "City": "us copyright office",
+    "State": "DC",
+    "StateName": "District of Columbia",
+    "Zip": "20559",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "202",
+    "Fips": "11001",
+    "CountyName": "district of columbia"
+  },
+  {
+    "City": "us synthetic fuel corp",
+    "State": "DC",
+    "StateName": "District of Columbia",
+    "Zip": "20586",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "202",
+    "Fips": "11001",
+    "CountyName": "district of columbia"
+  },
+  {
+    "City": "us coast guard",
+    "State": "DC",
+    "StateName": "District of Columbia",
+    "Zip": "20593",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "202",
+    "Fips": "11001",
+    "CountyName": "district of columbia"
+  },
+  {
+    "City": "us food and drug admin",
+    "State": "MD",
+    "StateName": "Maryland",
+    "Zip": "20993",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "301",
+    "Fips": "24031",
+    "CountyName": "montgomery"
+  },
+  {
+    "City": "usa fulfillment",
+    "State": "MD",
+    "StateName": "Maryland",
+    "Zip": "21690",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "410",
+    "Fips": "24035",
+    "CountyName": "queen annes"
+  },
+  {
+    "City": "usa today",
+    "State": "VA",
+    "StateName": "Virginia",
+    "Zip": "22108",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "703",
+    "Fips": "51059",
+    "CountyName": "fairfax"
+  },
+  {
+    "City": "us air",
+    "State": "VA",
+    "StateName": "Virginia",
+    "Zip": "22227",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "703",
+    "Fips": "51013",
+    "CountyName": "arlington"
+  },
+  {
+    "City": "us navy accounting office",
+    "State": "VA",
+    "StateName": "Virginia",
+    "Zip": "22240",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "703",
+    "Fips": "51013",
+    "CountyName": "arlington"
+  },
+  {
+    "City": "us unmanned aerial vehicles",
+    "State": "VA",
+    "StateName": "Virginia",
+    "Zip": "22246",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "703",
+    "Fips": "51013",
+    "CountyName": "arlington"
+  },
+  {
+    "City": "us army mat com",
+    "State": "VA",
+    "StateName": "Virginia",
+    "Zip": "22333",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "703",
+    "Fips": "51510",
+    "CountyName": "alexandria city"
+  },
+  {
+    "City": "us army trng support ctr",
+    "State": "VA",
+    "StateName": "Virginia",
+    "Zip": "23628",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "757",
+    "Fips": "51700",
+    "CountyName": "newport news city"
+  },
+  {
+    "City": "usps hr shared svcs",
+    "State": "NC",
+    "StateName": "North Carolina",
+    "Zip": "27497",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "336",
+    "Fips": "37081",
+    "CountyName": "guilford"
+  },
+  {
+    "City": "usc",
+    "State": "SC",
+    "StateName": "South Carolina",
+    "Zip": "29208",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "803",
+    "Fips": "45079",
+    "CountyName": "richland"
+  },
+  {
+    "City": "usps official mail",
+    "State": "GA",
+    "StateName": "Georgia",
+    "Zip": "31213",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "478",
+    "Fips": "13021",
+    "CountyName": "bibb"
+  },
+  {
+    "City": "usf",
+    "State": "FL",
+    "StateName": "Florida",
+    "Zip": "33620",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "813",
+    "Fips": "12057",
+    "CountyName": "hillsborough"
+  },
+  {
+    "City": "us postal inspect srvc",
+    "State": "TN",
+    "StateName": "Tennessee",
+    "Zip": "38161",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "901",
+    "Fips": "47157",
+    "CountyName": "shelby"
+  },
+  {
+    "City": "us nav const batt",
+    "State": "MS",
+    "StateName": "Mississippi",
+    "Zip": "39501",
+    "ZipCodeType": " ",
+    "AreaCode": "228",
+    "Fips": "28047",
+    "CountyName": "harrison"
+  },
+  {
+    "City": "us army tank auto command",
+    "State": "MI",
+    "StateName": "Michigan",
+    "Zip": "48397",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "586",
+    "Fips": "26099",
+    "CountyName": "macomb"
+  },
+  {
+    "City": "usps bmc",
+    "State": "IA",
+    "StateName": "Iowa",
+    "Zip": "50395",
+    "ZipCodeType": " ",
+    "AreaCode": "515",
+    "Fips": "19153",
+    "CountyName": "polk"
+  },
+  {
+    "City": "us bank",
+    "State": "WI",
+    "StateName": "Wisconsin",
+    "Zip": "53259",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "414",
+    "Fips": "55079",
+    "CountyName": "milwaukee"
+  },
+  {
+    "City": "us bank",
+    "State": "WI",
+    "StateName": "Wisconsin",
+    "Zip": "53278",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "414",
+    "Fips": "55079",
+    "CountyName": "milwaukee"
+  },
+  {
+    "City": "us bank",
+    "State": "MN",
+    "StateName": "Minnesota",
+    "Zip": "55170",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "651",
+    "Fips": "27123",
+    "CountyName": "ramsey"
+  },
+  {
+    "City": "us bank visa",
+    "State": "MN",
+    "StateName": "Minnesota",
+    "Zip": "55170",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "651",
+    "Fips": "27123",
+    "CountyName": "ramsey"
+  },
+  {
+    "City": "us bank",
+    "State": "MN",
+    "StateName": "Minnesota",
+    "Zip": "55486",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "612",
+    "Fips": "27053",
+    "CountyName": "hennepin"
+  },
+  {
+    "City": "usta",
+    "State": "SD",
+    "StateName": "South Dakota",
+    "Zip": "57626",
+    "ZipCodeType": " ",
+    "AreaCode": "605",
+    "Fips": "46093",
+    "CountyName": "meade"
+  },
+  {
+    "City": "us bank",
+    "State": "ND",
+    "StateName": "North Dakota",
+    "Zip": "58125",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "701",
+    "Fips": "38017",
+    "CountyName": "cass"
+  },
+  {
+    "City": "us bank",
+    "State": "MT",
+    "StateName": "Montana",
+    "Zip": "59115",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "406",
+    "Fips": "30111",
+    "CountyName": "yellowstone"
+  },
+  {
+    "City": "usps district chicago",
+    "State": "IL",
+    "StateName": "Illinois",
+    "Zip": "60699",
+    "ZipCodeType": " ",
+    "AreaCode": "312",
+    "Fips": "17031",
+    "CountyName": "cook"
+  },
+  {
+    "City": "ustick",
+    "State": "IL",
+    "StateName": "Illinois",
+    "Zip": "61270",
+    "ZipCodeType": " ",
+    "AreaCode": "815",
+    "Fips": "17195",
+    "CountyName": "whiteside"
+  },
+  {
+    "City": "us bank",
+    "State": "MO",
+    "StateName": "Missouri",
+    "Zip": "63195",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "314",
+    "Fips": "29510",
+    "CountyName": "saint louis city"
+  },
+  {
+    "City": "usps inspection service",
+    "State": "MO",
+    "StateName": "Missouri",
+    "Zip": "63199",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "314",
+    "Fips": "29510",
+    "CountyName": "saint louis city"
+  },
+  {
+    "City": "usps stamp distribution ctr",
+    "State": "MO",
+    "StateName": "Missouri",
+    "Zip": "64162",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "816",
+    "Fips": "29047",
+    "CountyName": "clay"
+  },
+  {
+    "City": "usps critical parts",
+    "State": "KS",
+    "StateName": "Kansas",
+    "Zip": "66630",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "785",
+    "Fips": "20177",
+    "CountyName": "shawnee"
+  },
+  {
+    "City": "usps offical mail",
+    "State": "KS",
+    "StateName": "Kansas",
+    "Zip": "67276",
+    "ZipCodeType": " ",
+    "AreaCode": "316",
+    "Fips": "20173",
+    "CountyName": "sedgwick"
+  },
+  {
+    "City": "usps official mail",
+    "State": "TX",
+    "StateName": "Texas",
+    "Zip": "75099",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "972",
+    "Fips": "48113",
+    "CountyName": "dallas"
+  },
+  {
+    "City": "usps official",
+    "State": "TX",
+    "StateName": "Texas",
+    "Zip": "77201",
+    "ZipCodeType": " ",
+    "AreaCode": "817",
+    "Fips": "48201",
+    "CountyName": "harris"
+  },
+  {
+    "City": "us west communications",
+    "State": "CO",
+    "StateName": "Colorado",
+    "Zip": "80244",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "303",
+    "Fips": "08031",
+    "CountyName": "denver"
+  },
+  {
+    "City": "us bank",
+    "State": "CO",
+    "StateName": "Colorado",
+    "Zip": "80256",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "303",
+    "Fips": "08031",
+    "CountyName": "denver"
+  },
+  {
+    "City": "us court of appeals 10th cir",
+    "State": "CO",
+    "StateName": "Colorado",
+    "Zip": "80257",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "303",
+    "Fips": "08031",
+    "CountyName": "denver"
+  },
+  {
+    "City": "us air force",
+    "State": "CO",
+    "StateName": "Colorado",
+    "Zip": "80840",
+    "ZipCodeType": " ",
+    "AreaCode": "719",
+    "Fips": "08041",
+    "CountyName": "el paso"
+  },
+  {
+    "City": "usaf academy",
+    "State": "CO",
+    "StateName": "Colorado",
+    "Zip": "80840",
+    "ZipCodeType": " ",
+    "AreaCode": "719",
+    "Fips": "08041",
+    "CountyName": "el paso"
+  },
+  {
+    "City": "usaf academy",
+    "State": "CO",
+    "StateName": "Colorado",
+    "Zip": "80841",
+    "ZipCodeType": "PO Box",
+    "AreaCode": "719",
+    "Fips": "08041",
+    "CountyName": "el paso"
+  },
+  {
+    "City": "us olympic committee",
+    "State": "CO",
+    "StateName": "Colorado",
+    "Zip": "80950",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "719",
+    "Fips": "08041",
+    "CountyName": "el paso"
+  },
+  {
+    "City": "us olympic",
+    "State": "CO",
+    "StateName": "Colorado",
+    "Zip": "80977",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "719",
+    "Fips": "08041",
+    "CountyName": "el paso"
+  },
+  {
+    "City": "ustick",
+    "State": "ID",
+    "StateName": "Idaho",
+    "Zip": "83704",
+    "ZipCodeType": " ",
+    "AreaCode": "208",
+    "Fips": "16001",
+    "CountyName": "ada"
+  },
+  {
+    "City": "us postal service",
+    "State": "UT",
+    "StateName": "Utah",
+    "Zip": "84199",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "801",
+    "Fips": "49035",
+    "CountyName": "salt lake"
+  },
+  {
+    "City": "us purchasing exchange",
+    "State": "CA",
+    "StateName": "California",
+    "Zip": "91495",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "818",
+    "Fips": "06037",
+    "CountyName": "los angeles"
+  },
+  {
+    "City": "us purchasing exchange",
+    "State": "CA",
+    "StateName": "California",
+    "Zip": "91496",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "818",
+    "Fips": "06037",
+    "CountyName": "los angeles"
+  },
+  {
+    "City": "us purchasing exchange",
+    "State": "CA",
+    "StateName": "California",
+    "Zip": "91611",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "818",
+    "Fips": "06037",
+    "CountyName": "los angeles"
+  },
+  {
+    "City": "us purchasing exchange",
+    "State": "CA",
+    "StateName": "California",
+    "Zip": "91612",
+    "ZipCodeType": "Company & Organization",
+    "AreaCode": "818",
+    "Fips": "06037",
+    "CountyName": "los angeles"
+  },
+  {
+    "City": "usk",
+    "State": "WA",
+    "StateName": "Washington",
+    "Zip": "99180",
+    "ZipCodeType": " ",
+    "AreaCode": "509",
+    "Fips": "53051",
+    "CountyName": "pend oreille"
+  },
+  {
+    "City": "uscgs",
+    "State": "AK",
+    "StateName": "Alaska",
+    "Zip": "99619",
+    "ZipCodeType": "PO Box",
+    "AreaCode": "907",
+    "Fips": "02150",
+    "CountyName": "kodiak island"
+  }
+]

@@ -25,7 +25,7 @@
 }
 .profile-cards h5 {
   color: #779e03;
-  margin-bottom: 0px;
+  margin-bottom: 3px;
 }
 .profile-status p {
   font-weight: 500;
@@ -51,7 +51,7 @@
   margin-bottom: 5px;
 }
 .profile-subtitle li {
-  list-style-type: none;
+  list-style-type: square;
 }
 .purpose-border {
   border-top: 1px solid #779e03;

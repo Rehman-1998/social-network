@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import banner from "../../../assets/images/pic3.jpg";
 import "./banner.css";
 // import { Link } from "react-router-dom";
-import Logo from "../../../assets/images/Main_Logo.png";
+import Logo from "../../../assets/images/logo.png";
 
 const Banner = () => {
   return (

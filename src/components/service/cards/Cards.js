@@ -74,6 +74,16 @@ const Cards = ({ setDumyData, dumyData }) => {
                                 </p>
                               </div>
                             </Col>
+                            <Col md={5} xs={5} sm={7}>
+                              <div className="profile-title">
+                                <p>Gender:</p>
+                              </div>
+                            </Col>
+                            <Col md={7} xs={5} sm={7}>
+                              <div className="profile-subtitle">
+                                <p>{capitalizeFirstLetter(item.gender)}</p>
+                              </div>
+                            </Col>
                             <Col md={5} xs={5} sm={5}>
                               <div className="profile-title">
                                 <p>Skill Level :</p>
@@ -82,18 +92,6 @@ const Cards = ({ setDumyData, dumyData }) => {
                             <Col md={7} xs={7} sm={7}>
                               <div className="profile-subtitle">
                                 <p>{capitalizeFirstLetter(item.skillLevel)}</p>
-                              </div>
-                            </Col>
-                            <Col md={5} xs={5} sm={7}>
-                              <div className="profile-title">
-                                <p>Political:</p>
-                              </div>
-                            </Col>
-                            <Col md={7} xs={5} sm={7}>
-                              <div className="profile-subtitle">
-                                <p>
-                                  {capitalizeFirstLetter(item.politicalView)}
-                                </p>
                               </div>
                             </Col>
                           </Row>
@@ -120,35 +118,35 @@ const Cards = ({ setDumyData, dumyData }) => {
                         </Col>
                         <Col md={2} xs={2} sm={2}>
                           <div className="profile-title">
-                            <p>Drinker:</p>
+                            <p>State:</p>
                           </div>
                         </Col>
                         <Col md={2} xs={2} sm={2}>
                           <div className="profile-subtitle">
-                            <p>{capitalizeFirstLetter(item.drinker)}</p>
+                            <p>{capitalizeFirstLetter(item.state)}</p>
                           </div>
                         </Col>
                         <Col md={5} xs={5} sm={5}>
                           <div className="profile-title">
-                            <p>Smoker : </p>
+                            <p>Zip Code : </p>
                           </div>
                         </Col>
                         <Col md={3} xs={3} sm={3}>
                           <div className="profile-subtitle">
-                            <p>{capitalizeFirstLetter(item.smoker)}</p>
+                            <p>{item.zipCode}</p>
                           </div>
                         </Col>
                         <Col md={2} xs={2} sm={2}>
                           <div className="profile-title">
-                            <p>Race:</p>
+                            <p>City:</p>
                           </div>
                         </Col>
                         <Col md={2} xs={2} sm={2}>
                           <div className="profile-subtitle">
-                            <p>{capitalizeFirstLetter(item.race)}</p>
+                            <p>{capitalizeFirstLetter(item.city)}</p>
                           </div>
                         </Col>
-                        <Col md={5} xs={5} sm={5}>
+                        {/* <Col md={5} xs={5} sm={5}>
                           <div className="profile-title">
                             <p>Religion : </p>
                           </div>
@@ -157,23 +155,28 @@ const Cards = ({ setDumyData, dumyData }) => {
                           <div className="profile-subtitle">
                             <p>{capitalizeFirstLetter(item.religion)}</p>
                           </div>
-                        </Col>
+                        </Col> */}
 
                         <div className="purpose-border"></div>
                         <Row>
-                          <Col md={4} xs={4} sm={4}>
+                          <Col md={12} xs={4} sm={4}>
                             <div className="profile-title ">
-                              <p>Purpose :</p>
+                              <p>Favorite Courses :</p>
                             </div>
                           </Col>
-                          <Col md={8} xs={8} sm={8}>
+                          <Col md={12} xs={8} sm={8}>
                             <div className="profile-subtitle ">
                               {/* <p style={{ textAlign: "left" }}>
                                 {capitalizeFirstLetter(item.purpose)}
                               </p> */}
-                              {item.purpose.split(",").map((item, index) => (
-                                <li key={index}>{item}</li>
-                              ))}
+                              {item.favouriteCourse
+                                .split(",")
+                                .map((item, index) => (
+                                  <li key={index}>{item}</li>
+                                ))}
+                              {/* <p style={{ textAlign: "left" }}>
+                                {capitalizeFirstLetter(item.favouriteCourse)}
+                              </p> */}
                             </div>
                           </Col>
                         </Row>

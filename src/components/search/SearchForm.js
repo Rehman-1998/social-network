@@ -2,15 +2,27 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { capitalizeFirstLetter } from "../../utilis/capitalizeFirstLetter";
 import data from "../../utilis/searchBarData";
-import state from "../../utilis/state";
+// import state from "../../utilis/state";
 import city from "../../utilis/city";
 // import county from "../../utilis/county";
 import americaCity from "../../utilis/americaCity";
 import banner from "../../assets/images/banner3.jpg";
-import { MenuItem, FormControl, TextField, Autocomplete } from "@mui/material";
+import {
+  MenuItem,
+  FormControl,
+  TextField,
+  Autocomplete,
+  InputLabel,
+  OutlinedInput,
+  ListItemText,
+  Checkbox,
+  Select,
+} from "@mui/material";
 import { useNavigate } from "react-router";
 import DatePicker from "react-multi-date-picker";
 import "./searchform.css";
+// import zipCode from "../../utilis/zipCode.json";
+import state from "../../utilis/filterZip";
 
 const SearchForm = () => {
   const navigate = useNavigate();
@@ -58,6 +70,25 @@ const SearchForm = () => {
     navigate("/results");
   };
 
+  const ITEM_HEIGHT = 48;
+  const ITEM_PADDING_TOP = 8;
+  const MenuProps = {
+    PaperProps: {
+      style: {
+        maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
+        width: 250,
+      },
+    },
+  };
+
+  // console.log(
+  //   "zipCode===>",
+  //   state
+  //   zipCode.map((item, index) => {
+  //     return { Zip: item.zip_code.toString() };
+  //   })
+  // );
+
   return (
     <>
       <Container className="g-0" fluid>
@@ -91,6 +122,33 @@ const SearchForm = () => {
                 </Col>
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
+                    <InputLabel id="demo-multiple-checkbox-label">
+                      Age
+                    </InputLabel>
+                    <Select
+                      labelId="demo-multiple-checkbox-label"
+                      id="demo-multiple-checkbox"
+                      multiple
+                      value={arr.age}
+                      name={"age"}
+                      onChange={handleChange}
+                      input={<OutlinedInput label="Age" />}
+                      renderValue={(selected) => selected.join(", ")}
+                      MenuProps={MenuProps}
+                    >
+                      {data?.age?.map((item, index) => (
+                        <MenuItem key={index} value={item.value}>
+                          <Checkbox
+                            checked={arr.age.indexOf(item.value) > -1}
+                          />
+                          <ListItemText primary={item.value} />
+                        </MenuItem>
+                      ))}
+                    </Select>
+                  </FormControl>
+                </Col>
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
                     <TextField
                       required
                       value={arr.age}
@@ -111,7 +169,7 @@ const SearchForm = () => {
                       ))}
                     </TextField>
                   </FormControl>
-                </Col>
+                </Col> */}
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <Autocomplete
@@ -218,7 +276,7 @@ const SearchForm = () => {
                   </FormControl>
                 </Col>
 
-                <Col md={3} xs={6} sm={6} className="mb-3">
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <TextField
                       required
@@ -238,6 +296,39 @@ const SearchForm = () => {
                         </MenuItem>
                       ))}
                     </TextField>
+                  </FormControl>
+                </Col> */}
+                {/* CheckBox */}
+                <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <InputLabel id="demo-multiple-checkbox-label">
+                      Smoker
+                    </InputLabel>
+                    <Select
+                      labelId="demo-multiple-checkbox-label"
+                      id="demo-multiple-checkbox"
+                      multiple
+                      value={arr.smoker}
+                      name={"smoker"}
+                      onChange={handleChange}
+                      input={<OutlinedInput label="Smoker" />}
+                      renderValue={(selected) => selected.join(", ")}
+                      MenuProps={MenuProps}
+                    >
+                      {data?.smoker?.map((item, index) => (
+                        <MenuItem
+                          key={index}
+                          value={capitalizeFirstLetter(item.value)}
+                        >
+                          <Checkbox
+                            checked={arr.smoker.indexOf(item.value) > -1}
+                          />
+                          <ListItemText
+                            primary={capitalizeFirstLetter(item.value)}
+                          />
+                        </MenuItem>
+                      ))}
+                    </Select>
                   </FormControl>
                 </Col>
                 <Col md={3} xs={6} sm={6} className="mb-3">
@@ -294,7 +385,7 @@ const SearchForm = () => {
                     </TextField>
                   </FormControl>
                 </Col>
-                <Col md={3} xs={6} sm={6} className="mb-3">
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <TextField
                       required
@@ -315,8 +406,40 @@ const SearchForm = () => {
                       ))}
                     </TextField>
                   </FormControl>
-                </Col>
+                </Col> */}
                 <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <InputLabel id="demo-multiple-checkbox-label">
+                      Skill Level
+                    </InputLabel>
+                    <Select
+                      labelId="demo-multiple-checkbox-label"
+                      id="demo-multiple-checkbox"
+                      multiple
+                      value={arr.skillLevel}
+                      name={"skillLevel"}
+                      onChange={handleChange}
+                      input={<OutlinedInput label="Skill Level" />}
+                      renderValue={(selected) => selected.join(", ")}
+                      MenuProps={MenuProps}
+                    >
+                      {data?.skillLevel?.map((item, index) => (
+                        <MenuItem
+                          key={index}
+                          value={capitalizeFirstLetter(item.value)}
+                        >
+                          <Checkbox
+                            checked={arr.skillLevel.indexOf(item.value) > -1}
+                          />
+                          <ListItemText
+                            primary={capitalizeFirstLetter(item.value)}
+                          />
+                        </MenuItem>
+                      ))}
+                    </Select>
+                  </FormControl>
+                </Col>
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <TextField
                       required
@@ -337,8 +460,42 @@ const SearchForm = () => {
                       ))}
                     </TextField>
                   </FormControl>
-                </Col>
+                </Col> */}
                 <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <InputLabel id="demo-multiple-checkbox-label">
+                      Current Handicap
+                    </InputLabel>
+                    <Select
+                      labelId="demo-multiple-checkbox-label"
+                      id="demo-multiple-checkbox"
+                      multiple
+                      value={arr.currentHandicap}
+                      name={"currentHandicap"}
+                      onChange={handleChange}
+                      input={<OutlinedInput label="Current Handicap" />}
+                      renderValue={(selected) => selected.join(", ")}
+                      MenuProps={MenuProps}
+                    >
+                      {data?.currentHandicap?.map((item, index) => (
+                        <MenuItem
+                          key={index}
+                          value={capitalizeFirstLetter(item.value)}
+                        >
+                          <Checkbox
+                            checked={
+                              arr.currentHandicap.indexOf(item.value) > -1
+                            }
+                          />
+                          <ListItemText
+                            primary={capitalizeFirstLetter(item.value)}
+                          />
+                        </MenuItem>
+                      ))}
+                    </Select>
+                  </FormControl>
+                </Col>
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <TextField
                       required
@@ -358,6 +515,35 @@ const SearchForm = () => {
                         </MenuItem>
                       ))}
                     </TextField>
+                  </FormControl>
+                </Col> */}
+                <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <InputLabel id="demo-multiple-checkbox-label">
+                      Purpose
+                    </InputLabel>
+                    <Select
+                      labelId="demo-multiple-checkbox-label"
+                      id="demo-multiple-checkbox"
+                      multiple
+                      value={arr.purpose}
+                      name={"purpose"}
+                      onChange={handleChange}
+                      input={<OutlinedInput label="Purpose" />}
+                      renderValue={(selected) => selected.join(", ")}
+                      MenuProps={MenuProps}
+                    >
+                      {data?.purpose?.map((item, index) => (
+                        <MenuItem key={index} value={item.value}>
+                          <Checkbox
+                            checked={arr.purpose.indexOf(item.value) > -1}
+                          />
+                          <ListItemText
+                            primary={capitalizeFirstLetter(item.value)}
+                          />
+                        </MenuItem>
+                      ))}
+                    </Select>
                   </FormControl>
                 </Col>
                 <Col md={3} xs={6} sm={6} className="mb-3">
@@ -384,11 +570,12 @@ const SearchForm = () => {
                     onChange={(e, value) =>
                       console.log("e Value===>>>", e, value)
                     }
+                    format={"MM/DD/YYYY"}
                     multiple={true}
                     placeholder={"Days *"}
                   />
                 </Col>
-                <Col md={3} xs={6} sm={6} className="mb-3">
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <TextField
                       required
@@ -407,6 +594,35 @@ const SearchForm = () => {
                         </MenuItem>
                       ))}
                     </TextField>
+                  </FormControl>
+                </Col> */}
+                <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <InputLabel id="demo-multiple-checkbox-label">
+                      Availability
+                    </InputLabel>
+                    <Select
+                      labelId="demo-multiple-checkbox-label"
+                      id="demo-multiple-checkbox"
+                      multiple
+                      value={arr.availability}
+                      name={"availability"}
+                      onChange={handleChange}
+                      input={<OutlinedInput label="Availability" />}
+                      renderValue={(selected) => selected.join(", ")}
+                      MenuProps={MenuProps}
+                    >
+                      {data?.availability?.map((item, index) => (
+                        <MenuItem key={index} value={item.value}>
+                          <Checkbox
+                            checked={arr.availability.indexOf(item.value) > -1}
+                          />
+                          <ListItemText
+                            primary={capitalizeFirstLetter(item.value)}
+                          />
+                        </MenuItem>
+                      ))}
+                    </Select>
                   </FormControl>
                 </Col>
                 {/* <Col md={3} xs={6} sm={6} className="mb-3">
@@ -496,7 +712,7 @@ const SearchForm = () => {
 
                 <Col md={12}>
                   <div>
-                    <h5>Where do you want to play ?</h5>
+                    <h5>Where do you want to play?</h5>
                   </div>
                 </Col>
                 <Col md={3} xs={6} sm={6} className="mb-3">
@@ -551,7 +767,7 @@ const SearchForm = () => {
                     </TextField>
                   </FormControl>
                 </Col>
-                <Col md={6} xs={6} sm={6} className="mb-3">
+                {/* <Col md={6} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <TextField
                       required
@@ -572,10 +788,41 @@ const SearchForm = () => {
                       ))}
                     </TextField>
                   </FormControl>
+                </Col> */}
+                <Col md={6} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <InputLabel id="demo-multiple-checkbox-label">
+                      Courses
+                    </InputLabel>
+                    <Select
+                      labelId="demo-multiple-checkbox-label"
+                      id="demo-multiple-checkbox"
+                      multiple
+                      value={arr.favouriteCourse}
+                      name={"favouriteCourse"}
+                      onChange={handleChange}
+                      input={<OutlinedInput label="Courses" />}
+                      renderValue={(selected) => selected.join(", ")}
+                      MenuProps={MenuProps}
+                    >
+                      {data?.favouriteCourse?.map((item, index) => (
+                        <MenuItem key={index} value={item.value}>
+                          <Checkbox
+                            checked={
+                              arr.favouriteCourse.indexOf(item.value) > -1
+                            }
+                          />
+                          <ListItemText
+                            primary={capitalizeFirstLetter(item.value)}
+                          />
+                        </MenuItem>
+                      ))}
+                    </Select>
+                  </FormControl>
                 </Col>
                 <Col md={12}>
                   <div>
-                    <h5>When I want to play</h5>
+                    <h5>When I want to play?</h5>
                   </div>
                 </Col>
                 <Col md={3} xs={6} sm={6} className="mb-3">
@@ -584,10 +831,11 @@ const SearchForm = () => {
                       console.log("e Value===>>>", e, value)
                     }
                     multiple={true}
+                    format={"MM/DD/YYYY"}
                     placeholder={"Days *"}
                   />
                 </Col>
-                <Col md={3} xs={6} sm={6} className="mb-3">
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <TextField
                       required
@@ -606,6 +854,33 @@ const SearchForm = () => {
                         </MenuItem>
                       ))}
                     </TextField>
+                  </FormControl>
+                </Col> */}
+                <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <InputLabel id="demo-multiple-checkbox-label">
+                      Time
+                    </InputLabel>
+                    <Select
+                      labelId="demo-multiple-checkbox-label"
+                      id="demo-multiple-checkbox"
+                      multiple
+                      value={arr.playTime}
+                      name={"playTime"}
+                      onChange={handleChange}
+                      input={<OutlinedInput label="Time" />}
+                      renderValue={(selected) => selected.join(", ")}
+                      MenuProps={MenuProps}
+                    >
+                      {data?.availability?.map((item, index) => (
+                        <MenuItem key={index} value={item.value}>
+                          <Checkbox
+                            checked={arr.playTime.indexOf(item.value) > -1}
+                          />
+                          <ListItemText primary={item.value} />
+                        </MenuItem>
+                      ))}
+                    </Select>
                   </FormControl>
                 </Col>
               </Row>

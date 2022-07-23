@@ -281,19 +281,19 @@ export default {
   ],
   availability: [
     {
-      value: "anytime",
+      value: "Anytime",
     },
     {
-      value: "weekend",
+      value: "Weekend",
     },
     {
-      value: "morning",
+      value: "Morning",
     },
     {
-      value: "mid-day",
+      value: "Mid-day",
     },
     {
-      value: "afternoon",
+      value: "Afternoon",
     },
   ],
   myAvailability: [
@@ -375,16 +375,16 @@ export default {
   ],
   purpose: [
     {
-      value: "dating",
+      value: "Dating",
     },
     {
-      value: "i just want to play golf",
+      value: "I just want to play golf",
     },
     {
-      value: "meet new friends",
+      value: "Meet new friends",
     },
     {
-      value: "networking",
+      value: "Networking",
     },
   ],
   industry: [

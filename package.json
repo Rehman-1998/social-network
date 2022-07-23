@@ -13,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "autoprefixer": "10.4.5",
     "gapi-script": "^1.2.0",
+    "moment": "^2.29.4",
     "react": "^18.0.0",
     "react-autocomplete": "^1.8.1",
     "react-bootstrap": "^2.2.3",

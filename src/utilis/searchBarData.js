@@ -249,19 +249,19 @@ export default {
   ],
   availability: [
     {
-      value: "anytime",
+      value: "Anytime",
     },
     {
-      value: "weekend",
+      value: "Weekend",
     },
     {
-      value: "morning",
+      value: "Morning",
     },
     {
-      value: "mid-day",
+      value: "Mid-day",
     },
     {
-      value: "afternoon",
+      value: "Afternoon",
     },
   ],
   myAvailability: [
@@ -318,16 +318,16 @@ export default {
   ],
   time: [
     {
-      value: "morning",
+      value: "Morning",
     },
     {
-      value: "mid-afternoon",
+      value: "Mid-afternoon",
     },
     {
-      value: "afternoon",
+      value: "Afternoon",
     },
     {
-      value: "anytime",
+      value: "Anytime",
     },
   ],
   distance: [
@@ -346,17 +346,17 @@ export default {
   ],
   purpose: [
     {
-      value: "i just want to play golf",
+      value: "I just want to play golf",
     },
     {
       value: "I want to meet new friends",
     },
     {
-      value: "dating",
+      value: "Dating",
     },
 
     {
-      value: "networking",
+      value: "Networking",
     },
   ],
   industry: [

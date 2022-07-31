@@ -6,14 +6,19 @@ import "./profileCards.css";
 import { Link, useLocation } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
 import { capitalizeFirstLetter } from "../../utilis/capitalizeFirstLetter";
-import { Widget, addResponseMessage, toggleWidget } from "react-chat-widget";
+import {
+  Widget,
+  addResponseMessage,
+  toggleWidget,
+  addUserMessage,
+} from "react-chat-widget";
 import Logo from "../../assets/images/logo.png";
 import "react-chat-widget/lib/styles.css";
 // import data from "../../utilis/data";
 const ProfileCards = () => {
   const [profileData, setProfileData] = React.useState("");
   const [loading, setLoading] = React.useState("");
-  // const [test, setTest] = React.useState(false);
+  const [customToogle, setCustomToogle] = React.useState(false);
   const location = useLocation();
   useEffect(() => {
     fetch(`https://social-golf-network.herokuapp.com/user/${location.state.id}`)
@@ -25,16 +30,53 @@ const ProfileCards = () => {
       });
   }, []);
 
+  useEffect(() => {
+    var elements = document.getElementsByClassName("rcw-input");
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].textContent += `Hi,
+I am Randy Orgeron
+Are you available to play golf?
+Date: 07/14/2022 
+Time: Morning, Mid-Afternoon 
+Where: Chateau Elan 
+City: Braselton 
+State: Georgia 
+Zip: 30517 
+Purpose: Networking, Meet New Friends`;
+    }
+  }, [customToogle]);
+
   return (
     <>
       <Container className="py-5 border-top ipad-class">
+        {customToogle ? (
+          <>
+            <Widget
+              title={``}
+              titleAvatar={Logo}
+              subtitle={""}
+              onClick={() => setCustomToogle(true)}
+              profileAvatar={profileData?.image}
+              handleNewUserMessage={(e) => console.log("handle", e)}
+              handleTextInputChange={(e) =>
+                console.log("hi", e.target.innerText)
+              }
+              handleSubmit={() => {
+                setTimeout(() => toggleWidget(), 1000);
+              }}
+              emojis={true}
+            />
+          </>
+        ) : (
+          ""
+        )}
         {!loading ? (
           <div className="text-center">
             <CircularProgress style={{ color: "#8FBF00" }} />
           </div>
         ) : (
           <>
-            {addResponseMessage(
+            {/* {addResponseMessage(
               `Hi, I am  ${
                 profileData && capitalizeFirstLetter(profileData.name)
               } 
@@ -48,12 +90,24 @@ const ProfileCards = () => {
         State: ${profileData && capitalizeFirstLetter(profileData.state)} 
          Zip: ${profileData && profileData.zipCode} 
           Purpose: ${profileData && profileData.purpose} `
-            )}
-            <Widget
-              title={`Social Golf Network`}
+            )} */}
+
+            {/* <Widget
+              title={``}
+              titleAvatar={Logo}
               subtitle={""}
+              onClick={() => setCustomToogle(true)}
               profileAvatar={profileData?.image}
-            />
+              handleNewUserMessage={(e) => console.log("handle", e)}
+              handleTextInputChange={(e) =>
+                console.log("hi", e.target.innerText)
+              }
+              handleSubmit={() => {
+                setTimeout(() => toggleWidget(), 1000);
+              }}
+              emojis={true}
+            /> */}
+
             <Row>
               <Col className="mb-3" md={4}>
                 <div className="profile-details">
@@ -65,7 +119,14 @@ const ProfileCards = () => {
                     "{profileData && profileData.about}"
                   </p>
                   <div className="text-center contact-button ">
-                    <button onClick={() => toggleWidget()}>Contact Me </button>
+                    <button
+                      onClick={() => {
+                        setCustomToogle((prevCheck) => !prevCheck);
+                        toggleWidget();
+                      }}
+                    >
+                      Contact Me{" "}
+                    </button>
                   </div>
                 </div>
               </Col>

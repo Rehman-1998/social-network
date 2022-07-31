@@ -1,15 +1,24 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import CircularProgress from "@mui/material/CircularProgress";
 import { useNavigate } from "react-router-dom";
 import "./cards.css";
 import { capitalizeFirstLetter } from "../../../utilis/capitalizeFirstLetter";
+import {
+  Widget,
+  addResponseMessage,
+  toggleWidget,
+  addUserMessage,
+} from "react-chat-widget";
+import Logo from "../../../assets/images/logo.png";
 
 const Cards = ({ setDumyData, dumyData }) => {
   const navigate = useNavigate();
   const [data, setData] = React.useState("");
   const [loading, setLoading] = React.useState(false);
+  const [customToogle, setCustomToogle] = React.useState(false);
 
   const handleClick = (id) => {
     navigate("/profile", { state: { id } });
@@ -28,10 +37,60 @@ const Cards = ({ setDumyData, dumyData }) => {
     fetchData();
   }, []);
 
+  React.useEffect(() => {
+    var elements = document.getElementsByClassName("rcw-input");
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].textContent += `Hi,
+I am Randy Orgeron
+Are you available to play golf?
+Date: 07/14/2022 
+Time: Morning, Mid-Afternoon 
+Where: Chateau Elan 
+City: Braselton 
+State: Georgia 
+Zip: 30517 
+Purpose: Networking, Meet New Friends`;
+    }
+  }, [customToogle]);
+
   return (
     <>
       <Container className=" border-top pt-4 pb-4">
-        <h5 className="mb-3">Contact All :</h5>
+        {loading ? (
+          <button
+            className="mb-3 contact-btn"
+            onClick={() => {
+              setCustomToogle((prevCheck) => !prevCheck);
+              toggleWidget();
+            }}
+          >
+            Contact All
+          </button>
+        ) : (
+          ""
+        )}
+        {customToogle ? (
+          <>
+            <Widget
+              title={``}
+              titleAvatar={Logo}
+              subtitle={""}
+              onClick={() => setCustomToogle(true)}
+              // profileAvatar={profileData?.image}
+              handleNewUserMessage={(e) => console.log("handle", e)}
+              handleTextInputChange={(e) =>
+                console.log("hi", e.target.innerText)
+              }
+              handleSubmit={() => {
+                setTimeout(() => toggleWidget(), 1000);
+              }}
+              emojis={true}
+            />
+          </>
+        ) : (
+          ""
+        )}
+        {/* <h5 className="mb-3">Contact All :</h5> */}
         <Row>
           {loading ? (
             <>

@@ -64,6 +64,15 @@
   background-color: #8fbf00 !important;
 }
 
+.rcw-conversation-container .avatar {
+  height: 70px !important;
+  width: 150px !important;
+  object-fit: contain !important;
+  border-radius: 0px !important;
+  margin-right: 0px !important;
+  vertical-align: middle;
+}
+
 /* .rcw-conversation-container > .rcw-header {
   background-color: red;
 }

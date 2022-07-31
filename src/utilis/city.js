@@ -2,79 +2,73 @@
 export default {
   data: [
     {
-      city: "Abbeville",
+      city: "Aberdeen",
     },
     {
-      city: "Acworth",
+      city: "Abilene",
     },
     {
-      city: "Adairsville",
+      city: "Aguada",
     },
     {
-      city: "Adel",
+      city: "Aguas",
     },
     {
-      city: "Adrian",
+      city: "Aibonito",
     },
     {
-      city: "Ailey",
-    },
-    {
-      city: "Alamo",
-    },
-    {
-      city: "Alapaha",
+      city: "Akron",
     },
     {
       city: "Albany",
     },
     {
-      city: "Allenhurst",
+      city: "Albuquerque",
+    },
+    {
+      city: "Alexandria",
     },
     {
       city: "Allentown",
     },
     {
-      city: "Alma",
-    },
-    {
-      city: "Alpharetta",
-    },
-    {
-      city: "Alston",
+      city: "Alta",
     },
     {
       city: "Alto",
     },
     {
-      city: "Ambrose",
+      city: "Amarillo",
     },
     {
-      city: "Americus",
+      city: "Anaheim",
     },
     {
-      city: "Andersonville",
+      city: "Anchorage",
     },
     {
-      city: "Appling",
+      city: "Ann Arbor",
     },
     {
-      city: "Arabi",
+      city: "Antioch",
     },
     {
-      city: "Aragon",
+      city: "Apple Valley",
     },
     {
-      city: "Argyle",
+      city: "Appleton",
     },
     {
-      city: "Armuchee",
+      city: "Arlington",
     },
     {
-      city: "Arnoldsville",
+      city: "Arroyo",
     },
     {
-      city: "Ashburn",
+      city: "Arvada",
+    },
+    {
+      city: "Asheville",
     },
     {
       city: "Athens",
@@ -83,427 +77,289 @@ export default {
       city: "Atlanta",
     },
     {
-      city: "Auburn",
+      city: "Atlantic City",
     },
     {
       city: "Augusta",
     },
     {
-      city: "Austell",
+      city: "Aurora",
     },
     {
-      city: "Avera",
+      city: "Austin",
     },
     {
-      city: "Avondale Estates",
+      city: "Baja",
     },
     {
-      city: "Axson",
+      city: "Bakersfield",
     },
     {
-      city: "Baconton",
+      city: "Baltimore",
     },
     {
-      city: "Baldwin",
+      city: "Barceloneta",
     },
     {
-      city: "Ball Ground",
+      city: "Barnstable",
     },
     {
-      city: "Barnesville",
+      city: "Baton Rouge",
     },
     {
-      city: "Barney",
+      city: "Bayamón",
     },
     {
-      city: "Bartow",
+      city: "Beaumont",
     },
     {
-      city: "Barwick",
+      city: "Bel Air",
     },
     {
-      city: "Baxley",
+      city: "Bellevue",
     },
     {
-      city: "Berlin",
+      city: "Berkeley",
     },
     {
       city: "Bethlehem",
     },
     {
-      city: "Bishop",
+      city: "Billings",
     },
     {
-      city: "Blackshear",
+      city: "Birmingham",
     },
     {
-      city: "Blairsville",
+      city: "Bloomington",
     },
     {
-      city: "Bloomingdale",
+      city: "Boise",
     },
     {
-      city: "Blue Ridge",
+      city: "Boise City",
     },
     {
-      city: "Blythe",
-    },
-    {
-      city: "Bogart",
-    },
-    {
-      city: "Bonaire",
+      city: "Bonita Springs",
     },
     {
       city: "Boston",
     },
     {
-      city: "Bostwick",
+      city: "Boulder",
     },
     {
-      city: "Bowdon",
+      city: "Bradenton",
     },
     {
-      city: "Bowersville",
+      city: "Bremerton",
     },
     {
-      city: "Bowman",
+      city: "Bridgeport",
     },
     {
-      city: "Box Springs",
+      city: "Brighton",
     },
     {
-      city: "Braselton",
+      city: "Brownsville",
     },
     {
-      city: "Bremen",
+      city: "Bryan",
     },
     {
-      city: "Bristol",
+      city: "Buffalo",
     },
     {
-      city: "Brooklet",
+      city: "Burbank",
     },
     {
-      city: "Brooks",
+      city: "Burlington",
     },
     {
-      city: "Broxton",
+      city: "Cambridge",
     },
     {
-      city: "Brunswick",
-    },
-    {
-      city: "Buchanan",
-    },
-    {
-      city: "Buckhead",
-    },
-    {
-      city: "Buena Vista",
-    },
-    {
-      city: "Buford",
-    },
-    {
-      city: "Butler",
-    },
-    {
-      city: "Byromville",
-    },
-    {
-      city: "Byron",
-    },
-    {
-      city: "Cadwell",
-    },
-    {
-      city: "Calhoun",
-    },
-    {
-      city: "Camak",
-    },
-    {
-      city: "Camilla",
-    },
-    {
-      city: "Canon",
+      city: "Camuy",
     },
     {
       city: "Canton",
     },
     {
-      city: "Carlton",
+      city: "Cape Coral",
     },
     {
-      city: "Carnesville",
+      city: "Carolina",
     },
     {
       city: "Carrollton",
     },
     {
-      city: "Cartersville",
+      city: "Cary",
     },
     {
-      city: "Cataula",
+      city: "Cathedral City",
     },
     {
-      city: "Cave Spring",
+      city: "Cayey",
     },
     {
-      city: "Cecil",
+      city: "Cedar Rapids",
     },
     {
-      city: "Cedartown",
+      city: "Champaign",
     },
     {
-      city: "Centerville",
+      city: "Chandler",
     },
     {
-      city: "Chatsworth",
+      city: "Charleston",
     },
     {
-      city: "Chauncey",
+      city: "Charlotte",
     },
     {
-      city: "Cherrylog",
+      city: "Chattanooga",
     },
     {
-      city: "Chester",
+      city: "Chesapeake",
     },
     {
-      city: "Chickamauga",
+      city: "Chicago",
     },
     {
-      city: "Chula",
+      city: "Chula Vista",
     },
     {
-      city: "Cisco",
+      city: "Ciales",
     },
     {
-      city: "Clarkesville",
+      city: "Cincinnati",
     },
     {
-      city: "Clarkston",
+      city: "Clarke County",
     },
     {
-      city: "Claxton",
+      city: "Clarksville",
     },
     {
-      city: "Clayton",
-    },
-    {
-      city: "Clermont",
+      city: "Clearwater",
     },
     {
       city: "Cleveland",
     },
     {
-      city: "Clyo",
+      city: "Coamo",
     },
     {
-      city: "Cobb",
+      city: "College Station",
     },
     {
-      city: "Cobbtown",
+      city: "Colorado Springs",
     },
     {
-      city: "Cochran",
-    },
-    {
-      city: "Cohutta",
-    },
-    {
-      city: "Colbert",
-    },
-    {
-      city: "Collins",
+      city: "Columbia",
     },
     {
       city: "Columbus",
     },
     {
-      city: "Comer",
-    },
-    {
-      city: "Commerce",
-    },
-    {
       city: "Concord",
     },
     {
-      city: "Conley",
+      city: "Coral Springs",
     },
     {
-      city: "Conyers",
+      city: "Corona",
     },
     {
-      city: "Coolidge",
+      city: "Corozal",
     },
     {
-      city: "Cordele",
+      city: "Corpus Christi",
     },
     {
-      city: "Cornelia",
-    },
-    {
-      city: "Covington",
-    },
-    {
-      city: "Crandall",
-    },
-    {
-      city: "Crawford",
-    },
-    {
-      city: "Crawfordville",
-    },
-    {
-      city: "Crescent",
-    },
-    {
-      city: "Culloden",
-    },
-    {
-      city: "Cumming",
-    },
-    {
-      city: "Cusseta",
-    },
-    {
-      city: "Dacula",
-    },
-    {
-      city: "Dahlonega",
-    },
-    {
-      city: "Daisy",
+      city: "Costa Mesa",
     },
     {
       city: "Dallas",
     },
     {
-      city: "Dalton",
+      city: "Daly City",
     },
     {
-      city: "Danielsville",
+      city: "Danbury",
     },
     {
-      city: "Danville",
+      city: "Davenport",
     },
     {
-      city: "Darien",
+      city: "Davidson County",
     },
     {
-      city: "Davisboro",
+      city: "Dayton",
     },
     {
-      city: "Dawsonville",
+      city: "Daytona Beach",
     },
     {
-      city: "De Soto",
-    },
-    {
-      city: "Dearing",
-    },
-    {
-      city: "Decatur",
-    },
-    {
-      city: "Demorest",
+      city: "Deltona",
     },
     {
       city: "Denton",
     },
     {
-      city: "Dewy Rose",
+      city: "Denver",
     },
     {
-      city: "Dexter",
+      city: "Des Moines",
     },
     {
-      city: "Dillard",
+      city: "Detroit",
     },
     {
-      city: "Dixie",
+      city: "Dorado",
     },
     {
-      city: "Doerun",
-    },
-    {
-      city: "Douglas",
-    },
-    {
-      city: "Douglasville",
-    },
-    {
-      city: "Dry Branch",
-    },
-    {
-      city: "Du Pont",
-    },
-    {
-      city: "Dublin",
-    },
-    {
-      city: "Dudley",
+      city: "Downey",
     },
     {
       city: "Duluth",
     },
     {
-      city: "Eastanollee",
+      city: "Durham",
     },
     {
-      city: "Eastman",
+      city: "Díaz",
     },
     {
-      city: "Eatonton",
+      city: "El Monte",
     },
     {
-      city: "Eden",
+      city: "El Paso",
     },
     {
-      city: "Elberton",
+      city: "Elizabeth",
     },
     {
-      city: "Elko",
+      city: "Elk Grove",
     },
     {
-      city: "Ellabell",
+      city: "Elkhart",
     },
     {
-      city: "Ellaville",
+      city: "Erie",
     },
     {
-      city: "Ellenton",
+      city: "Escondido",
     },
     {
-      city: "Ellenwood",
+      city: "Eugene",
     },
     {
-      city: "Ellerslie",
+      city: "Evansville",
     },
     {
-      city: "Ellijay",
-    },
-    {
-      city: "Emerson",
-    },
-    {
-      city: "Enigma",
-    },
-    {
-      city: "Epworth",
-    },
-    {
-      city: "Evans",
-    },
-    {
-      city: "Fairburn",
-    },
-    {
-      city: "Fairmount",
+      city: "Fairfield",
     },
     {
       city: "Fargo",
@@ -512,94 +368,82 @@ export default {
       city: "Fayetteville",
     },
     {
-      city: "Fitzgerald",
+      city: "Fitchburg",
     },
     {
-      city: "Fleming",
+      city: "Flint",
     },
     {
-      city: "Flintstone",
+      city: "Florida",
     },
     {
-      city: "Flovilla",
+      city: "Fontana",
     },
     {
-      city: "Flowery Branch",
+      city: "Fort Collins",
     },
     {
-      city: "Folkston",
+      city: "Fort Lauderdale",
     },
     {
-      city: "Forest Park",
+      city: "Fort Smith",
     },
     {
-      city: "Forsyth",
+      city: "Fort Walton Beach",
     },
     {
-      city: "Fort Benning",
+      city: "Fort Wayne",
     },
     {
-      city: "Fort Oglethorpe",
+      city: "Fort Worth",
     },
     {
-      city: "Fort Stewart",
+      city: "Frederick",
     },
     {
-      city: "Fort Valley",
+      city: "Fremont",
     },
     {
-      city: "Fortson",
+      city: "Fresno",
     },
     {
-      city: "Franklin",
+      city: "Fullerton",
     },
     {
       city: "Gainesville",
     },
     {
-      city: "Garfield",
+      city: "Garden Grove",
     },
     {
-      city: "Gay",
+      city: "Garland",
     },
     {
-      city: "Geneva",
+      city: "Gastonia",
     },
     {
-      city: "Gibson",
+      city: "Germán",
     },
     {
-      city: "Gillsville",
+      city: "Gilbert",
     },
     {
-      city: "Girard",
+      city: "Glendale",
     },
     {
-      city: "Glennville",
+      city: "Grand Prairie",
     },
     {
-      city: "Glenwood",
+      city: "Grand Rapids",
     },
     {
-      city: "Good Hope",
+      city: "Grayslake",
     },
     {
-      city: "Gordon",
+      city: "Green Bay",
     },
     {
-      city: "Gracewood",
-    },
-    {
-      city: "Grantville",
-    },
-    {
-      city: "Gray",
-    },
-    {
-      city: "Grayson",
-    },
-    {
-      city: "Graysville",
+      city: "GreenBay",
     },
     {
       city: "Greensboro",
@@ -608,97 +452,100 @@ export default {
       city: "Greenville",
     },
     {
-      city: "Griffin",
+      city: "Guayanilla",
     },
     {
-      city: "Grovetown",
+      city: "Gulfport-Biloxi",
     },
     {
-      city: "Guyton",
+      city: "Gurabo",
     },
     {
-      city: "Haddock",
-    },
-    {
-      city: "Hagan",
-    },
-    {
-      city: "Hahira",
-    },
-    {
-      city: "Hamilton",
+      city: "Hagerstown",
     },
     {
       city: "Hampton",
     },
     {
-      city: "Harlem",
+      city: "Harlingen",
     },
     {
-      city: "Harrison",
+      city: "Harrisburg",
     },
     {
-      city: "Hartsfield",
+      city: "Hartford",
     },
     {
-      city: "Hartwell",
+      city: "Hatillo",
     },
     {
-      city: "Hawkinsville",
+      city: "Havre de Grace",
     },
     {
-      city: "Hazlehurst",
+      city: "Hayward",
     },
     {
-      city: "Helen",
+      city: "Hemet",
     },
     {
-      city: "Helena",
+      city: "Henderson",
     },
     {
-      city: "Hephzibah",
+      city: "Hesperia",
     },
     {
-      city: "Hiawassee",
+      city: "Hialeah",
     },
     {
-      city: "Hillsboro",
+      city: "Hickory",
     },
     {
-      city: "Hinesville",
+      city: "High Point",
     },
     {
-      city: "Hiram",
+      city: "Hollywood",
     },
     {
-      city: "Hoboken",
+      city: "Honolulu",
     },
     {
-      city: "Hogansville",
+      city: "Houma",
     },
     {
-      city: "Homer",
+      city: "Houston",
     },
     {
-      city: "Homerville",
+      city: "Howell",
     },
     {
-      city: "Hortense",
+      city: "Humacao",
     },
     {
-      city: "Hoschton",
+      city: "Huntington",
     },
     {
-      city: "Howard",
+      city: "Huntington Beach",
     },
     {
-      city: "Hull",
+      city: "Huntsville",
     },
     {
-      city: "Ideal",
+      city: "Independence",
     },
     {
-      city: "Irwinton",
+      city: "Indianapolis",
+    },
+    {
+      city: "Inglewood",
+    },
+    {
+      city: "Irvine",
+    },
+    {
+      city: "Irving",
+    },
+    {
+      city: "Isabel",
     },
     {
       city: "Jackson",
@@ -707,154 +554,130 @@ export default {
       city: "Jacksonville",
     },
     {
-      city: "Jasper",
+      city: "Jayuya",
     },
     {
       city: "Jefferson",
     },
     {
-      city: "Jeffersonville",
+      city: "Jersey City",
     },
     {
-      city: "Jekyll Island",
+      city: "Johnson City",
     },
     {
-      city: "Jenkinsburg",
+      city: "Joliet",
     },
     {
-      city: "Jesup",
+      city: "Juan",
     },
     {
-      city: "Jewell",
+      city: "Kailua",
     },
     {
-      city: "Jonesboro",
+      city: "Kalamazoo",
     },
     {
-      city: "Juliette",
+      city: "Kaneohe",
     },
     {
-      city: "Junction City",
+      city: "Kansas City",
     },
     {
-      city: "Kathleen",
+      city: "Kennewick",
     },
     {
-      city: "Kennesaw",
+      city: "Kenosha",
     },
     {
-      city: "Keysville",
+      city: "Killeen",
     },
     {
-      city: "Kings Bay",
-    },
-    {
-      city: "Kingsland",
-    },
-    {
-      city: "Kingston",
-    },
-    {
-      city: "Kite",
+      city: "Kissimmee",
     },
     {
       city: "Knoxville",
     },
     {
-      city: "La Fayette",
+      city: "Lacey",
     },
     {
-      city: "Lagrange",
+      city: "Lafayette",
     },
     {
-      city: "Lake Park",
+      city: "Lajas",
+    },
+    {
+      city: "Lake Charles",
     },
     {
       city: "Lakeland",
     },
     {
-      city: "Lakemont",
+      city: "Lakewood",
     },
     {
-      city: "Lavonia",
+      city: "Lancaster",
     },
     {
-      city: "Lawrenceville",
+      city: "Lansing",
     },
     {
-      city: "Leesburg",
+      city: "Laredo",
     },
     {
-      city: "Lenox",
+      city: "Las",
     },
     {
-      city: "Leslie",
+      city: "Las",
+    },
+    {
+      city: "Las Cruces",
+    },
+    {
+      city: "Las Vegas",
+    },
+    {
+      city: "Layton",
+    },
+    {
+      city: "Leominster",
+    },
+    {
+      city: "Lewisville",
     },
     {
       city: "Lexington",
     },
     {
-      city: "Lilburn",
+      city: "Lincoln",
     },
     {
-      city: "Lilly",
+      city: "Little Rock",
     },
     {
-      city: "Lincolnton",
+      city: "Loiza",
     },
     {
-      city: "Lindale",
+      city: "Long Beach",
     },
     {
-      city: "Lithia Springs",
+      city: "Lorain",
     },
     {
-      city: "Lithonia",
+      city: "Lorenzo",
     },
     {
-      city: "Lizella",
-    },
-    {
-      city: "Locust Grove",
-    },
-    {
-      city: "Loganville",
-    },
-    {
-      city: "Lookout Mountain",
+      city: "Los Angeles",
     },
     {
       city: "Louisville",
     },
     {
-      city: "Louvale",
+      city: "Lowell",
     },
     {
-      city: "Lovejoy",
-    },
-    {
-      city: "Ludowici",
-    },
-    {
-      city: "Lula",
-    },
-    {
-      city: "Lumber City",
-    },
-    {
-      city: "Lumpkin",
-    },
-    {
-      city: "Luthersville",
-    },
-    {
-      city: "Lyerly",
-    },
-    {
-      city: "Lyons",
-    },
-    {
-      city: "Mableton",
+      city: "Lubbock",
     },
     {
       city: "Macon",
@@ -863,781 +686,619 @@ export default {
       city: "Madison",
     },
     {
-      city: "Manassas",
+      city: "Manatí",
     },
     {
       city: "Manchester",
     },
     {
-      city: "Manor",
+      city: "Marina",
     },
     {
-      city: "Mansfield",
+      city: "Marysville",
     },
     {
-      city: "Marble Hill",
+      city: "Maunabo",
     },
     {
-      city: "Marietta",
+      city: "McAllen",
     },
     {
-      city: "Marshallville",
+      city: "McHenry",
     },
     {
-      city: "Martin",
+      city: "Medford",
     },
     {
-      city: "Matthews",
+      city: "Melbourne",
     },
     {
-      city: "Mauk",
+      city: "Memphis",
     },
     {
-      city: "Maysville",
+      city: "Merced",
     },
     {
-      city: "Mc Caysville",
+      city: "Mesa",
     },
     {
-      city: "Mc Intyre",
+      city: "Mesquite",
     },
     {
-      city: "Mc Rae",
+      city: "Miami",
     },
     {
-      city: "Mcdonough",
+      city: "Milwaukee",
     },
     {
-      city: "Meansville",
+      city: "Minneapolis",
     },
     {
-      city: "Meigs",
+      city: "Miramar",
     },
     {
-      city: "Meldrim",
+      city: "Mission Viejo",
     },
     {
-      city: "Menlo",
+      city: "Mobile",
     },
     {
-      city: "Mershon",
+      city: "Moca",
     },
     {
-      city: "Metter",
-    },
-    {
-      city: "Midland",
-    },
-    {
-      city: "Midville",
-    },
-    {
-      city: "Midway",
-    },
-    {
-      city: "Milan",
-    },
-    {
-      city: "Milledgeville",
-    },
-    {
-      city: "Millen",
-    },
-    {
-      city: "Millwood",
-    },
-    {
-      city: "Milner",
-    },
-    {
-      city: "Mineral Bluff",
-    },
-    {
-      city: "Mitchell",
-    },
-    {
-      city: "Molena",
+      city: "Modesto",
     },
     {
       city: "Monroe",
     },
     {
-      city: "Montezuma",
+      city: "Monterey",
     },
     {
-      city: "Monticello",
+      city: "Montgomery",
     },
     {
-      city: "Montrose",
+      city: "Moreno Valley",
     },
     {
-      city: "Moreland",
+      city: "Murfreesboro",
     },
     {
-      city: "Morganton",
+      city: "Murrieta",
     },
     {
-      city: "Morrow",
+      city: "Muskegon",
     },
     {
-      city: "Morven",
+      city: "Myrtle Beach",
     },
     {
-      city: "Moultrie",
+      city: "Naguabo",
     },
     {
-      city: "Mount Airy",
+      city: "Naperville",
     },
     {
-      city: "Mount Berry",
+      city: "Naples",
     },
     {
-      city: "Mount Vernon",
-    },
-    {
-      city: "Mountain City",
-    },
-    {
-      city: "Murrayville",
-    },
-    {
-      city: "Musella",
-    },
-    {
-      city: "Nahunta",
+      city: "Nashua",
     },
     {
       city: "Nashville",
     },
     {
-      city: "Naylor",
+      city: "New Bedford",
     },
     {
-      city: "Newborn",
+      city: "New Haven",
     },
     {
-      city: "Newington",
+      city: "New London",
     },
     {
-      city: "Newnan",
+      city: "New Orleans",
     },
     {
-      city: "Nicholls",
+      city: "New York",
     },
     {
-      city: "Nicholson",
+      city: "New York City",
     },
     {
-      city: "Norcross",
+      city: "Newark",
     },
     {
-      city: "Norman Park",
+      city: "Newburgh",
     },
     {
-      city: "Norwood",
+      city: "Newport News",
     },
     {
-      city: "Nunez",
+      city: "Norfolk",
     },
     {
-      city: "Oakfield",
+      city: "Normal",
     },
     {
-      city: "Oakwood",
+      city: "Norman",
     },
     {
-      city: "Ochlocknee",
+      city: "North Charleston",
     },
     {
-      city: "Ocilla",
+      city: "North Las Vegas",
     },
     {
-      city: "Oconee",
+      city: "North Port",
     },
     {
-      city: "Odum",
+      city: "Norwalk",
     },
     {
-      city: "Offerman",
+      city: "Norwich",
     },
     {
-      city: "Oglethorpe",
+      city: "Oakland",
     },
     {
-      city: "Oliver",
+      city: "Ocala",
+    },
+    {
+      city: "Oceanside",
+    },
+    {
+      city: "Odessa",
+    },
+    {
+      city: "Ogden",
+    },
+    {
+      city: "Oklahoma City",
+    },
+    {
+      city: "Olathe",
+    },
+    {
+      city: "Olympia",
     },
     {
       city: "Omaha",
     },
     {
-      city: "Omega",
+      city: "Ontario",
     },
     {
-      city: "Oxford",
+      city: "Orange",
     },
     {
-      city: "Palmetto",
+      city: "Orem",
     },
     {
-      city: "Patterson",
+      city: "Orlando",
     },
     {
-      city: "Pavo",
+      city: "Orocovis",
     },
     {
-      city: "Peachtree City",
+      city: "Overland Park",
     },
     {
-      city: "Pearson",
+      city: "Oxnard",
     },
     {
-      city: "Pelham",
+      city: "Palm Bay",
     },
     {
-      city: "Pembroke",
+      city: "Palm Springs",
     },
     {
-      city: "Pendergrass",
+      city: "Palmdale",
     },
     {
-      city: "Perkins",
+      city: "Panama City",
     },
     {
-      city: "Perry",
+      city: "Pasadena",
     },
     {
-      city: "Pine Lake",
+      city: "Paterson",
     },
     {
-      city: "Pine Mountain",
+      city: "Pembroke Pines",
     },
     {
-      city: "Pine Mountain Valley",
+      city: "Pensacola",
     },
     {
-      city: "Pinehurst",
+      city: "Peoria",
     },
     {
-      city: "Pineview",
+      city: "Peñuelas",
     },
     {
-      city: "Pitts",
+      city: "Philadelphia",
     },
     {
-      city: "Plains",
+      city: "Phoenix",
     },
     {
-      city: "Plainville",
+      city: "Pittsburgh",
     },
     {
-      city: "Pooler",
+      city: "Plano",
     },
     {
-      city: "Portal",
+      city: "Pomona",
     },
     {
-      city: "Porterdale",
+      city: "Pompano Beach",
     },
     {
-      city: "Poulan",
+      city: "Port Arthur",
     },
     {
-      city: "Powder Springs",
+      city: "Port Orange",
     },
     {
-      city: "Preston",
+      city: "Port Saint Lucie",
     },
     {
-      city: "Pulaski",
+      city: "Port St. Lucie",
     },
     {
-      city: "Quitman",
+      city: "Portland",
     },
     {
-      city: "Rabun Gap",
+      city: "Portsmouth",
     },
     {
-      city: "Ranger",
+      city: "Poughkeepsie",
     },
     {
-      city: "Ray City",
+      city: "Providence",
     },
     {
-      city: "Rayle",
+      city: "Provo",
     },
     {
-      city: "Rebecca",
+      city: "Pueblo",
     },
     {
-      city: "Register",
+      city: "Punta Gorda",
     },
     {
-      city: "Reidsville",
+      city: "Quebradillas",
     },
     {
-      city: "Rentz",
+      city: "Racine",
     },
     {
-      city: "Resaca",
+      city: "Raleigh",
     },
     {
-      city: "Rex",
+      city: "Rancho Cucamonga",
     },
     {
-      city: "Reynolds",
+      city: "Reading",
     },
     {
-      city: "Rhine",
+      city: "Redding",
     },
     {
-      city: "Riceboro",
+      city: "Reno",
     },
     {
       city: "Richland",
     },
     {
-      city: "Richmond Hill",
+      city: "Richmond",
     },
     {
-      city: "Rincon",
+      city: "Richmond County",
     },
     {
-      city: "Ringgold",
+      city: "Rio",
     },
     {
-      city: "Rising Fawn",
+      city: "Riverside",
     },
     {
-      city: "Riverdale",
+      city: "Roanoke",
     },
     {
-      city: "Roberta",
+      city: "Rochester",
     },
     {
-      city: "Rochelle",
+      city: "Rockford",
     },
     {
-      city: "Rock Spring",
+      city: "Rojo",
     },
     {
-      city: "Rockledge",
+      city: "Roseville",
     },
     {
-      city: "Rockmart",
+      city: "Round Lake Beach",
     },
     {
-      city: "Rocky Face",
+      city: "Sabana",
     },
     {
-      city: "Rocky Ford",
+      city: "Sacramento",
     },
     {
-      city: "Rome",
+      city: "Saginaw",
     },
     {
-      city: "Roopville",
+      city: "Saint Louis",
     },
     {
-      city: "Rossville",
+      city: "Saint Paul",
     },
     {
-      city: "Roswell",
+      city: "Saint Petersburg",
     },
     {
-      city: "Royston",
+      city: "Salem",
     },
     {
-      city: "Rupert",
+      city: "Salinas",
     },
     {
-      city: "Rutledge",
+      city: "Salinas",
     },
     {
-      city: "Rydal",
+      city: "Salt Lake City",
     },
     {
-      city: "Saint Marys",
+      city: "San Antonio",
     },
     {
-      city: "Saint Simons Island",
+      city: "San Bernardino",
     },
     {
-      city: "Sale City",
+      city: "San Buenaventura",
     },
     {
-      city: "Sandersville",
+      city: "San Diego",
     },
     {
-      city: "Sapelo Island",
+      city: "San Francisco",
     },
     {
-      city: "Sardis",
+      city: "San Jose",
     },
     {
-      city: "Sargent",
+      city: "Santa Ana",
     },
     {
-      city: "Sautee Nacoochee",
+      city: "Santa Barbara",
+    },
+    {
+      city: "Santa Clara",
+    },
+    {
+      city: "Santa Clarita",
+    },
+    {
+      city: "Santa Cruz",
+    },
+    {
+      city: "Santa Maria",
+    },
+    {
+      city: "Santa Rosa",
+    },
+    {
+      city: "Sarasota",
     },
     {
       city: "Savannah",
     },
     {
-      city: "Scotland",
+      city: "Scottsdale",
     },
     {
-      city: "Scottdale",
+      city: "Scranton",
     },
     {
-      city: "Screven",
+      city: "Seaside",
     },
     {
-      city: "Sea Island",
+      city: "Seattle",
     },
     {
-      city: "Senoia",
+      city: "Sebastian",
     },
     {
-      city: "Seville",
+      city: "Sebastián",
     },
     {
-      city: "Shady Dale",
+      city: "Shreveport",
     },
     {
-      city: "Sharon",
+      city: "Simi Valley",
     },
     {
-      city: "Sharpsburg",
+      city: "Sioux City",
     },
     {
-      city: "Shiloh",
+      city: "Sioux Falls",
     },
     {
-      city: "Siloam",
+      city: "South Bend",
     },
     {
-      city: "Silver Creek",
+      city: "South Lyon",
     },
     {
-      city: "Smithville",
+      city: "Spartanburg",
     },
     {
-      city: "Smyrna",
+      city: "Spokane",
     },
     {
-      city: "Snellville",
-    },
-    {
-      city: "Social Circle",
-    },
-    {
-      city: "Soperton",
-    },
-    {
-      city: "Sparks",
-    },
-    {
-      city: "Sparta",
+      city: "Springdale",
     },
     {
       city: "Springfield",
     },
     {
-      city: "Stapleton",
+      city: "St. Louis",
     },
     {
-      city: "Statenville",
+      city: "St. Paul",
     },
     {
-      city: "Statesboro",
+      city: "St. Petersburg",
     },
     {
-      city: "Statham",
+      city: "Stamford",
     },
     {
-      city: "Stephens",
-    },
-    {
-      city: "Stillmore",
-    },
-    {
-      city: "Stockbridge",
+      city: "Sterling Heights",
     },
     {
       city: "Stockton",
     },
     {
-      city: "Stone Mountain",
+      city: "Sunnyvale",
     },
     {
-      city: "Suches",
+      city: "Syracuse",
     },
     {
-      city: "Sugar Valley",
+      city: "Tacoma",
     },
     {
-      city: "Summerville",
+      city: "Tallahassee",
     },
     {
-      city: "Sumner",
+      city: "Tampa",
     },
     {
-      city: "Sunny Side",
+      city: "Temecula",
     },
     {
-      city: "Surrency",
+      city: "Tempe",
     },
     {
-      city: "Suwanee",
+      city: "Thornton",
     },
     {
-      city: "Swainsboro",
+      city: "Thousand Oaks",
     },
     {
-      city: "Sycamore",
+      city: "Toledo",
     },
     {
-      city: "Sylvania",
+      city: "Topeka",
     },
     {
-      city: "Sylvester",
-    },
-    {
-      city: "Talbotton",
-    },
-    {
-      city: "Talking Rock",
-    },
-    {
-      city: "Tallapoosa",
-    },
-    {
-      city: "Tallulah Falls",
-    },
-    {
-      city: "Talmo",
-    },
-    {
-      city: "Tarrytown",
-    },
-    {
-      city: "Tate",
-    },
-    {
-      city: "Taylorsville",
-    },
-    {
-      city: "Temple",
-    },
-    {
-      city: "Tennga",
-    },
-    {
-      city: "Tennille",
-    },
-    {
-      city: "The Rock",
-    },
-    {
-      city: "Thomaston",
-    },
-    {
-      city: "Thomasville",
-    },
-    {
-      city: "Thomson",
-    },
-    {
-      city: "Tifton",
-    },
-    {
-      city: "Tiger",
-    },
-    {
-      city: "Tignall",
-    },
-    {
-      city: "Toccoa",
-    },
-    {
-      city: "Toomsboro",
-    },
-    {
-      city: "Townsend",
+      city: "Torrance",
     },
     {
       city: "Trenton",
     },
     {
-      city: "Trion",
+      city: "Tucson",
     },
     {
-      city: "Tucker",
+      city: "Tulsa",
     },
     {
-      city: "Tunnel Hill",
+      city: "Tuscaloosa",
     },
     {
-      city: "Turin",
+      city: "Tyler",
     },
     {
-      city: "Twin City",
+      city: "Utica",
     },
     {
-      city: "Ty Ty",
+      city: "Vallejo",
     },
     {
-      city: "Tybee Island",
+      city: "Vancouver",
     },
     {
-      city: "Tyrone",
+      city: "Vega",
     },
     {
-      city: "Unadilla",
+      city: "Vega",
     },
     {
-      city: "Union City",
+      city: "Vero Beach",
     },
     {
-      city: "Union Point",
+      city: "Victorville",
     },
     {
-      city: "Upatoi",
+      city: "Vieques",
     },
     {
-      city: "Uvalda",
+      city: "Virginia Beach",
     },
     {
-      city: "Valdosta",
-    },
-    {
-      city: "Varnell",
-    },
-    {
-      city: "Vidalia",
-    },
-    {
-      city: "Vienna",
-    },
-    {
-      city: "Villa Rica",
+      city: "Visalia",
     },
     {
       city: "Waco",
     },
     {
-      city: "Wadley",
-    },
-    {
-      city: "Waleska",
-    },
-    {
-      city: "Warm Springs",
-    },
-    {
-      city: "Warner Robins",
-    },
-    {
-      city: "Warrenton",
-    },
-    {
-      city: "Warthen",
-    },
-    {
-      city: "Warwick",
+      city: "Warren",
     },
     {
       city: "Washington",
     },
     {
-      city: "Watkinsville",
+      city: "Waterbury",
     },
     {
-      city: "Waverly",
+      city: "Waterloo",
     },
     {
-      city: "Waverly Hall",
+      city: "West Covina",
     },
     {
-      city: "Waycross",
+      city: "West Valley City",
     },
     {
-      city: "Waynesboro",
+      city: "Westminster",
     },
     {
-      city: "Waynesville",
+      city: "Wichita",
     },
     {
-      city: "West Green",
-    },
-    {
-      city: "West Point",
-    },
-    {
-      city: "Weston",
-    },
-    {
-      city: "White",
-    },
-    {
-      city: "White Oak",
-    },
-    {
-      city: "White Plains",
-    },
-    {
-      city: "Whitesburg",
-    },
-    {
-      city: "Wildwood",
-    },
-    {
-      city: "Wiley",
-    },
-    {
-      city: "Willacoochee",
-    },
-    {
-      city: "Williamson",
-    },
-    {
-      city: "Winder",
+      city: "Wilmington",
     },
     {
       city: "Winston",
     },
     {
-      city: "Winterville",
+      city: "Winter Haven",
     },
     {
-      city: "Woodbine",
+      city: "Worcester",
     },
     {
-      city: "Woodbury",
+      city: "Yabucoa",
     },
     {
-      city: "Woodland",
+      city: "Yakima",
     },
     {
-      city: "Woodstock",
+      city: "Yauco",
     },
     {
-      city: "Wray",
+      city: "Yonkers",
     },
     {
-      city: "Wrens",
+      city: "York",
     },
     {
-      city: "Wrightsville",
-    },
-    {
-      city: "Yatesville",
-    },
-    {
-      city: "Young Harris",
-    },
-    {
-      city: "Zebulon",
+      city: "Youngstown",
     },
   ],
 };

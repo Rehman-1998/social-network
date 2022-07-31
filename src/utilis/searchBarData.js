@@ -28,7 +28,10 @@ export default {
       value: "56-65",
     },
     {
-      value: "66-100",
+      value: "66-75",
+    },
+    {
+      value: "75-100",
     },
     {
       value: "Does not matter",
@@ -64,16 +67,16 @@ export default {
   ],
   smoker: [
     {
-      value: "no",
+      value: "No",
     },
     {
-      value: "cigarettes",
+      value: "Cigarettes",
     },
     {
-      value: "cigar",
+      value: "Cigar",
     },
     {
-      value: "vape",
+      value: "Vape",
     },
     {
       value: "Other",
@@ -84,25 +87,28 @@ export default {
   ],
   race: [
     {
-      value: "white",
+      value: "White",
     },
     {
-      value: "black",
+      value: "Black",
     },
     {
-      value: "asian",
+      value: "Asian",
     },
     {
-      value: "hispanic",
+      value: "Hispanic",
     },
     {
-      value: "mixed",
+      value: "Mixed",
+    },
+    // {
+    //   value: "American Indian/Alaska Native",
+    // },
+    {
+      value: "Alaska Native",
     },
     {
-      value: "american Indian/Alaska Native",
-    },
-    {
-      value: "Native Hawaiian/Other Islander",
+      value: "Other Islander",
     },
     {
       value: "Does not matter",
@@ -110,31 +116,31 @@ export default {
   ],
   religion: [
     {
-      value: "christian",
+      value: "Christian",
     },
     {
-      value: "catholic",
+      value: "Catholic",
     },
     {
-      value: "mormon",
+      value: "Mormon",
     },
     {
-      value: "unaffiliated",
+      value: "Unaffiliated",
     },
     {
-      value: "atheist",
+      value: "Atheist",
     },
     {
-      value: "agnostic",
+      value: "Agnostic",
     },
     {
-      value: "jewish",
+      value: "Jewish",
     },
     {
-      value: "hindu",
+      value: "Hindu",
     },
     {
-      value: "buddish",
+      value: "Buddish",
     },
     {
       value: "Does not matter",
@@ -142,16 +148,16 @@ export default {
   ],
   politicalView: [
     {
-      value: "conservative",
+      value: "Conservative",
     },
     {
-      value: "libral",
+      value: "Libral",
     },
     {
-      value: "independent",
+      value: "Independent",
     },
     {
-      value: "non-political",
+      value: "Non-political",
     },
     {
       value: "Does not matter",
@@ -249,19 +255,23 @@ export default {
   ],
   availability: [
     {
-      value: "Anytime",
+      value: "Weekdays",
+    },
+
+    {
+      value: "Weekends",
     },
     {
-      value: "Weekend",
-    },
-    {
-      value: "Morning",
+      value: "Mornings",
     },
     {
       value: "Mid-day",
     },
     {
       value: "Afternoon",
+    },
+    {
+      value: "Anytime",
     },
   ],
   myAvailability: [
@@ -361,64 +371,64 @@ export default {
   ],
   industry: [
     {
-      value: "advertising and marketing",
+      value: "Advertising and marketing",
     },
     {
-      value: "aerospace",
+      value: "Aerospace",
     },
     {
-      value: "agriculture",
+      value: "Agriculture",
     },
     {
-      value: "computer technology",
+      value: "Computer technology",
     },
     {
-      value: "construction",
+      value: "Construction",
     },
     {
-      value: "education",
+      value: "Education",
     },
     {
-      value: "energy",
+      value: "Energy",
     },
     {
-      value: "entertainment",
+      value: "Entertainment",
     },
     {
-      value: "fashion",
+      value: "Fashion",
     },
     {
-      value: "finance economic",
+      value: "Finance Economic",
     },
     {
-      value: "food and beverage",
+      value: "Food and Beverage",
     },
     {
-      value: "government",
+      value: "Government",
     },
     {
-      value: "healthcare",
+      value: "Healthcare",
     },
     {
-      value: "hospitality",
+      value: "Hospitality",
     },
     {
-      value: "manufacturing",
+      value: "Manufacturing",
     },
     {
-      value: "Media news",
+      value: "Media News",
     },
     {
-      value: "mining",
+      value: "Mining",
     },
     {
-      value: "pharmaceutical",
+      value: "Pharmaceutical",
     },
     {
-      value: "telecommunication",
+      value: "Telecommunication",
     },
     {
-      value: "transportation",
+      value: "Transportation",
     },
     {
       value: "Does not matter",
@@ -439,7 +449,7 @@ export default {
     },
     {
       name: "21 or Greater",
-      value: "21-100",
+      value: "21-40",
     },
     {
       name: "No Handicap",
@@ -458,6 +468,28 @@ export default {
     },
     {
       value: "Does not matter",
+    },
+  ],
+  company: [
+    {
+      value: "AT&T",
+    },
+    {
+      value: "Verizon",
+    },
+    {
+      value: "Sprint",
+    },
+  ],
+  companyTitle: [
+    {
+      value: "Sales",
+    },
+    {
+      value: "Manager",
+    },
+    {
+      value: "Vice President ",
     },
   ],
 };

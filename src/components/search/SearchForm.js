@@ -21,8 +21,10 @@ import {
 import { useNavigate } from "react-router";
 import DatePicker from "react-multi-date-picker";
 import "./searchform.css";
+// import checkcity from "../../utilis/checkcity";
 // import zipCode from "../../utilis/zipCode.json";
-import state from "../../utilis/filterZip";
+// import state from "../../utilis/filterZip";
+const usZips = require("us-zips/array");
 
 const SearchForm = () => {
   const navigate = useNavigate();
@@ -32,28 +34,31 @@ const SearchForm = () => {
     country: "",
     city: "",
     zipCode: "",
-    distance: "",
+    distance: [],
     matirialStatus: "",
     drinker: "",
     smoker: [],
-    race: "",
-    religion: "",
-    politicalView: "",
+    race: [],
+    religion: [],
+    politicalView: [],
     skillLevel: [],
     currentHandicap: [],
     oftenPlay: "",
     purpose: [],
     professional: "",
-    industry: "",
+    industry: [],
     availability: [],
     date: [],
     playState: "",
     playCity: "",
     playZipCode: "",
     playDistance: "",
-    playCourse: "",
     favouriteCourse: [],
+    playCourse: [],
     playTime: [],
+    professionalIndustry: [],
+    company: "",
+    companyTitle: "",
   });
 
   const handleChange = (e) => {
@@ -81,13 +86,15 @@ const SearchForm = () => {
     },
   };
 
-  // console.log(
-  //   "zipCode===>",
-  //   state
-  //   zipCode.map((item, index) => {
-  //     return { Zip: item.zip_code.toString() };
-  //   })
-  // );
+  // console.log("Zip Code===>", usZips);
+
+  //======= ZIP CODe====
+
+  const zipData = usZips.map((item, index) => {
+    return { zip: item.zipCode };
+  });
+
+  // console.log("Zip Code===>", usZips.length);
 
   return (
     <>
@@ -208,7 +215,7 @@ const SearchForm = () => {
                   <FormControl fullWidth>
                     <Autocomplete
                       id="controllable-states-demo"
-                      options={state.data}
+                      options={zipData}
                       getOptionLabel={(option) => option?.zip || arr.zipCode}
                       name={"zipCode"}
                       value={arr?.zipCode}
@@ -221,7 +228,7 @@ const SearchForm = () => {
                     />
                   </FormControl>
                 </Col>
-                <Col md={3} xs={6} sm={6} className="mb-3">
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <TextField
                       required
@@ -237,6 +244,33 @@ const SearchForm = () => {
                         </MenuItem>
                       ))}
                     </TextField>
+                  </FormControl>
+                </Col> */}
+                <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <InputLabel id="demo-multiple-checkbox-label">
+                      Willingness to Drive
+                    </InputLabel>
+                    <Select
+                      labelId="demo-multiple-checkbox-label"
+                      id="demo-multiple-checkbox"
+                      multiple
+                      value={arr.distance}
+                      name={"distance"}
+                      onChange={handleChange}
+                      input={<OutlinedInput label="Willingness to Drive" />}
+                      renderValue={(selected) => selected.join(", ")}
+                      MenuProps={MenuProps}
+                    >
+                      {data?.distance?.map((item, index) => (
+                        <MenuItem key={index} value={item.value}>
+                          <Checkbox
+                            checked={arr.distance.indexOf(item.value) > -1}
+                          />
+                          <ListItemText primary={item.value} />
+                        </MenuItem>
+                      ))}
+                    </Select>
                   </FormControl>
                 </Col>
                 <Col md={3} xs={6} sm={6} className="mb-3">
@@ -316,22 +350,17 @@ const SearchForm = () => {
                       MenuProps={MenuProps}
                     >
                       {data?.smoker?.map((item, index) => (
-                        <MenuItem
-                          key={index}
-                          value={capitalizeFirstLetter(item.value)}
-                        >
+                        <MenuItem key={index} value={item.value}>
                           <Checkbox
                             checked={arr.smoker.indexOf(item.value) > -1}
                           />
-                          <ListItemText
-                            primary={capitalizeFirstLetter(item.value)}
-                          />
+                          <ListItemText primary={item.value} />
                         </MenuItem>
                       ))}
                     </Select>
                   </FormControl>
                 </Col>
-                <Col md={3} xs={6} sm={6} className="mb-3">
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <TextField
                       required
@@ -348,8 +377,62 @@ const SearchForm = () => {
                       ))}
                     </TextField>
                   </FormControl>
+                </Col> */}
+                <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <InputLabel id="demo-multiple-checkbox-label">
+                      Race
+                    </InputLabel>
+                    <Select
+                      labelId="demo-multiple-checkbox-label"
+                      id="demo-multiple-checkbox"
+                      multiple
+                      value={arr.race}
+                      name={"race"}
+                      onChange={handleChange}
+                      input={<OutlinedInput label="Race" />}
+                      renderValue={(selected) => selected.join(", ")}
+                      MenuProps={MenuProps}
+                    >
+                      {data?.race?.map((item, index) => (
+                        <MenuItem key={index} value={item.value}>
+                          <Checkbox
+                            checked={arr.race.indexOf(item.value) > -1}
+                          />
+                          <ListItemText primary={item.value} />
+                        </MenuItem>
+                      ))}
+                    </Select>
+                  </FormControl>
                 </Col>
                 <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <InputLabel id="demo-multiple-checkbox-label">
+                      Religion
+                    </InputLabel>
+                    <Select
+                      labelId="demo-multiple-checkbox-label"
+                      id="demo-multiple-checkbox"
+                      multiple
+                      value={arr.religion}
+                      name={"religion"}
+                      onChange={handleChange}
+                      input={<OutlinedInput label="Religion" />}
+                      renderValue={(selected) => selected.join(", ")}
+                      MenuProps={MenuProps}
+                    >
+                      {data?.religion?.map((item, index) => (
+                        <MenuItem key={index} value={item.value}>
+                          <Checkbox
+                            checked={arr.religion.indexOf(item.value) > -1}
+                          />
+                          <ListItemText primary={item.value} />
+                        </MenuItem>
+                      ))}
+                    </Select>
+                  </FormControl>
+                </Col>
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <TextField
                       required
@@ -366,8 +449,35 @@ const SearchForm = () => {
                       ))}
                     </TextField>
                   </FormControl>
-                </Col>
+                </Col> */}
                 <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <InputLabel id="demo-multiple-checkbox-label">
+                      Political View
+                    </InputLabel>
+                    <Select
+                      labelId="demo-multiple-checkbox-label"
+                      id="demo-multiple-checkbox"
+                      multiple
+                      value={arr.politicalView}
+                      name={"politicalView"}
+                      onChange={handleChange}
+                      input={<OutlinedInput label="Political View" />}
+                      renderValue={(selected) => selected.join(", ")}
+                      MenuProps={MenuProps}
+                    >
+                      {data?.politicalView?.map((item, index) => (
+                        <MenuItem key={index} value={item.value}>
+                          <Checkbox
+                            checked={arr.politicalView.indexOf(item.value) > -1}
+                          />
+                          <ListItemText primary={item.value} />
+                        </MenuItem>
+                      ))}
+                    </Select>
+                  </FormControl>
+                </Col>
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <TextField
                       required
@@ -384,7 +494,7 @@ const SearchForm = () => {
                       ))}
                     </TextField>
                   </FormControl>
-                </Col>
+                </Col> */}
                 {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <TextField
@@ -478,18 +588,13 @@ const SearchForm = () => {
                       MenuProps={MenuProps}
                     >
                       {data?.currentHandicap?.map((item, index) => (
-                        <MenuItem
-                          key={index}
-                          value={capitalizeFirstLetter(item.value)}
-                        >
+                        <MenuItem key={index} value={item.value}>
                           <Checkbox
                             checked={
                               arr.currentHandicap.indexOf(item.value) > -1
                             }
                           />
-                          <ListItemText
-                            primary={capitalizeFirstLetter(item.value)}
-                          />
+                          <ListItemText primary={item.value} />
                         </MenuItem>
                       ))}
                     </Select>
@@ -538,15 +643,40 @@ const SearchForm = () => {
                           <Checkbox
                             checked={arr.purpose.indexOf(item.value) > -1}
                           />
-                          <ListItemText
-                            primary={capitalizeFirstLetter(item.value)}
-                          />
+                          <ListItemText primary={item.value} />
                         </MenuItem>
                       ))}
                     </Select>
                   </FormControl>
                 </Col>
                 <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <InputLabel id="demo-multiple-checkbox-label">
+                      Industry
+                    </InputLabel>
+                    <Select
+                      labelId="demo-multiple-checkbox-label"
+                      id="demo-multiple-checkbox"
+                      multiple
+                      value={arr.industry}
+                      name={"industry"}
+                      onChange={handleChange}
+                      input={<OutlinedInput label="Industry" />}
+                      renderValue={(selected) => selected.join(", ")}
+                      MenuProps={MenuProps}
+                    >
+                      {data?.industry?.map((item, index) => (
+                        <MenuItem key={index} value={item.value}>
+                          <Checkbox
+                            checked={arr.industry.indexOf(item.value) > -1}
+                          />
+                          <ListItemText primary={item.value} />
+                        </MenuItem>
+                      ))}
+                    </Select>
+                  </FormControl>
+                </Col>
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <TextField
                       required
@@ -563,7 +693,7 @@ const SearchForm = () => {
                       ))}
                     </TextField>
                   </FormControl>
-                </Col>
+                </Col> */}
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <DatePicker
                     // value={new Date()}
@@ -643,7 +773,7 @@ const SearchForm = () => {
                     </TextField>
                   </FormControl>
                 </Col> */}
-                <Col md={3} xs={6} sm={6} className="mb-3">
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <TextField
                       required
@@ -653,60 +783,79 @@ const SearchForm = () => {
                       label="Network"
                     ></TextField>
                   </FormControl>
+                </Col> */}
+                <Col md={12}>
+                  <div>
+                    <h5>Professional</h5>
+                  </div>
                 </Col>
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
-                    <TextField
-                      required
-                      // value={arr.professional}
-                      // name={"professional"}
-                      // onChange={handleChange}
-                      label="type"
-                    ></TextField>
+                    <Autocomplete
+                      id="controllable-states-demo"
+                      options={data?.company}
+                      getOptionLabel={(option) => option?.value || arr.company}
+                      name={"company"}
+                      value={arr?.company}
+                      onChange={(e, value) =>
+                        setArr({ ...arr, company: value.value })
+                      }
+                      renderInput={(params) => (
+                        <TextField {...params} fullWidth label="Company" />
+                      )}
+                    />
                   </FormControl>
                 </Col>
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
-                    <TextField
-                      required
-                      // value={arr.professional}
-                      // name={"professional"}
-                      // onChange={handleChange}
-                      label="type"
-                    ></TextField>
+                    <Autocomplete
+                      id="controllable-states-demo"
+                      options={data?.companyTitle}
+                      getOptionLabel={(option) =>
+                        option?.value || arr.companyTitle
+                      }
+                      name={"companyTitle"}
+                      value={arr?.companyTitle}
+                      onChange={(e, value) =>
+                        setArr({ ...arr, companyTitle: value.value })
+                      }
+                      renderInput={(params) => (
+                        <TextField
+                          {...params}
+                          fullWidth
+                          label="Company Title"
+                        />
+                      )}
+                    />
                   </FormControl>
                 </Col>
-                <Col md={3} xs={6} sm={6} className="mb-3">
+                <Col md={6} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
-                    <TextField
-                      required
-                      // value={arr.professional}
-                      // name={"professional"}
-                      // onChange={handleChange}
-                      label="type"
-                    ></TextField>
-                  </FormControl>
-                </Col>
-                <Col md={3} xs={6} sm={6} className="mb-3">
-                  <FormControl fullWidth>
-                    <TextField
-                      required
-                      // value={arr.professional}
-                      // name={"professional"}
-                      // onChange={handleChange}
-                      label="type"
-                    ></TextField>
-                  </FormControl>
-                </Col>
-                <Col md={3} xs={6} sm={6} className="mb-3">
-                  <FormControl fullWidth>
-                    <TextField
-                      required
-                      // value={arr.professional}
-                      // name={"professional"}
-                      // onChange={handleChange}
-                      label="type"
-                    ></TextField>
+                    <InputLabel id="demo-multiple-checkbox-label">
+                      Industry
+                    </InputLabel>
+                    <Select
+                      labelId="demo-multiple-checkbox-label"
+                      id="demo-multiple-checkbox"
+                      multiple
+                      value={arr.professionalIndustry}
+                      name={"professionalIndustry"}
+                      onChange={handleChange}
+                      input={<OutlinedInput label="Industry" />}
+                      renderValue={(selected) => selected.join(", ")}
+                      MenuProps={MenuProps}
+                    >
+                      {data?.industry?.map((item, index) => (
+                        <MenuItem key={index} value={item.value}>
+                          <Checkbox
+                            checked={
+                              arr.professionalIndustry.indexOf(item.value) > -1
+                            }
+                          />
+                          <ListItemText primary={item.value} />
+                        </MenuItem>
+                      ))}
+                    </Select>
                   </FormControl>
                 </Col>
 
@@ -751,6 +900,25 @@ const SearchForm = () => {
                 </Col>
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
+                    <Autocomplete
+                      id="controllable-states-demo"
+                      options={zipData}
+                      getOptionLabel={(option) =>
+                        option?.zip || arr.playZipCode
+                      }
+                      name={"playZipCode"}
+                      value={arr?.playZipCode}
+                      onChange={(e, value) =>
+                        setArr({ ...arr, playZipCode: value.zip })
+                      }
+                      renderInput={(params) => (
+                        <TextField {...params} fullWidth label="Zip Code" />
+                      )}
+                    />
+                  </FormControl>
+                </Col>
+                <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
                     <TextField
                       required
                       value={arr.playDistance}
@@ -789,7 +957,7 @@ const SearchForm = () => {
                     </TextField>
                   </FormControl>
                 </Col> */}
-                <Col md={6} xs={6} sm={6} className="mb-3">
+                {/* <Col md={6} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <InputLabel id="demo-multiple-checkbox-label">
                       Courses
@@ -819,7 +987,8 @@ const SearchForm = () => {
                       ))}
                     </Select>
                   </FormControl>
-                </Col>
+                </Col> */}
+                {/* ********* When I want to Play Section ********* */}
                 <Col md={12}>
                   <div>
                     <h5>When I want to play?</h5>
@@ -881,6 +1050,25 @@ const SearchForm = () => {
                         </MenuItem>
                       ))}
                     </Select>
+                  </FormControl>
+                </Col>
+                <Col md={6} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <Autocomplete
+                      id="controllable-states-demo"
+                      options={data?.favouriteCourse}
+                      getOptionLabel={(option) =>
+                        option?.value || arr.playCourse
+                      }
+                      name={"playCourse"}
+                      value={arr?.playCourse}
+                      onChange={(e, value) =>
+                        setArr({ ...arr, playCourse: value.value })
+                      }
+                      renderInput={(params) => (
+                        <TextField {...params} fullWidth label="Courses" />
+                      )}
+                    />
                   </FormControl>
                 </Col>
               </Row>

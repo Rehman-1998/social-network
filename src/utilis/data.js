@@ -117,16 +117,16 @@ export default {
   ],
   smoker: [
     {
-      value: "no",
+      value: "No",
     },
     {
-      value: "cigarettes",
+      value: "Cigarettes",
     },
     {
-      value: "cigar",
+      value: "Cigar",
     },
     {
-      value: "vape",
+      value: "Vape",
     },
     {
       value: "Other",
@@ -276,24 +276,34 @@ export default {
       value: "twice a week",
     },
     {
+      value: "three times a week",
+    },
+    {
+      value: "four times a week",
+    },
+    {
       value: "three times a month",
     },
   ],
   availability: [
     {
-      value: "Anytime",
+      value: "Weekdays",
+    },
+
+    {
+      value: "Weekends",
     },
     {
-      value: "Weekend",
-    },
-    {
-      value: "Morning",
+      value: "Mornings",
     },
     {
       value: "Mid-day",
     },
     {
       value: "Afternoon",
+    },
+    {
+      value: "Anytime",
     },
   ],
   myAvailability: [
@@ -463,8 +473,8 @@ export default {
       value: "16-20",
     },
     {
-      name: "21 or Greater",
-      value: "21-100",
+      name: "21 or 40",
+      value: "21-40",
     },
     {
       name: "No Handicap",

@@ -23,3 +23,7 @@
   width: 100%;
   height: 100px;
 }
+
+.profile-desc p {
+  overflow-wrap: break-word;
+}

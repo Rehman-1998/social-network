@@ -27,10 +27,12 @@ import americaCity from "../../utilis/americaCity";
 import zip from "../../utilis/zip.json";
 import moment from "moment";
 import "./myprofile.css";
+const usZips = require("us-zips/array");
 const MyProfile = () => {
   const [profileData, setProfileData] = React.useState("");
   const [loading, setLoading] = React.useState("");
   const [msg, setMsg] = React.useState(false);
+  const [customLoader, setCustomLoader] = React.useState(false);
   const location = useLocation();
   let navigate = useNavigate();
 
@@ -58,7 +60,7 @@ const MyProfile = () => {
     distance: "",
     matirialStatus: "",
     drinker: "",
-    smoker: "",
+    smoker: [],
     race: "",
     religion: "",
     politicalView: "",
@@ -84,9 +86,10 @@ const MyProfile = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setCustomLoader(true);
     console.log("form submit===>>", arr);
     // send Data API
-    fetch("http://localhost:8000/user/update", {
+    fetch("https://social-golf-network.herokuapp.com/user/update", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(arr),
@@ -95,12 +98,17 @@ const MyProfile = () => {
       .then((response) => {
         if (response.success) {
           setMsg(true);
+          setCustomLoader(false);
           // alert("change has been saved");
           setTimeout(() => {
             const id = "62bff400d45f9d4184350c89";
             navigate("/profile", { state: { id } });
           }, 2000);
         }
+      })
+      .catch((err) => {
+        console.log("err", err);
+        setCustomLoader(false);
       });
   };
 
@@ -128,6 +136,10 @@ const MyProfile = () => {
       },
     },
   };
+
+  const zipData = usZips.map((item, index) => {
+    return { zip: item.zipCode };
+  });
 
   return (
     <>
@@ -186,6 +198,7 @@ const MyProfile = () => {
                         <TextField
                           value={arr.age}
                           name={"age"}
+                          required
                           onChange={handleChange}
                           label="Age"
                         ></TextField>
@@ -195,6 +208,7 @@ const MyProfile = () => {
                       <FormControl fullWidth>
                         <Autocomplete
                           id="controllable-states-demo"
+                          required
                           options={americaCity.data}
                           getOptionLabel={(option) =>
                             option?.name || arr.country
@@ -205,7 +219,12 @@ const MyProfile = () => {
                             setArr({ ...arr, country: value.name })
                           }
                           renderInput={(params) => (
-                            <TextField {...params} fullWidth label="State" />
+                            <TextField
+                              {...params}
+                              required
+                              fullWidth
+                              label="State"
+                            />
                           )}
                         />
                       </FormControl>
@@ -214,6 +233,7 @@ const MyProfile = () => {
                       <FormControl fullWidth>
                         <Autocomplete
                           id="controllable-states-demo"
+                          required
                           options={city.data}
                           getOptionLabel={(option) => option?.city || arr.city}
                           name={"city"}
@@ -222,7 +242,36 @@ const MyProfile = () => {
                             setArr({ ...arr, city: value.city })
                           }
                           renderInput={(params) => (
-                            <TextField {...params} fullWidth label="City" />
+                            <TextField
+                              {...params}
+                              required
+                              fullWidth
+                              label="City"
+                            />
+                          )}
+                        />
+                      </FormControl>
+                    </Col>
+                    <Col md={3} xs={6} sm={6} className="mb-3">
+                      <FormControl fullWidth>
+                        <Autocomplete
+                          id="controllable-states-demo"
+                          options={zipData}
+                          getOptionLabel={(option) =>
+                            option?.zip || arr.playZipCode
+                          }
+                          name={"playZipCode"}
+                          value={arr?.playZipCode}
+                          onChange={(e, value) =>
+                            setArr({ ...arr, playZipCode: value.zip })
+                          }
+                          renderInput={(params) => (
+                            <TextField
+                              {...params}
+                              required
+                              fullWidth
+                              label="Zip Code"
+                            />
                           )}
                         />
                       </FormControl>
@@ -230,6 +279,7 @@ const MyProfile = () => {
                     <Col className="mb-3" md={3} xs={6} sm={6}>
                       <FormControl fullWidth>
                         <TextField
+                          required
                           value={arr.matirialStatus}
                           name={"matirialStatus"}
                           onChange={handleChange}
@@ -247,6 +297,7 @@ const MyProfile = () => {
                     <Col className="mb-3" md={3} xs={6} sm={6}>
                       <FormControl fullWidth>
                         <TextField
+                          required
                           value={arr.drinker}
                           name={"drinker"}
                           onChange={handleChange}
@@ -261,7 +312,35 @@ const MyProfile = () => {
                         </TextField>
                       </FormControl>
                     </Col>
-                    <Col className="mb-3" md={3} xs={6} sm={6}>
+                    <Col md={3} xs={6} sm={6} className="mb-3">
+                      <FormControl fullWidth>
+                        <InputLabel id="demo-multiple-checkbox-label">
+                          Smoker
+                        </InputLabel>
+                        <Select
+                          labelId="demo-multiple-checkbox-label"
+                          id="demo-multiple-checkbox"
+                          required
+                          multiple
+                          value={arr.smoker}
+                          name={"smoker"}
+                          onChange={handleChange}
+                          input={<OutlinedInput label="Smoker" />}
+                          renderValue={(selected) => selected.join(", ")}
+                          MenuProps={MenuProps}
+                        >
+                          {data?.smoker?.map((item, index) => (
+                            <MenuItem key={index} value={item.value}>
+                              <Checkbox
+                                checked={arr.smoker.indexOf(item.value) > -1}
+                              />
+                              <ListItemText primary={item.value} />
+                            </MenuItem>
+                          ))}
+                        </Select>
+                      </FormControl>
+                    </Col>
+                    {/* <Col className="mb-3" md={3} xs={6} sm={6}>
                       <FormControl fullWidth>
                         <TextField
                           value={arr.smoker}
@@ -277,10 +356,11 @@ const MyProfile = () => {
                           ))}
                         </TextField>
                       </FormControl>
-                    </Col>
+                    </Col> */}
                     <Col className="mb-3" md={3} xs={6} sm={6}>
                       <FormControl fullWidth>
                         <TextField
+                          required
                           value={arr.race}
                           name={"race"}
                           onChange={handleChange}
@@ -298,6 +378,7 @@ const MyProfile = () => {
                     <Col className="mb-3" md={3} xs={6} sm={6}>
                       <FormControl fullWidth>
                         <TextField
+                          required
                           value={arr.religion}
                           name={"religion"}
                           onChange={handleChange}
@@ -315,6 +396,7 @@ const MyProfile = () => {
                     <Col className="mb-3" md={3} xs={6} sm={6}>
                       <FormControl fullWidth>
                         <TextField
+                          required
                           value={arr.politicalView}
                           name={"politicalView"}
                           onChange={handleChange}
@@ -355,6 +437,7 @@ const MyProfile = () => {
                     <Col className="mb-3" md={3} xs={6} sm={6}>
                       <FormControl fullWidth>
                         <TextField
+                          required
                           value={arr.skillLevel}
                           name={"skillLevel"}
                           onChange={handleChange}
@@ -372,6 +455,7 @@ const MyProfile = () => {
                     <Col className="mb-3" md={3} xs={6} sm={6}>
                       <FormControl fullWidth>
                         <TextField
+                          required
                           value={arr.currentHandicap}
                           name={"currentHandicap"}
                           onChange={handleChange}
@@ -389,6 +473,7 @@ const MyProfile = () => {
                     <Col className="mb-3" md={3} xs={6} sm={6}>
                       <FormControl fullWidth>
                         <TextField
+                          required
                           value={arr.distance}
                           name={"distance"}
                           onChange={handleChange}
@@ -406,6 +491,7 @@ const MyProfile = () => {
                     <Col className="mb-3" md={3} xs={6} sm={6}>
                       <FormControl fullWidth>
                         <TextField
+                          required
                           value={arr.oftenPlay}
                           name={"oftenPlay"}
                           onChange={handleChange}
@@ -450,6 +536,7 @@ const MyProfile = () => {
                         <Select
                           labelId="demo-multiple-checkbox-label"
                           id="demo-multiple-checkbox"
+                          required
                           multiple
                           value={arr.availability}
                           name={"availability"}
@@ -555,6 +642,7 @@ const MyProfile = () => {
                           Purpose
                         </InputLabel>
                         <Select
+                          required
                           labelId="demo-multiple-checkbox-label"
                           id="demo-multiple-checkbox"
                           multiple
@@ -585,6 +673,7 @@ const MyProfile = () => {
                           Home Courses
                         </InputLabel>
                         <Select
+                          required
                           labelId="demo-multiple-checkbox-label"
                           id="demo-multiple-checkbox"
                           multiple
@@ -728,6 +817,13 @@ const MyProfile = () => {
                         <p className="text-success">
                           Save has been changed Successfully
                         </p>
+                      </>
+                    ) : (
+                      ""
+                    )}
+                    {customLoader ? (
+                      <>
+                        <p>Loading...</p>
                       </>
                     ) : (
                       ""

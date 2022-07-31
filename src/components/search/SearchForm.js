@@ -534,16 +534,11 @@ const SearchForm = () => {
                       MenuProps={MenuProps}
                     >
                       {data?.skillLevel?.map((item, index) => (
-                        <MenuItem
-                          key={index}
-                          value={capitalizeFirstLetter(item.value)}
-                        >
+                        <MenuItem key={index} value={item.value}>
                           <Checkbox
                             checked={arr.skillLevel.indexOf(item.value) > -1}
                           />
-                          <ListItemText
-                            primary={capitalizeFirstLetter(item.value)}
-                          />
+                          <ListItemText primary={item.value} />
                         </MenuItem>
                       ))}
                     </Select>
@@ -869,11 +864,11 @@ const SearchForm = () => {
                     <Autocomplete
                       id="controllable-states-demo"
                       options={americaCity.data}
-                      getOptionLabel={(option) => option?.name || arr.country}
-                      name={"country"}
-                      value={arr?.country}
+                      getOptionLabel={(option) => option?.name || arr.playState}
+                      name={"playState"}
+                      value={arr?.playState}
                       onChange={(e, value) =>
-                        setArr({ ...arr, country: value.name })
+                        setArr({ ...arr, playState: value.name })
                       }
                       renderInput={(params) => (
                         <TextField {...params} fullWidth label="State" />

@@ -217,19 +217,19 @@ export default {
   ],
   skillLevel: [
     {
-      value: "beginner",
+      value: "Beginner",
     },
     {
-      value: "below average",
+      value: "Below average",
     },
     {
-      value: "average",
+      value: "Average",
     },
     {
-      value: "above average",
+      value: "Above Average",
     },
     {
-      value: "advance",
+      value: "Advance",
     },
     {
       value: "Does not matter",

@@ -17,7 +17,7 @@ const Header = () => {
             <Nav className="ms-auto">
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/my-profile">My Profile</Nav.Link>
-              <Nav.Link href="/search">Find Your Partner</Nav.Link>
+              <Nav.Link href="/search">Find My Partner</Nav.Link>
               <Nav.Link href="/results">Results</Nav.Link>
               <Nav.Link href="/">Book Now</Nav.Link>
               {/* <Link to="/my-profile">

@@ -31,7 +31,7 @@ export default {
       value: "66-75",
     },
     {
-      value: "75-100",
+      value: "76 or Greater",
     },
     {
       value: "Does not matter",
@@ -268,7 +268,7 @@ export default {
       value: "Mid-day",
     },
     {
-      value: "Afternoon",
+      value: "Afternoons",
     },
     {
       value: "Anytime",
@@ -331,10 +331,10 @@ export default {
       value: "Morning",
     },
     {
-      value: "Mid-afternoon",
+      value: "Mid-day",
     },
     {
-      value: "Afternoon",
+      value: "Afternoons",
     },
     {
       value: "Anytime",
@@ -436,6 +436,10 @@ export default {
   ],
   currentHandicap: [
     {
+      name: "No Handicap",
+      value: "0",
+    },
+    {
       name: "0 to 9",
       value: "0-9",
     },
@@ -450,10 +454,6 @@ export default {
     {
       name: "21 or Greater",
       value: "21-40",
-    },
-    {
-      name: "No Handicap",
-      value: "0",
     },
   ],
   professional: [

@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { capitalizeFirstLetter } from "../../utilis/capitalizeFirstLetter";
 import data from "../../utilis/searchBarData";
 // import state from "../../utilis/state";
-import city from "../../utilis/city";
+// import city from "../../utilis/city";
 // import county from "../../utilis/county";
 import americaCity from "../../utilis/americaCity";
 import banner from "../../assets/images/banner3.jpg";
@@ -24,7 +24,7 @@ import "./searchform.css";
 // import checkcity from "../../utilis/checkcity";
 // import zipCode from "../../utilis/zipCode.json";
 // import state from "../../utilis/filterZip";
-const usZips = require("us-zips/array");
+// const usZips = require("us-zips/array");
 
 const SearchForm = () => {
   const navigate = useNavigate();
@@ -84,15 +84,17 @@ const SearchForm = () => {
         width: 250,
       },
     },
+    // variant: "menu",
+    // getContentAnchorEl: null,
   };
 
   // console.log("Zip Code===>", usZips);
 
   //======= ZIP CODe====
 
-  const zipData = usZips.map((item, index) => {
-    return { zip: item.zipCode };
-  });
+  // const zipData = usZips.map((item, index) => {
+  //   return { zip: item.zipCode };
+  // });
 
   // console.log("Zip Code===>", usZips.length);
 
@@ -106,7 +108,7 @@ const SearchForm = () => {
           }}
         >
           <Container className="container-bg ">
-            <h5>Find Your Partner</h5>
+            <h5>Find My Partner</h5>
             <form onSubmit={handleSubmit}>
               <Row className="py-3">
                 <Col md={3} xs={6} sm={6} className="mb-3">
@@ -194,7 +196,7 @@ const SearchForm = () => {
                     />
                   </FormControl>
                 </Col>
-                <Col md={3} xs={6} sm={6} className="mb-3">
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <Autocomplete
                       id="controllable-states-demo"
@@ -210,8 +212,20 @@ const SearchForm = () => {
                       )}
                     />
                   </FormControl>
-                </Col>
+                </Col> */}
                 <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <TextField
+                      id="outlined-basic"
+                      label="City"
+                      variant="outlined"
+                      name={"city"}
+                      value={arr?.city}
+                      onChange={(e) => setArr({ ...arr, city: e.target.value })}
+                    />
+                  </FormControl>
+                </Col>
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <Autocomplete
                       id="controllable-states-demo"
@@ -225,6 +239,20 @@ const SearchForm = () => {
                       renderInput={(params) => (
                         <TextField {...params} fullWidth label="Zip Code" />
                       )}
+                    />
+                  </FormControl>
+                </Col> */}
+                <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <TextField
+                      id="outlined-basic"
+                      label="Zip Code"
+                      variant="outlined"
+                      name={"zipCode"}
+                      value={arr?.zipCode}
+                      onChange={(e) =>
+                        setArr({ ...arr, zipCode: e.target.value })
+                      }
                     />
                   </FormControl>
                 </Col>
@@ -644,7 +672,7 @@ const SearchForm = () => {
                     </Select>
                   </FormControl>
                 </Col>
-                <Col md={3} xs={6} sm={6} className="mb-3">
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <InputLabel id="demo-multiple-checkbox-label">
                       Industry
@@ -670,7 +698,7 @@ const SearchForm = () => {
                       ))}
                     </Select>
                   </FormControl>
-                </Col>
+                </Col> */}
                 {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <TextField
@@ -784,46 +812,6 @@ const SearchForm = () => {
                     <h5>Professional</h5>
                   </div>
                 </Col>
-                <Col md={3} xs={6} sm={6} className="mb-3">
-                  <FormControl fullWidth>
-                    <Autocomplete
-                      id="controllable-states-demo"
-                      options={data?.company}
-                      getOptionLabel={(option) => option?.value || arr.company}
-                      name={"company"}
-                      value={arr?.company}
-                      onChange={(e, value) =>
-                        setArr({ ...arr, company: value.value })
-                      }
-                      renderInput={(params) => (
-                        <TextField {...params} fullWidth label="Company" />
-                      )}
-                    />
-                  </FormControl>
-                </Col>
-                <Col md={3} xs={6} sm={6} className="mb-3">
-                  <FormControl fullWidth>
-                    <Autocomplete
-                      id="controllable-states-demo"
-                      options={data?.companyTitle}
-                      getOptionLabel={(option) =>
-                        option?.value || arr.companyTitle
-                      }
-                      name={"companyTitle"}
-                      value={arr?.companyTitle}
-                      onChange={(e, value) =>
-                        setArr({ ...arr, companyTitle: value.value })
-                      }
-                      renderInput={(params) => (
-                        <TextField
-                          {...params}
-                          fullWidth
-                          label="Company Title"
-                        />
-                      )}
-                    />
-                  </FormControl>
-                </Col>
                 <Col md={6} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <InputLabel id="demo-multiple-checkbox-label">
@@ -853,10 +841,72 @@ const SearchForm = () => {
                     </Select>
                   </FormControl>
                 </Col>
+                <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <TextField
+                      required
+                      value={arr.company}
+                      name={"company"}
+                      onChange={handleChange}
+                      label="Company"
+                    ></TextField>
+                  </FormControl>
+                </Col>
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <Autocomplete
+                      id="controllable-states-demo"
+                      options={data?.company}
+                      getOptionLabel={(option) => option?.value || arr.company}
+                      name={"company"}
+                      value={arr?.company}
+                      onChange={(e, value) =>
+                        setArr({ ...arr, company: value.value })
+                      }
+                      renderInput={(params) => (
+                        <TextField {...params} fullWidth label="Company" />
+                      )}
+                    />
+                  </FormControl>
+                </Col> */}
+                <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <TextField
+                      required
+                      value={arr.companyTitle}
+                      name={"companyTitle"}
+                      onChange={handleChange}
+                      label="Company Title"
+                    ></TextField>
+                  </FormControl>
+                </Col>
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <Autocomplete
+                      id="controllable-states-demo"
+                      options={data?.companyTitle}
+                      getOptionLabel={(option) =>
+                        option?.value || arr.companyTitle
+                      }
+                      name={"companyTitle"}
+                      value={arr?.companyTitle}
+                      onChange={(e, value) =>
+                        setArr({ ...arr, companyTitle: value.value })
+                      }
+                      renderInput={(params) => (
+                        <TextField
+                          {...params}
+                          fullWidth
+                          label="Company Title"
+                        />
+                      )}
+                    />
+                  </FormControl>
+                </Col> */}
 
                 <Col md={12}>
                   <div>
-                    <h5>Where do you want to play?</h5>
+                    <h5>Where do I want to play?</h5>
                   </div>
                 </Col>
                 <Col md={3} xs={6} sm={6} className="mb-3">
@@ -876,7 +926,7 @@ const SearchForm = () => {
                     />
                   </FormControl>
                 </Col>
-                <Col md={3} xs={6} sm={6} className="mb-3">
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <Autocomplete
                       id="controllable-states-demo"
@@ -892,8 +942,22 @@ const SearchForm = () => {
                       )}
                     />
                   </FormControl>
-                </Col>
+                </Col> */}
                 <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <TextField
+                      id="outlined-basic"
+                      label="City"
+                      variant="outlined"
+                      name={"playCity"}
+                      value={arr?.playCity}
+                      onChange={(e) =>
+                        setArr({ ...arr, playCity: e.target.value })
+                      }
+                    />
+                  </FormControl>
+                </Col>
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <Autocomplete
                       id="controllable-states-demo"
@@ -909,6 +973,20 @@ const SearchForm = () => {
                       renderInput={(params) => (
                         <TextField {...params} fullWidth label="Zip Code" />
                       )}
+                    />
+                  </FormControl>
+                </Col> */}
+                <Col md={3} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <TextField
+                      id="outlined-basic"
+                      label="Zip Code"
+                      variant="outlined"
+                      name={"playZipCode"}
+                      value={arr?.playZipCode}
+                      onChange={(e) =>
+                        setArr({ ...arr, playZipCode: e.target.value })
+                      }
                     />
                   </FormControl>
                 </Col>
@@ -983,6 +1061,25 @@ const SearchForm = () => {
                     </Select>
                   </FormControl>
                 </Col> */}
+                <Col md={6} xs={6} sm={6} className="mb-3">
+                  <FormControl fullWidth>
+                    <Autocomplete
+                      id="controllable-states-demo"
+                      options={data?.favouriteCourse}
+                      getOptionLabel={(option) =>
+                        option?.value || arr.playCourse
+                      }
+                      name={"playCourse"}
+                      value={arr?.playCourse}
+                      onChange={(e, value) =>
+                        setArr({ ...arr, playCourse: value.value })
+                      }
+                      renderInput={(params) => (
+                        <TextField {...params} fullWidth label="Courses" />
+                      )}
+                    />
+                  </FormControl>
+                </Col>
                 {/* ********* When I want to Play Section ********* */}
                 <Col md={12}>
                   <div>
@@ -996,7 +1093,7 @@ const SearchForm = () => {
                     }
                     multiple={true}
                     format={"MM/DD/YYYY"}
-                    placeholder={"Days *"}
+                    placeholder={"Day(s) *"}
                   />
                 </Col>
                 {/* <Col md={3} xs={6} sm={6} className="mb-3">
@@ -1036,7 +1133,7 @@ const SearchForm = () => {
                       renderValue={(selected) => selected.join(", ")}
                       MenuProps={MenuProps}
                     >
-                      {data?.availability?.map((item, index) => (
+                      {data?.time?.map((item, index) => (
                         <MenuItem key={index} value={item.value}>
                           <Checkbox
                             checked={arr.playTime.indexOf(item.value) > -1}
@@ -1047,7 +1144,7 @@ const SearchForm = () => {
                     </Select>
                   </FormControl>
                 </Col>
-                <Col md={6} xs={6} sm={6} className="mb-3">
+                {/* <Col md={6} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <Autocomplete
                       id="controllable-states-demo"
@@ -1065,7 +1162,7 @@ const SearchForm = () => {
                       )}
                     />
                   </FormControl>
-                </Col>
+                </Col> */}
               </Row>
               <div>
                 <button className="submit-button" type="submit">

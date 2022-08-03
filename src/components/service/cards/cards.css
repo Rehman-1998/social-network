@@ -60,9 +60,9 @@
   margin-left: 12px;
   width: 92%;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 .contact-btn {
   background-color: #779e03;

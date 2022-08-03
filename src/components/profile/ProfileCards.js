@@ -13,6 +13,7 @@ import {
   addUserMessage,
 } from "react-chat-widget";
 import Logo from "../../assets/images/logo.png";
+import Pic from "../../assets/images/mypic.jpeg";
 import "react-chat-widget/lib/styles.css";
 // import data from "../../utilis/data";
 const ProfileCards = () => {
@@ -111,7 +112,12 @@ Purpose: Networking, Meet New Friends`;
             <Row>
               <Col className="mb-3" md={4}>
                 <div className="profile-details">
-                  <img src={profileData?.image} alt="" />
+                  {location.state.id === "62bff400d45f9d4184350c89" ? (
+                    <img src={Pic} alt="" />
+                  ) : (
+                    <img src={profileData?.image} alt="" />
+                  )}
+                  {/* <img src={profileData?.image} alt="" /> */}
                   {/* <h3>
                   {profileData && capitalizeFirstLetter(profileData.name)}
                 </h3> */}

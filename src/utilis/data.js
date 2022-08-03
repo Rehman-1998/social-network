@@ -267,22 +267,19 @@ export default {
 
   oftenPlay: [
     {
-      value: "daily",
+      value: "Daily",
     },
     {
-      value: "once a week",
+      value: "Once a week",
     },
     {
-      value: "twice a week",
+      value: "Twice a week",
     },
     {
-      value: "three times a week",
+      value: "Three times a week",
     },
     {
-      value: "four times a week",
-    },
-    {
-      value: "three times a month",
+      value: "Not very often",
     },
   ],
   availability: [
@@ -300,7 +297,7 @@ export default {
       value: "Mid-day",
     },
     {
-      value: "Afternoon",
+      value: "Afternoons",
     },
     {
       value: "Anytime",
@@ -385,13 +382,13 @@ export default {
   ],
   purpose: [
     {
-      value: "Dating",
-    },
-    {
       value: "I just want to play golf",
     },
     {
       value: "Meet new friends",
+    },
+    {
+      value: "Dating",
     },
     {
       value: "Networking",

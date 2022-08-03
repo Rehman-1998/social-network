@@ -25,7 +25,7 @@ import city from "../../utilis/city";
 import county from "../../utilis/county";
 import americaCity from "../../utilis/americaCity";
 import zip from "../../utilis/zip.json";
-import moment from "moment";
+import Pic from "../../assets/images/mypic.jpeg";
 import "./myprofile.css";
 const usZips = require("us-zips/array");
 const MyProfile = () => {
@@ -54,7 +54,7 @@ const MyProfile = () => {
     age: "",
     birthdate: "",
     gender: "",
-    country: "",
+    state: "",
     city: "",
     zipCode: "",
     distance: "",
@@ -159,7 +159,8 @@ const MyProfile = () => {
             <Row>
               <Col className="mb-3" md={4}>
                 <div className="profile-details">
-                  <img src={profileData?.image} alt="" />
+                  {/* <img src={profileData?.image} alt="" /> */}
+                  <img src={Pic} alt="" />
                   <h3>
                     {profileData && capitalizeFirstLetter(profileData.name)}
                   </h3>
@@ -210,13 +211,11 @@ const MyProfile = () => {
                           id="controllable-states-demo"
                           required
                           options={americaCity.data}
-                          getOptionLabel={(option) =>
-                            option?.name || arr.country
-                          }
-                          name={"country"}
-                          value={arr?.country}
+                          getOptionLabel={(option) => option?.name || arr.state}
+                          name={"state"}
+                          value={arr?.state}
                           onChange={(e, value) =>
-                            setArr({ ...arr, country: value.name })
+                            setArr({ ...arr, state: value.name })
                           }
                           renderInput={(params) => (
                             <TextField
@@ -230,6 +229,20 @@ const MyProfile = () => {
                       </FormControl>
                     </Col>
                     <Col md={3} xs={6} sm={6} className="mb-3">
+                      <FormControl fullWidth>
+                        <TextField
+                          id="outlined-basic"
+                          label="City"
+                          variant="outlined"
+                          name={"city"}
+                          value={arr?.city}
+                          onChange={(e) =>
+                            setArr({ ...arr, city: e.target.value })
+                          }
+                        />
+                      </FormControl>
+                    </Col>
+                    {/* <Col md={3} xs={6} sm={6} className="mb-3">
                       <FormControl fullWidth>
                         <Autocomplete
                           id="controllable-states-demo"
@@ -251,8 +264,22 @@ const MyProfile = () => {
                           )}
                         />
                       </FormControl>
-                    </Col>
+                    </Col> */}
                     <Col md={3} xs={6} sm={6} className="mb-3">
+                      <FormControl fullWidth>
+                        <TextField
+                          id="outlined-basic"
+                          label="Zip Code"
+                          variant="outlined"
+                          name={"zipCode"}
+                          value={arr?.zipCode}
+                          onChange={(e) =>
+                            setArr({ ...arr, zipCode: e.target.value })
+                          }
+                        />
+                      </FormControl>
+                    </Col>
+                    {/* <Col md={3} xs={6} sm={6} className="mb-3">
                       <FormControl fullWidth>
                         <Autocomplete
                           id="controllable-states-demo"
@@ -275,7 +302,7 @@ const MyProfile = () => {
                           )}
                         />
                       </FormControl>
-                    </Col>
+                    </Col> */}
                     <Col className="mb-3" md={3} xs={6} sm={6}>
                       <FormControl fullWidth>
                         <TextField
@@ -456,6 +483,24 @@ const MyProfile = () => {
                       <FormControl fullWidth>
                         <TextField
                           required
+                          value={arr.oftenPlay}
+                          name={"oftenPlay"}
+                          onChange={handleChange}
+                          select
+                          label="Often Play"
+                        >
+                          {data?.oftenPlay?.map((item, index) => (
+                            <MenuItem key={index} value={item.value}>
+                              {capitalizeFirstLetter(item.value)}
+                            </MenuItem>
+                          ))}
+                        </TextField>
+                      </FormControl>
+                    </Col>
+                    <Col className="mb-3" md={3} xs={6} sm={6}>
+                      <FormControl fullWidth>
+                        <TextField
+                          required
                           value={arr.currentHandicap}
                           name={"currentHandicap"}
                           onChange={handleChange}
@@ -488,24 +533,7 @@ const MyProfile = () => {
                         </TextField>
                       </FormControl>
                     </Col>
-                    <Col className="mb-3" md={3} xs={6} sm={6}>
-                      <FormControl fullWidth>
-                        <TextField
-                          required
-                          value={arr.oftenPlay}
-                          name={"oftenPlay"}
-                          onChange={handleChange}
-                          select
-                          label="Often Play"
-                        >
-                          {data?.oftenPlay?.map((item, index) => (
-                            <MenuItem key={index} value={item.value}>
-                              {capitalizeFirstLetter(item.value)}
-                            </MenuItem>
-                          ))}
-                        </TextField>
-                      </FormControl>
-                    </Col>
+
                     {/* <Col className="mb-3" md={3} xs={6} sm={6}>
                     <FormControl fullWidth>
                       <TextField

@@ -58,10 +58,15 @@
 } */
 
 .rcw-conversation-container .rcw-header {
-  background-color: #8fbf00 !important;
+  /* background-color: #8fbf00 !important; */
+  background-color: #53bef2 !important;
+}
+.rcw-client .rcw-message-text {
+  background-color: #8fbf00a8 !important;
 }
 .rcw-launcher {
-  background-color: #8fbf00 !important;
+  /* background-color: #8fbf00 !important; */
+  background-color: #53bef2 !important;
 }
 
 .rcw-conversation-container .avatar {

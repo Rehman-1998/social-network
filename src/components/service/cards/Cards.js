@@ -12,6 +12,7 @@ import {
   toggleWidget,
   addUserMessage,
 } from "react-chat-widget";
+import { Checkbox } from "@mui/material";
 import Logo from "../../../assets/images/logo.png";
 
 const Cards = ({ setDumyData, dumyData }) => {
@@ -19,6 +20,7 @@ const Cards = ({ setDumyData, dumyData }) => {
   const [data, setData] = React.useState("");
   const [loading, setLoading] = React.useState(false);
   const [customToogle, setCustomToogle] = React.useState(false);
+  const [isSelect, setIsSelect] = React.useState(false);
 
   const handleClick = (id) => {
     navigate("/profile", { state: { id } });
@@ -53,19 +55,46 @@ Purpose: Networking, Meet New Friends`;
     }
   }, [customToogle]);
 
+  const label = { inputProps: { "aria-label": "Checkbox demo" } };
+
   return (
     <>
       <Container className=" border-top pt-4 pb-4">
         {loading ? (
-          <button
-            className="mb-3 contact-btn"
-            onClick={() => {
-              setCustomToogle((prevCheck) => !prevCheck);
-              toggleWidget();
-            }}
-          >
-            Contact All
-          </button>
+          <>
+            <button
+              className="mb-3 contact-btn"
+              onClick={() => {
+                setCustomToogle((prevCheck) => !prevCheck);
+                toggleWidget();
+              }}
+            >
+              Contact All
+            </button>
+            {isSelect ? null : (
+              <button
+                className="mb-3 ms-3 contact-btn"
+                onClick={() => {
+                  setIsSelect(true);
+                }}
+              >
+                Select
+              </button>
+            )}
+
+            {isSelect ? (
+              <button
+                className="mb-3 ms-3 contact-btn"
+                onClick={() => {
+                  setCustomToogle((prevCheck) => !prevCheck);
+                  toggleWidget();
+                  setIsSelect(false);
+                }}
+              >
+                Send Message
+              </button>
+            ) : null}
+          </>
         ) : (
           ""
         )}
@@ -98,6 +127,8 @@ Purpose: Networking, Meet New Friends`;
                 data?.map((item, index) => (
                   <Col key={index} className="mb-3" md={6} lg={4}>
                     <div className="profile-cards">
+                      {isSelect ? <Checkbox {...label} defaultChecked /> : null}
+
                       <Row>
                         <Col className="mb-2" sm={4} xs={4} md={4} lg={4}>
                           <div className="cards-image">

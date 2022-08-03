@@ -62,7 +62,7 @@ Purpose: Networking, Meet New Friends`;
       <Container className=" border-top pt-4 pb-4">
         {loading ? (
           <>
-            <button
+            {/* <button
               className="mb-3 contact-btn"
               onClick={() => {
                 setCustomToogle((prevCheck) => !prevCheck);
@@ -70,7 +70,7 @@ Purpose: Networking, Meet New Friends`;
               }}
             >
               Contact All
-            </button>
+            </button> */}
             {isSelect ? null : (
               <button
                 className="mb-3 ms-3 contact-btn"
@@ -78,7 +78,7 @@ Purpose: Networking, Meet New Friends`;
                   setIsSelect(true);
                 }}
               >
-                Select
+                Contact All
               </button>
             )}
 
@@ -86,7 +86,8 @@ Purpose: Networking, Meet New Friends`;
               <button
                 className="mb-3 ms-3 contact-btn"
                 onClick={() => {
-                  setCustomToogle((prevCheck) => !prevCheck);
+                  // setCustomToogle((prevCheck) => !prevCheck);
+                  setCustomToogle(true);
                   toggleWidget();
                   setIsSelect(false);
                 }}

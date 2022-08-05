@@ -62,15 +62,16 @@ Purpose: Networking, Meet New Friends`;
       <Container className=" border-top pt-4 pb-4">
         {loading ? (
           <>
-            {/* <button
+            <button
               className="mb-3 contact-btn"
               onClick={() => {
-                setCustomToogle((prevCheck) => !prevCheck);
+                // setCustomToogle((prevCheck) => !prevCheck);
+                setCustomToogle(true);
                 toggleWidget();
               }}
             >
               Contact All
-            </button> */}
+            </button>
             {isSelect ? null : (
               <button
                 className="mb-3 ms-3 contact-btn"
@@ -78,7 +79,7 @@ Purpose: Networking, Meet New Friends`;
                   setIsSelect(true);
                 }}
               >
-                Contact All
+                Select
               </button>
             )}
 
@@ -128,7 +129,7 @@ Purpose: Networking, Meet New Friends`;
                 data?.map((item, index) => (
                   <Col key={index} className="mb-3" md={6} lg={4}>
                     <div className="profile-cards">
-                      {isSelect ? <Checkbox {...label} defaultChecked /> : null}
+                      {isSelect ? <Checkbox {...label} /> : null}
 
                       <Row>
                         <Col className="mb-2" sm={4} xs={4} md={4} lg={4}>

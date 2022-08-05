@@ -38,6 +38,24 @@
   width: 100% !important;
 }
 
+.react-tagsinput-input {
+  width: 100% !important;
+}
+.react-tagsinput--focused {
+  border-color: none !important;
+}
+.react-tagsinput-tag {
+  background-color: #1976d2 !important;
+  border: 1px solid white !important;
+  color: white !important;
+}
+.react-tagsinput-remove {
+  color: white !important;
+}
+.test-border {
+  border-color: #1976d2 !important;
+}
+
 @media screen and (max-width: 786px) {
   .rmdp-container {
     height: 55px !important;

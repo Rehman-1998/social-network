@@ -21,6 +21,8 @@ import {
 import { useNavigate } from "react-router";
 import DatePicker from "react-multi-date-picker";
 import "./searchform.css";
+import TagsInput from "react-tagsinput";
+import "react-tagsinput/react-tagsinput.css"; // If using WebPack and style-loader.
 // import checkcity from "../../utilis/checkcity";
 // import zipCode from "../../utilis/zipCode.json";
 // import state from "../../utilis/filterZip";
@@ -57,8 +59,8 @@ const SearchForm = () => {
     playCourse: [],
     playTime: [],
     professionalIndustry: [],
-    company: "",
-    companyTitle: "",
+    company: [],
+    companyTitle: [],
   });
 
   const handleChange = (e) => {
@@ -812,7 +814,7 @@ const SearchForm = () => {
                     <h5>Professional</h5>
                   </div>
                 </Col>
-                <Col md={6} xs={6} sm={6} className="mb-3">
+                <Col md={8} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <InputLabel id="demo-multiple-checkbox-label">
                       Industry
@@ -841,15 +843,24 @@ const SearchForm = () => {
                     </Select>
                   </FormControl>
                 </Col>
-                <Col md={3} xs={6} sm={6} className="mb-3">
+                <Col md={6} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
-                    <TextField
+                    {/* <TextField
                       required
                       value={arr.company}
                       name={"company"}
                       onChange={handleChange}
                       label="Company"
-                    ></TextField>
+                    ></TextField> */}
+                    <TagsInput
+                      focusedClassName={"test-border"}
+                      name={"company"}
+                      value={arr.company}
+                      onChange={(e) => setArr({ ...arr, company: e })}
+                      inputProps={{
+                        placeholder: "Company",
+                      }}
+                    />
                   </FormControl>
                 </Col>
                 {/* <Col md={3} xs={6} sm={6} className="mb-3">
@@ -869,15 +880,24 @@ const SearchForm = () => {
                     />
                   </FormControl>
                 </Col> */}
-                <Col md={3} xs={6} sm={6} className="mb-3">
+                <Col md={6} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
-                    <TextField
+                    {/* <TextField
                       required
                       value={arr.companyTitle}
                       name={"companyTitle"}
                       onChange={handleChange}
                       label="Company Title"
-                    ></TextField>
+                    ></TextField> */}
+                    <TagsInput
+                      focusedClassName={"test-border"}
+                      name={"companyTitle"}
+                      value={arr.companyTitle}
+                      onChange={(e) => setArr({ ...arr, companyTitle: e })}
+                      inputProps={{
+                        placeholder: "Company Title",
+                      }}
+                    />
                   </FormControl>
                 </Col>
                 {/* <Col md={3} xs={6} sm={6} className="mb-3">

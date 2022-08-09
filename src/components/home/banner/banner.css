@@ -8,7 +8,7 @@
 
 .banner {
   position: absolute;
-  top: 55%;
+  top: 52%;
   right: 50%;
   transform: translate(50%, -50%);
   /* background: #0c0b0b61; */
@@ -65,19 +65,25 @@
     height: 100vh !important;
   }
   .banner-Logo {
-    width: 300px;
+    width: 330px;
     height: 200px;
     object-fit: contain;
     margin-bottom: 10px;
+  }
+  .banner {
+    top: 60%;
   }
 }
 @media screen and (max-width: 299px) {
   .banner-image {
     height: 100vh !important;
   }
+  .banner {
+    top: 60%;
+  }
   .banner-Logo {
-    width: 200px;
-    height: 130px;
+    width: 235px;
+    height: 145px;
     object-fit: cover;
     margin-bottom: 10px;
   }

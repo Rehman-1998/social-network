@@ -487,7 +487,7 @@ const MyProfile = () => {
                           name={"oftenPlay"}
                           onChange={handleChange}
                           select
-                          label="Often Play"
+                          label="Frequency of Play"
                         >
                           {data?.oftenPlay?.map((item, index) => (
                             <MenuItem key={index} value={item.value}>

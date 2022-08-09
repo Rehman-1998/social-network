@@ -34,7 +34,7 @@ export default {
       value: "76 or Greater",
     },
     {
-      value: "Does not matter",
+      value: "Any age",
     },
   ],
   materialStatus: [
@@ -437,7 +437,7 @@ export default {
   currentHandicap: [
     {
       name: "No Handicap",
-      value: "0",
+      value: "No Handicap",
     },
     {
       name: "0 to 9",

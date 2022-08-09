@@ -131,7 +131,7 @@ Purpose: Networking, Meet New Friends`;
                         toggleWidget();
                       }}
                     >
-                      Contact Me{" "}
+                      Contact{" "}
                     </button>
                   </div>
                 </div>
@@ -319,7 +319,7 @@ Purpose: Networking, Meet New Friends`;
                     </Col>
                     <Col md={3} xs={6} sm={6}>
                       <div>
-                        <h6>Often Play :</h6>
+                        <h6>Frequency of Play:</h6>
                       </div>
                     </Col>
                     <Col md={3} xs={6} sm={6}>

@@ -140,6 +140,7 @@ const SearchForm = () => {
                       labelId="demo-multiple-checkbox-label"
                       id="demo-multiple-checkbox"
                       multiple
+                      required
                       value={arr.age}
                       name={"age"}
                       onChange={handleChange}
@@ -193,7 +194,12 @@ const SearchForm = () => {
                         setArr({ ...arr, country: value.name })
                       }
                       renderInput={(params) => (
-                        <TextField {...params} fullWidth label="State" />
+                        <TextField
+                          required
+                          {...params}
+                          fullWidth
+                          label="State"
+                        />
                       )}
                     />
                   </FormControl>
@@ -220,6 +226,7 @@ const SearchForm = () => {
                     <TextField
                       id="outlined-basic"
                       label="City"
+                      required
                       variant="outlined"
                       name={"city"}
                       value={arr?.city}
@@ -249,6 +256,7 @@ const SearchForm = () => {
                     <TextField
                       id="outlined-basic"
                       label="Zip Code"
+                      required
                       variant="outlined"
                       name={"zipCode"}
                       value={arr?.zipCode}
@@ -266,7 +274,7 @@ const SearchForm = () => {
                       name={"distance"}
                       onChange={handleChange}
                       select
-                      label="Willingness to Drive"
+                      label="Distance Willing to Travel"
                     >
                       {data?.distance?.map((item, index) => (
                         <MenuItem key={index} value={item.value}>
@@ -278,8 +286,8 @@ const SearchForm = () => {
                 </Col> */}
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
-                    <InputLabel id="demo-multiple-checkbox-label">
-                      Willingness to Drive
+                    <InputLabel required id="demo-multiple-checkbox-label">
+                      Distance Willing to Travel
                     </InputLabel>
                     <Select
                       labelId="demo-multiple-checkbox-label"
@@ -288,7 +296,9 @@ const SearchForm = () => {
                       value={arr.distance}
                       name={"distance"}
                       onChange={handleChange}
-                      input={<OutlinedInput label="Willingness to Drive" />}
+                      input={
+                        <OutlinedInput label="Distance Willing to Travel" />
+                      }
                       renderValue={(selected) => selected.join(", ")}
                       MenuProps={MenuProps}
                     >
@@ -365,7 +375,7 @@ const SearchForm = () => {
                 {/* CheckBox */}
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
-                    <InputLabel id="demo-multiple-checkbox-label">
+                    <InputLabel required id="demo-multiple-checkbox-label">
                       Smoker
                     </InputLabel>
                     <Select
@@ -410,7 +420,7 @@ const SearchForm = () => {
                 </Col> */}
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
-                    <InputLabel id="demo-multiple-checkbox-label">
+                    <InputLabel required id="demo-multiple-checkbox-label">
                       Race
                     </InputLabel>
                     <Select
@@ -437,7 +447,7 @@ const SearchForm = () => {
                 </Col>
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
-                    <InputLabel id="demo-multiple-checkbox-label">
+                    <InputLabel required id="demo-multiple-checkbox-label">
                       Religion
                     </InputLabel>
                     <Select
@@ -482,7 +492,7 @@ const SearchForm = () => {
                 </Col> */}
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
-                    <InputLabel id="demo-multiple-checkbox-label">
+                    <InputLabel required id="demo-multiple-checkbox-label">
                       Political View
                     </InputLabel>
                     <Select
@@ -549,7 +559,7 @@ const SearchForm = () => {
                 </Col> */}
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
-                    <InputLabel id="demo-multiple-checkbox-label">
+                    <InputLabel required id="demo-multiple-checkbox-label">
                       Skill Level
                     </InputLabel>
                     <Select
@@ -598,7 +608,7 @@ const SearchForm = () => {
                 </Col> */}
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
-                    <InputLabel id="demo-multiple-checkbox-label">
+                    <InputLabel required id="demo-multiple-checkbox-label">
                       Current Handicap
                     </InputLabel>
                     <Select
@@ -649,7 +659,7 @@ const SearchForm = () => {
                 </Col> */}
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
-                    <InputLabel id="demo-multiple-checkbox-label">
+                    <InputLabel required id="demo-multiple-checkbox-label">
                       Purpose
                     </InputLabel>
                     <Select
@@ -719,7 +729,7 @@ const SearchForm = () => {
                     </TextField>
                   </FormControl>
                 </Col> */}
-                <Col md={3} xs={6} sm={6} className="mb-3">
+                {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <DatePicker
                     // value={new Date()}
                     onChange={(e, value) =>
@@ -729,7 +739,7 @@ const SearchForm = () => {
                     multiple={true}
                     placeholder={"Days *"}
                   />
-                </Col>
+                </Col> */}
                 {/* <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <TextField
@@ -753,7 +763,7 @@ const SearchForm = () => {
                 </Col> */}
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
-                    <InputLabel id="demo-multiple-checkbox-label">
+                    <InputLabel required id="demo-multiple-checkbox-label">
                       Availability
                     </InputLabel>
                     <Select
@@ -816,7 +826,7 @@ const SearchForm = () => {
                 </Col>
                 <Col md={8} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
-                    <InputLabel id="demo-multiple-checkbox-label">
+                    <InputLabel required id="demo-multiple-checkbox-label">
                       Industry
                     </InputLabel>
                     <Select
@@ -855,10 +865,11 @@ const SearchForm = () => {
                     <TagsInput
                       focusedClassName={"test-border"}
                       name={"company"}
+                      required
                       value={arr.company}
                       onChange={(e) => setArr({ ...arr, company: e })}
                       inputProps={{
-                        placeholder: "Company",
+                        placeholder: "Company *",
                       }}
                     />
                   </FormControl>
@@ -890,12 +901,13 @@ const SearchForm = () => {
                       label="Company Title"
                     ></TextField> */}
                     <TagsInput
+                      required
                       focusedClassName={"test-border"}
                       name={"companyTitle"}
                       value={arr.companyTitle}
                       onChange={(e) => setArr({ ...arr, companyTitle: e })}
                       inputProps={{
-                        placeholder: "Company Title",
+                        placeholder: "Company Title *",
                       }}
                     />
                   </FormControl>
@@ -926,7 +938,7 @@ const SearchForm = () => {
 
                 <Col md={12}>
                   <div>
-                    <h5>Where do I want to play?</h5>
+                    <h5>Where I want to play</h5>
                   </div>
                 </Col>
                 <Col md={3} xs={6} sm={6} className="mb-3">
@@ -941,7 +953,12 @@ const SearchForm = () => {
                         setArr({ ...arr, playState: value.name })
                       }
                       renderInput={(params) => (
-                        <TextField {...params} fullWidth label="State" />
+                        <TextField
+                          required
+                          {...params}
+                          fullWidth
+                          label="State"
+                        />
                       )}
                     />
                   </FormControl>
@@ -966,6 +983,7 @@ const SearchForm = () => {
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <TextField
+                      required
                       id="outlined-basic"
                       label="City"
                       variant="outlined"
@@ -999,6 +1017,7 @@ const SearchForm = () => {
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
                     <TextField
+                      required
                       id="outlined-basic"
                       label="Zip Code"
                       variant="outlined"
@@ -1018,7 +1037,7 @@ const SearchForm = () => {
                       name={"playDistance"}
                       onChange={handleChange}
                       select
-                      label="Willingness to Drive"
+                      label="Distance Willing to Travel"
                     >
                       {data?.distance?.map((item, index) => (
                         <MenuItem key={index} value={item.value}>
@@ -1095,7 +1114,12 @@ const SearchForm = () => {
                         setArr({ ...arr, playCourse: value.value })
                       }
                       renderInput={(params) => (
-                        <TextField {...params} fullWidth label="Courses" />
+                        <TextField
+                          required
+                          {...params}
+                          fullWidth
+                          label="Courses"
+                        />
                       )}
                     />
                   </FormControl>
@@ -1103,7 +1127,7 @@ const SearchForm = () => {
                 {/* ********* When I want to Play Section ********* */}
                 <Col md={12}>
                   <div>
-                    <h5>When I want to play?</h5>
+                    <h5>When I want to play</h5>
                   </div>
                 </Col>
                 <Col md={3} xs={6} sm={6} className="mb-3">
@@ -1111,6 +1135,7 @@ const SearchForm = () => {
                     onChange={(e, value) =>
                       console.log("e Value===>>>", e, value)
                     }
+                    required
                     multiple={true}
                     format={"MM/DD/YYYY"}
                     placeholder={"Day(s) *"}
@@ -1139,7 +1164,7 @@ const SearchForm = () => {
                 </Col> */}
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
-                    <InputLabel id="demo-multiple-checkbox-label">
+                    <InputLabel required id="demo-multiple-checkbox-label">
                       Time
                     </InputLabel>
                     <Select

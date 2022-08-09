@@ -79,7 +79,7 @@ Purpose: Networking, Meet New Friends`;
                   setIsSelect(true);
                 }}
               >
-                Select
+                Contact Selected
               </button>
             )}
 
@@ -129,8 +129,8 @@ Purpose: Networking, Meet New Friends`;
                 data?.map((item, index) => (
                   <Col key={index} className="mb-3" md={6} lg={4}>
                     <div className="profile-cards">
-                      {isSelect ? <Checkbox {...label} /> : null}
-
+                      {/* {isSelect ? <Checkbox {...label} /> : null} */}
+                      <Checkbox {...label} />
                       <Row>
                         <Col className="mb-2" sm={4} xs={4} md={4} lg={4}>
                           <div className="cards-image">

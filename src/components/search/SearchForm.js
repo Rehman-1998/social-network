@@ -133,7 +133,7 @@ const SearchForm = () => {
                 </Col>
                 <Col md={3} xs={6} sm={6} className="mb-3">
                   <FormControl fullWidth>
-                    <InputLabel id="demo-multiple-checkbox-label">
+                    <InputLabel required id="demo-multiple-checkbox-label">
                       Age
                     </InputLabel>
                     <Select

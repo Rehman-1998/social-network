@@ -419,7 +419,9 @@ Purpose: Networking, Meet New Friends`;
                             window.location.replace(profileData?.linkdinProfile)
                           }
                         >
-                          {profileData && profileData.linkdinProfile}
+                          {profileData && profileData.linkdinProfile !== ""
+                            ? profileData.linkdinProfile
+                            : "No Data"}
                         </p>
                       </div>
                     </Col>
@@ -431,8 +433,9 @@ Purpose: Networking, Meet New Friends`;
                     <Col md={3} xs={6} sm={6}>
                       <div>
                         <p>
-                          {profileData &&
-                            capitalizeFirstLetter(profileData.companyName)}
+                          {profileData && profileData.companyName !== ""
+                            ? profileData.companyName
+                            : "No Data"}
                         </p>
                       </div>
                     </Col>
@@ -444,10 +447,9 @@ Purpose: Networking, Meet New Friends`;
                     <Col md={3} xs={6} sm={6}>
                       <div>
                         <p>
-                          {profileData &&
-                            capitalizeFirstLetter(
-                              profileData.positionInCompany
-                            )}
+                          {profileData && profileData.positionInCompany !== ""
+                            ? profileData.positionInCompany
+                            : "No Data"}
                         </p>
                       </div>
                     </Col>
@@ -459,8 +461,9 @@ Purpose: Networking, Meet New Friends`;
                     <Col md={3} xs={6} sm={6}>
                       <div>
                         <p>
-                          {profileData &&
-                            capitalizeFirstLetter(profileData.industry)}
+                          {profileData && profileData.industry !== ""
+                            ? profileData.industry
+                            : "No Data"}
                         </p>
                       </div>
                     </Col>

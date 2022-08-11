@@ -436,10 +436,6 @@ export default {
   ],
   currentHandicap: [
     {
-      name: "No Handicap",
-      value: "No Handicap",
-    },
-    {
       name: "0 to 9",
       value: "0-9",
     },
@@ -454,6 +450,10 @@ export default {
     {
       name: "21 or Greater",
       value: "21-40",
+    },
+    {
+      name: "No Handicap",
+      value: "No Handicap",
     },
   ],
   professional: [

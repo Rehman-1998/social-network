@@ -1119,6 +1119,11 @@ const SearchForm = () => {
                           {...params}
                           fullWidth
                           label="Courses"
+                          name={"playCourse"}
+                          value={arr?.playCourse}
+                          onChange={(e) =>
+                            setArr({ ...arr, playCourse: e.target.value })
+                          }
                         />
                       )}
                     />

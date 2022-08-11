@@ -697,9 +697,7 @@ const MyProfile = () => {
                     </Col>
                     <Col md={6} xs={6} sm={6} className="mb-3">
                       <FormControl fullWidth>
-                        <InputLabel id="demo-multiple-checkbox-label">
-                          Home Courses
-                        </InputLabel>
+                        <InputLabel>Home Courses</InputLabel>
                         <Select
                           required
                           labelId="demo-multiple-checkbox-label"
@@ -726,6 +724,38 @@ const MyProfile = () => {
                             </MenuItem>
                           ))}
                         </Select>
+                        {/* <Autocomplete
+                          id="controllable-states-demo"
+                          options={data?.favouriteCourse}
+                          // multiple
+                          getOptionLabel={(option) =>
+                            option?.value || arr?.favouriteCourse
+                          }
+                          name={"favouriteCourse"}
+                          // value={arr?.favouriteCourse}
+                          value={data?.favouriteCourse.filter((e) =>
+                            arr?.favouriteCourse?.includes(e.value)
+                          )}
+                          onChange={(e, value) =>
+                            setArr({ ...arr, favouriteCourse: value.value })
+                          }
+                          renderInput={(params) => (
+                            <TextField
+                              required
+                              {...params}
+                              fullWidth
+                              label="Courses"
+                              // name={"favouriteCourse"}
+                              // value={arr?.favouriteCourse}
+                              // onChange={(e) =>
+                              //   setArr({
+                              //     ...arr,
+                              //     favouriteCourse: e.target.value,
+                              //   })
+                              // }
+                            />
+                          )}
+                        /> */}
                       </FormControl>
                     </Col>
                   </Row>

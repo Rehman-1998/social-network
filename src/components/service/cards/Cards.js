@@ -27,7 +27,7 @@ const Cards = ({ setDumyData, dumyData }) => {
   };
 
   const fetchData = () => {
-    fetch("https://social-golf-network.herokuapp.com/user")
+    fetch("https://social-golf-network-backend.herokuapp.com/user")
       .then((response) => response.json())
       .then((res) => {
         setData(res.data);

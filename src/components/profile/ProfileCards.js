@@ -22,7 +22,9 @@ const ProfileCards = () => {
   const [customToogle, setCustomToogle] = React.useState(false);
   const location = useLocation();
   useEffect(() => {
-    fetch(`https://social-golf-network.herokuapp.com/user/${location.state.id}`)
+    fetch(
+      `https://social-golf-network-backend.herokuapp.com/user/${location.state.id}`
+    )
       .then((response) => response.json())
       .then((res) => {
         const { data, success } = res;

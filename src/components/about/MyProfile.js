@@ -38,7 +38,7 @@ const MyProfile = () => {
 
   useEffect(() => {
     fetch(
-      `https://social-golf-network.herokuapp.com/user/62bff400d45f9d4184350c89`
+      `https://social-golf-network-backend.herokuapp.com/user/62bff400d45f9d4184350c89`
     )
       .then((response) => response.json())
       .then((res) => {
@@ -89,7 +89,7 @@ const MyProfile = () => {
     setCustomLoader(true);
     console.log("form submit===>>", arr);
     // send Data API
-    fetch("https://social-golf-network.herokuapp.com/user/update", {
+    fetch("https://social-golf-network-backend.herokuapp.com/user/update", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(arr),

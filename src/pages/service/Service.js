@@ -13,7 +13,7 @@ const Service = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetch("https://social-golf-network.herokuapp.com/user")
+    fetch("https://social-golf-network-backend.herokuapp.com/user")
       .then((response) => response.json())
       .then((res) => {
         const { data, success } = res;

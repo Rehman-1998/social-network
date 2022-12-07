@@ -37,9 +37,7 @@ const MyProfile = () => {
   let navigate = useNavigate();
 
   useEffect(() => {
-    fetch(
-      `https://social-golf-network-backend.herokuapp.com/user/62bff400d45f9d4184350c89`
-    )
+    fetch(`https://social-golf-api.onrender.com/user/62bff400d45f9d4184350c89`)
       .then((response) => response.json())
       .then((res) => {
         const { data, success } = res;
@@ -89,7 +87,7 @@ const MyProfile = () => {
     setCustomLoader(true);
     console.log("form submit===>>", arr);
     // send Data API
-    fetch("https://social-golf-network-backend.herokuapp.com/user/update", {
+    fetch("https://social-golf-api.onrender.com/user/update", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(arr),
